@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09D0B30B82076F4332323872 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		370F269FA753CCD3BE6C0A60 /* MercurySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MercurySDK.podspec; path = ../MercurySDK.podspec; sourceTree = "<group>"; };
+		09D0B30B82076F4332323872 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		370F269FA753CCD3BE6C0A60 /* MercurySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MercurySDK.podspec; path = ../MercurySDK.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MercurySDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercurySDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		C5853537C9B14B23002A8C31 /* Pods-MercurySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercurySDK_Example.release.xcconfig"; path = "Target Support Files/Pods-MercurySDK_Example/Pods-MercurySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D610E223A6FE12E4988C3CE7 /* Pods-MercurySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercurySDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MercurySDK_Tests/Pods-MercurySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D703D68DCB0140712783B652 /* Pods-MercurySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercurySDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-MercurySDK_Example/Pods-MercurySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E9E6029DDD9DECDAB075D785 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E9E6029DDD9DECDAB075D785 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				D610E223A6FE12E4988C3CE7 /* Pods-MercurySDK_Tests.debug.xcconfig */,
 				7F0D6F4FD58FDE2DB8E1BEE4 /* Pods-MercurySDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,6 +497,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MercurySDK/MercurySDK-Prefix.pch";
 				INFOPLIST_FILE = "MercurySDK/MercurySDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +514,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MercurySDK/MercurySDK-Prefix.pch";
 				INFOPLIST_FILE = "MercurySDK/MercurySDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

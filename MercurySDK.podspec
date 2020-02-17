@@ -1,42 +1,32 @@
-#
-# Be sure to run `pod lib lint MercurySDK.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'MercurySDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MercurySDK.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '3.0.2'
+  
+  s.ios.deployment_target = '9.0'
+  
+  s.requires_arc = true
+  
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.summary          = 'bayescom iOS SDK'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Blink倍联——免费透明的流量变现神器 
+600+ 移动媒体选择的广告商业化管理工具，定制私有的移动媒体商业化解决方案。优质上游资源一网打尽，接入方式快速透明稳定。支持流量分发、渠道策略、精准投放、数据报表、排期管理、广告审核等全流程业务场景。
                        DESC
 
-  s.homepage         = 'https://github.com/Cheng455153666/MercurySDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Cheng455153666' => '455153666@qq.com' }
-  s.source           = { :git => 'https://github.com/Cheng455153666/MercurySDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'MercurySDK/Classes/**/*'
+  s.homepage         = 'http://www.bayescom.com/'
   
-  # s.resource_bundles = {
-  #   'MercurySDK' => ['MercurySDK/Assets/*.png']
-  # }
+  s.author           = { 'Cheng455153666' => '455153666@qq.com' }
+  s.source           = { :git => 'https://github.com/bayescom/MercurySDK.git', :tag => s.version.to_s }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.vendored_frameworks = 'MercurySDK/Classes/*.framework'
+  
+  s.resource = 'MercurySDK/MercurySDKBundle.bundle'
+   
+  s.user_target_xcconfig = {'OTHER_LDFLAGS' => ['-ObjC']}
+   
+  # bitcode
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+  s.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+
+  s.frameworks = 'UIKit', 'Foundation'
 end

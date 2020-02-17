@@ -1,0 +1,22 @@
+{
+  "name": "MercurySDK",
+  "version": "0.1.0",
+  "summary": "A short description of MercurySDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Cheng455153666/MercurySDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Cheng455153666": "455153666@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/Cheng455153666/MercurySDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MercurySDK/Classes/**/*"
+}
