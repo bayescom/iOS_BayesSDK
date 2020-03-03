@@ -8,39 +8,81 @@
 
 #import "MERCURYAppDelegate.h"
 
+#import "MERCURYViewController.h"
+
+#import <MercurySDK/MercurySDK.h>
+
+@interface MERCURYAppDelegate () <MercurySplashAdDelegate>
+@property (nonatomic, strong) MercurySplashAd *ad;
+@end
+
 @implementation MERCURYAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIViewController *vc = [[MERCURYViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+//    self.nav.navigationBar.barStyle = UIBarStyleBlackOpaque;
+    nav.navigationBar.translucent = NO;
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    [self splashShow];
+    
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+- (void)splashShow {   // 开屏
+    // 设置AppId MediaKey
+    [MercuryConfigManager setAppID:@"100255"
+                     mediaKey:@"757d5119466abe3d771a211cc1278df7"];
+    [MercuryConfigManager openDebug:YES];
+    
+    _ad = [[MercurySplashAd alloc] initAdWithAdspotId:@"10002436" delegate:nil];
+    _ad.controller = self.window.rootViewController;
+    _ad.delegate = self;
+    _ad.placeholderImage = [UIImage imageNamed:@"LaunchImage_img"];
+    _ad.logoImage = [UIImage imageNamed:@"app_logo"];
+    [_ad loadAdAndShow];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+// MARK: ======================= MercurySplashAdDelegate =======================
+- (void)mercury_splashAdDidLoad:(MercurySplashAd *)splashAd {
+    NSLog(@"开屏广告模型加载成功 %s", __func__);
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+- (void)mercury_splashAdSuccessPresentScreen:(MercurySplashAd *)splashAd {
+    NSLog(@"开屏广告成功曝光 %s", __func__);
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+- (void)mercury_splashAdFailError:(NSError *)error {
+    NSLog(@"开屏广告曝光失败 %s %@", __func__, error);
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+- (void)mercury_splashAdLifeTime:(NSUInteger)time {
+    NSLog(@"开屏广告剩余时间回调 %s _ %ld", __func__, time);
+}
+
+- (void)mercury_splashAdApplicationWillEnterBackground:(MercurySplashAd *)splashAd {
+    NSLog(@"应用进入后台时回调 %s", __func__);
+}
+
+- (void)mercury_splashAdExposured:(MercurySplashAd *)splashAd {
+    NSLog(@"开屏广告曝光回调 %s", __func__);
+}
+
+- (void)mercury_splashAdClicked:(MercurySplashAd *)splashAd {
+    NSLog(@"开屏广告点击回调 %s", __func__);
+}
+
+- (void)mercury_splashAdWillClosed:(MercurySplashAd *)splashAd {
+    NSLog(@"开屏广告将要关闭回调 %s", __func__);
+}
+
+- (void)mercury_splashAdClosed:(MercurySplashAd *)splashAd {
+    NSLog(@"开屏广告关闭回调 %s", __func__);
 }
 
 @end

@@ -24,6 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取 SDK 版本
 + (NSString *)sdkVersion;
 
+/// 预缓存素材资源
++ (void)preloadedResourcesIfNeed:(BOOL)isNeed;
+
 @end
 
 NS_ASSUME_NONNULL_END
