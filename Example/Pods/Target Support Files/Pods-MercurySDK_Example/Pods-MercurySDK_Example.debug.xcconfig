@@ -1,5 +1,5 @@
 ENABLE_BITCODE = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../MercurySDK/Classes"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../MercurySDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -ObjC -framework "Foundation" -framework "MercurySDK" -framework "UIKit"

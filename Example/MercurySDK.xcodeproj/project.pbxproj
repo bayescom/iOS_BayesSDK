@@ -362,7 +362,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				3E58AE0178BD2203CD2E65CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -454,24 +453,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3E58AE0178BD2203CD2E65CA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MercurySDK_Example/Pods-MercurySDK_Example-resources.sh",
-				"${PODS_ROOT}/../../MercurySDK/MercurySDKBundle.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MercurySDKBundle.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MercurySDK_Example/Pods-MercurySDK_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5CB2B566EA7C1E5090759C72 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

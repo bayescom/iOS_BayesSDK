@@ -1,6 +1,6 @@
 {
   "name": "MercurySDK",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "platforms": {
     "ios": null
   },
@@ -17,9 +17,9 @@
   },
   "source": {
     "git": "https://github.com/bayescom/MercurySDK.git",
-    "tag": "3.0.2"
+    "tag": "3.0.3"
   },
-  "vendored_frameworks": "MercurySDK/Classes/*.framework",
+  "vendored_frameworks": "MercurySDK/*.framework",
   "resources": "MercurySDK/MercurySDKBundle.bundle",
   "user_target_xcconfig": {
     "ENABLE_BITCODE": "NO"

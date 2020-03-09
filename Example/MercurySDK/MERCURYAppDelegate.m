@@ -29,7 +29,7 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    [self splashShow];
+    [self splashShow]; 
     
     return YES;
 }

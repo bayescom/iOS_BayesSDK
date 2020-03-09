@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MercurySDK'
-  s.version          = '3.0.2.1'
+  s.version          = '3.0.3'
   
   s.ios.deployment_target = '9.0'
   s.platform     = :ios
@@ -18,7 +18,7 @@ Blink倍联——免费透明的流量变现神器 
   s.author           = { 'bayescom' => 'http://www.bayescom.com/' }
   s.source           = { :git => 'https://github.com/bayescom/MercurySDK.git', :tag => s.version.to_s }
 
-  s.vendored_frameworks = 'MercurySDK/Classes/*.framework'
+  s.vendored_frameworks = 'MercurySDK/*.framework'
   
   s.resource = 'MercurySDK/MercurySDKBundle.bundle'
    
