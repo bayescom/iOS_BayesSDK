@@ -20,7 +20,7 @@ Blink倍联——免费透明的流量变现神器 
 
   s.vendored_frameworks = 'MercurySDK/*.framework'
   
-  s.resource = 'MercurySDK/MercurySDKBundle.bundle'
+  #s.resource = 'MercurySDK/MercurySDKBundle.bundle'
    
   s.user_target_xcconfig = {'OTHER_LDFLAGS' => ['-ObjC']}
    
