@@ -1,6 +1,5 @@
 # MercurySDK集成文档
 
-[![CI Status](https://img.shields.io/travis/Cheng455153666/MercurySDK.svg?style=flat)](https://travis-ci.org/Cheng455153666/MercurySDK)
 [![Version](https://img.shields.io/cocoapods/v/MercurySDK.svg?style=flat)](https://cocoapods.org/pods/MercurySDK)
 [![License](https://img.shields.io/cocoapods/l/MercurySDK.svg?style=flat)](https://cocoapods.org/pods/MercurySDK)
 [![Platform](https://img.shields.io/cocoapods/p/MercurySDK.svg?style=flat)](https://cocoapods.org/pods/MercurySDK)
