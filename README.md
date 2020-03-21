@@ -4,8 +4,6 @@
 [![License](https://img.shields.io/cocoapods/l/MercurySDK.svg?style=flat)](https://cocoapods.org/pods/MercurySDK)
 [![Platform](https://img.shields.io/cocoapods/p/MercurySDK.svg?style=flat)](https://cocoapods.org/pods/MercurySDK)
 
-**Version: v 3.1.0**
-
 ## 概述
 
 ### 开发环境
@@ -57,7 +55,7 @@ end
 platform :ios, '9.0'
 target '你的项目名称' do
   # use_frameworks!
- pod 'MercurySDK', '~> 3.1.0' # 输入你想要的版本号
+ pod 'MercurySDK', '~> 3.1.1' # 输入你想要的版本号
   # Pods for podTest
 end
 ```
@@ -99,7 +97,7 @@ $ pod install
 指定SDK版本前，请先确保repo库为最新版本，参考上一小节内容进行更新。如果需要指定SDK版本，需要在Podfile文件中，pod那一行指定版本号：
 
 ```
- pod 'MercurySDK', '~> 3.1.0'  #这里改成你想要的版本号
+ pod 'MercurySDK', '~> 3.1.1'  #这里改成你想要的版本号
 
 ```
 之后运行命令：
