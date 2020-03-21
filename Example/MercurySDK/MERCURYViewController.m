@@ -32,6 +32,7 @@
         @{@"title":@"激励视频", @"targetVCName": @"MercuryRewardVideoViewController"},
         @{@"title":@"信息流", @"targetVCName": @"MercuryFeedExpressViewController"},
         @{@"title":@"视频贴片", @"targetVCName": @"MercuryPreVideoViewController"},
+        @{@"title":@"自渲染", @"targetVCName": @"TestCustomViewController"},
     ];
     
     [_tableView reloadData];

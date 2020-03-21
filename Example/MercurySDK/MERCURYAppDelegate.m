@@ -38,8 +38,11 @@
     // 设置AppId MediaKey
     [MercuryConfigManager setAppID:@"100255"
                      mediaKey:@"757d5119466abe3d771a211cc1278df7"];
+    // 开启日志
     [MercuryConfigManager openDebug:YES];
-    
+    // 支持预缓存资源
+    [MercuryConfigManager preloadedResourcesIfNeed:YES];
+    NSLog(@"%@", [MercuryConfigManager sdkVersion]);
     _ad = [[MercurySplashAd alloc] initAdWithAdspotId:@"10002436" delegate:nil];
     _ad.controller = self.window.rootViewController;
     _ad.delegate = self;

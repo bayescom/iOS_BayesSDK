@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'MercurySDK'
-  s.version          = '3.0.3'
+  s.version          = '3.1.1'
   
   s.ios.deployment_target = '9.0'
-  s.platform     = :ios
+  s.platform     = :ios, "9.0" 
   s.requires_arc = true
   
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -19,8 +19,6 @@ Blink倍联——免费透明的流量变现神器 
   s.source           = { :git => 'https://github.com/bayescom/MercurySDK.git', :tag => s.version.to_s }
 
   s.vendored_frameworks = 'MercurySDK/*.framework'
-  
-  #s.resource = 'MercurySDK/MercurySDKBundle.bundle'
    
   s.user_target_xcconfig = {'OTHER_LDFLAGS' => ['-ObjC']}
    
@@ -29,4 +27,9 @@ Blink倍联——免费透明的流量变现神器 
   s.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 
   s.frameworks = 'UIKit', 'Foundation'
+
+  valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
+  s.xcconfig = {
+    'VALID_ARCHS' =>  valid_archs.join(' '),
+  }
 end

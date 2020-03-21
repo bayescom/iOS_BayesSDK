@@ -1,8 +1,8 @@
 {
   "name": "MercurySDK",
-  "version": "3.0.3",
+  "version": "3.1.1",
   "platforms": {
-    "ios": null
+    "ios": "9.0"
   },
   "requires_arc": true,
   "license": {
@@ -17,10 +17,9 @@
   },
   "source": {
     "git": "https://github.com/bayescom/MercurySDK.git",
-    "tag": "3.0.3"
+    "tag": "3.1.1"
   },
   "vendored_frameworks": "MercurySDK/*.framework",
-  "resources": "MercurySDK/MercurySDKBundle.bundle",
   "user_target_xcconfig": {
     "ENABLE_BITCODE": "NO"
   },
@@ -30,5 +29,8 @@
   "frameworks": [
     "UIKit",
     "Foundation"
-  ]
+  ],
+  "xcconfig": {
+    "VALID_ARCHS": "armv7 armv7s x86_64 arm64"
+  }
 }
