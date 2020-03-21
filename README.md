@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/MercurySDK.svg?style=flat)](https://cocoapods.org/pods/MercurySDK)
 [![Platform](https://img.shields.io/cocoapods/p/MercurySDK.svg?style=flat)](https://cocoapods.org/pods/MercurySDK)
 
-**Version: v 3.0.3**
+**Version: v 3.1.0**
 
 ## 概述
 
@@ -58,7 +58,7 @@ end
 platform :ios, '9.0'
 target '你的项目名称' do
   # use_frameworks!
- pod 'MercurySDK', '~> 3.0.3' # 输入你想要的版本号
+ pod 'MercurySDK', '~> 3.1.0' # 输入你想要的版本号
   # Pods for podTest
 end
 ```
@@ -100,7 +100,7 @@ $ pod install
 指定SDK版本前，请先确保repo库为最新版本，参考上一小节内容进行更新。如果需要指定SDK版本，需要在Podfile文件中，pod那一行指定版本号：
 
 ```
- pod 'MercurySDK', '~> 3.0.3'  #这里改成你想要的版本号
+ pod 'MercurySDK', '~> 3.1.0'  #这里改成你想要的版本号
 
 ```
 之后运行命令：
@@ -686,3 +686,125 @@ _adView.videoMuted = YES; // 设置静音
 [_adView showAdWithView:aView]; // 将贴片展示在某个视图上
 ```
 
+### 自渲染广告
+
+在使用自渲染广告时，您可以获取到广告的信息，进行自定义的UI绘制。如：
+
+#### 主要API
+
+##### MercuryNativeAd回调方法
+```
+@protocol MercuryNativeAdDelegate <NSObject>
+
+/// 广告数据回调
+/// @param nativeAdDataModels 广告数据数组
+/// @param error 错误信息
+- (void)mercury_nativeAdLoaded:(NSArray<MercuryNativeAdDataModel *> * _Nullable)nativeAdDataModels error:(NSError * _Nullable)error;
+@end
+```
+
+##### MercuryNativeAdView回调方法
+
+```
+@protocol MercuryNativeAdViewDelegate <NSObject>
+
+@optional
+
+/// 广告曝光回调
+/// @param nativeAdView MercuryNativeAdView 实例
+- (void)mercury_nativeAdViewWillExpose:(MercuryNativeAdView *)nativeAdView;
+
+/// 广告点击回调
+/// @param nativeAdView MercuryNativeAdView 实例
+- (void)mercury_nativeAdViewDidClick:(MercuryNativeAdView *)nativeAdView;
+
+/// 视频广告播放状态更改回调
+/// @param nativeAdView MercuryNativeAdView 实例
+/// @param status 视频广告播放状态
+- (void)mercury_nativeAdView:(MercuryNativeAdView *)nativeAdView playerStatusChanged:(MercuryMediaPlayerStatus)status;
+
+@end
+```
+
+##### MercuryMediaView回调方法
+
+```
+@class MercuryMediaView;
+@protocol MercuryMediaViewDelegate <NSObject>
+
+@optional
+
+/**
+ 用户点击 MediaView 回调，当 MercuryVideoConfig userControlEnable 设为 YES，用户点击 mediaView 会回调。
+ 
+ @param mediaView 播放器实例
+ */
+- (void)mercury_mediaViewDidTapped:(MercuryMediaView *)mediaView;
+
+/**
+ 播放完成回调
+
+ @param mediaView 播放器实例
+ */
+- (void)mercury_mediaViewDidPlayFinished:(MercuryMediaView *)mediaView;
+
+@end
+```
+
+在实现上述事件回调之前，请务必先设置delegate:
+
+```
+self.nativeAd.delegate = self;	// 设置MercuryNativeAd代理
+self.adView.delegate = self;	// 设置MercuryNativeAdView代理
+self.mediaView.delegate = self; // 设置MercuryMediaView代理
+```
+
+#### 接入代码示例
+
+> 更具体的调用方法请参考 Demo
+
+
+1. 在控制器头文件中加入SDK头文件，并添加MercuryNativeAd对象
+
+```
+#import <MercurySDK/MercurySDK.h>
+@property (nonatomic, strong) NSMutableArray *dataArrM;
+@property (nonatomic, strong) MercuryNativeAd *nativeAd;
+```
+
+2. 在ViewController的实现文件中初始化并加载广告数据
+
+```
+_dataArrM = [NSMutableArray arrayWithArray:[CellBuilder dataFromJsonFile:@"cell01"]];
+_nativeAd = [[MercuryNativeAd alloc] initAdWithAdspotId:_adspotId];
+_nativeAd.delegate = self;
+[_nativeAd loadAd];
+```
+
+3. 需要在广告内容准备就绪的时候展示广告。开发者需要在拿到数据的回调方法，即`mercury_nativeAdLoaded:error`里处理数据并做广告展示，可以将取到的数据进行自定义的渲染：
+
+```
+- (void)registerNativeAd:(MercuryNativeAd *)nativeAd
+              dataObject:(MercuryNativeAdDataModel *)model {
+    if (!model) { return; }
+    
+    self.titleLbl.text = model.title;
+    self.descLbl.text = model.desc;
+    self.sourceLbl.text = model.adsource;
+    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:model.logo]];
+    if (model.isVideoAd) {
+	// 视频类型资源 播放器类型对象可以控制其配置
+	model.videoConfig.autoResumeEnable = NO;
+      model.videoConfig.userControlEnable = YES;
+      model.videoConfig.progressViewEnable = YES;
+      model.videoConfig.coverImageEnable = YES;
+      model.videoConfig.videoPlayPolicy = MercuryVideoAutoPlayPolicyWIFI;
+    } else {
+    	// 图片类型资源
+        }];
+    }
+}    	
+
+```
+
+> 注意：register方法中，clickableViews只接受在容器可视范围内的元素的点击（有效点击），如果不在容器内可见，即便注册到clickableViews中也不会响应广告的点击事件；
