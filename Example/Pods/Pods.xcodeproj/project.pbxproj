@@ -54,23 +54,21 @@
 		2C122736A1138299522A7DCFA33B7EF2 /* Pods-MercurySDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MercurySDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		345774B2919B3DCE9E8A33B9C964EE47 /* Pods-MercurySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercurySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		3F32918370DDC39023D24AB975965855 /* MercurySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MercurySDK.framework; path = MercurySDK/MercurySDK.framework; sourceTree = "<group>"; };
+		543302FD489E0E1F06106DFC23DFF474 /* MercurySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MercurySDK.release.xcconfig; sourceTree = "<group>"; };
 		579330BF83EDFACDFCA78365D6625963 /* Pods-MercurySDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MercurySDK_Example.modulemap"; sourceTree = "<group>"; };
-		5FF0A40AB5C96F1D66A32753EF4BEBC8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		6CFE502A6204D8F9907C2DA0B1BC9FAC /* Pods-MercurySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercurySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		718F9DA13611F2F7FD0D19CE45E5A1ED /* MercurySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MercurySDK.framework; path = MercurySDK/MercurySDK.framework; sourceTree = "<group>"; };
+		7EE750523EB05366BE21040B5AF0E13D /* MercurySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MercurySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		86EFE7B2AB01FF0F34FBE9B61AC4CCA0 /* Pods-MercurySDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MercurySDK_Tests.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB69AFA7669CCBC4C95E3D4CF19B12B5 /* Pods-MercurySDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MercurySDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B49D32781830FA7C8415FBB2B18AFDD6 /* MercurySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MercurySDK.release.xcconfig; sourceTree = "<group>"; };
-		B6BA33D562D70A8F2B4373C6E1D79318 /* MercurySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MercurySDK.debug.xcconfig; sourceTree = "<group>"; };
+		B755019F79705353AAE6C19099FC3A8A /* MercurySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MercurySDK.debug.xcconfig; sourceTree = "<group>"; };
 		C630F0BA46F036FF867CBEAD35659D03 /* Pods_MercurySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MercurySDK_Tests.framework; path = "Pods-MercurySDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D612E81BAE603B6931A503BBBB3E54 /* Pods-MercurySDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MercurySDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		D6202B17F4FD634BEAB1B36F3DA86768 /* MercurySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MercurySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DC03799B922A241565D0A39B31111335 /* Pods-MercurySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercurySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCBCC9E1B57F9AE4FB10B1A9D8801ADE /* Pods-MercurySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercurySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E2C511AEFC36A7E7FBC8F3AA2783E782 /* Pods-MercurySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercurySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E69A97798818B90C6F3B703CF4F69BBC /* Pods-MercurySDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MercurySDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F8CA24278263112D40B3D6BA0A95B32C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +91,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02DB17D96B6ECE57BD3EED19C7972EF7 /* Frameworks */ = {
+		36996A7E6C5BEF15CDCEFFC1D5192B9F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				3F32918370DDC39023D24AB975965855 /* MercurySDK.framework */,
+				7EE750523EB05366BE21040B5AF0E13D /* MercurySDK.podspec */,
 			);
-			name = Frameworks;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		491648F42199C0E2D0F8086F8F0D3AC0 /* Pods-MercurySDK_Example */ = {
@@ -135,25 +133,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8E6707858D34B99DA083A410FDD87405 /* MercurySDK */ = {
+		6E910B9ADF7CD7AE2FA3336EF7FAE0F1 /* MercurySDK */ = {
 			isa = PBXGroup;
 			children = (
-				02DB17D96B6ECE57BD3EED19C7972EF7 /* Frameworks */,
-				942107FEDEA08D038A54C8C085A675A8 /* Pod */,
-				CF61766D51E1A7224ADDD83738DE1800 /* Support Files */,
+				A34E83F99D13421A0D36FEAC4D04DCBC /* Frameworks */,
+				36996A7E6C5BEF15CDCEFFC1D5192B9F /* Pod */,
+				A0891D0379E5E95502CF66ECBA55F6B4 /* Support Files */,
 			);
 			name = MercurySDK;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		942107FEDEA08D038A54C8C085A675A8 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F8CA24278263112D40B3D6BA0A95B32C /* LICENSE */,
-				D6202B17F4FD634BEAB1B36F3DA86768 /* MercurySDK.podspec */,
-				5FF0A40AB5C96F1D66A32753EF4BEBC8 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		986FC999580201D5DD601C61C820DF76 /* Pods-MercurySDK_Tests */ = {
@@ -170,6 +158,24 @@
 			);
 			name = "Pods-MercurySDK_Tests";
 			path = "Target Support Files/Pods-MercurySDK_Tests";
+			sourceTree = "<group>";
+		};
+		A0891D0379E5E95502CF66ECBA55F6B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B755019F79705353AAE6C19099FC3A8A /* MercurySDK.debug.xcconfig */,
+				543302FD489E0E1F06106DFC23DFF474 /* MercurySDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MercurySDK";
+			sourceTree = "<group>";
+		};
+		A34E83F99D13421A0D36FEAC4D04DCBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				718F9DA13611F2F7FD0D19CE45E5A1ED /* MercurySDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -191,16 +197,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		CF61766D51E1A7224ADDD83738DE1800 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B6BA33D562D70A8F2B4373C6E1D79318 /* MercurySDK.debug.xcconfig */,
-				B49D32781830FA7C8415FBB2B18AFDD6 /* MercurySDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MercurySDK";
-			sourceTree = "<group>";
-		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,7 +208,7 @@
 		EF48A39A03FF7487F58D0709E41E5848 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8E6707858D34B99DA083A410FDD87405 /* MercurySDK */,
+				6E910B9ADF7CD7AE2FA3336EF7FAE0F1 /* MercurySDK */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -551,7 +547,7 @@
 		};
 		92C8E3B182C7546AE2C88D2EA2CF6A5B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6BA33D562D70A8F2B4373C6E1D79318 /* MercurySDK.debug.xcconfig */;
+			baseConfigurationReference = B755019F79705353AAE6C19099FC3A8A /* MercurySDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -597,7 +593,7 @@
 		};
 		DD9603FB92A6D0E9A40B22D11D28F068 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B49D32781830FA7C8415FBB2B18AFDD6 /* MercurySDK.release.xcconfig */;
+			baseConfigurationReference = 543302FD489E0E1F06106DFC23DFF474 /* MercurySDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

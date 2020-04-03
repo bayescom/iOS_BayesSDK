@@ -1,5 +1,5 @@
 PODS:
-  - MercurySDK (3.1.1)
+  - MercurySDK (3.1.2)
 
 DEPENDENCIES:
   - MercurySDK (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MercurySDK: 0e08e0958bd8c5635ed0a21ba1076309b58338a4
+  MercurySDK: bd46eae767ca29052140aa8f14133e114914ed2e
 
 PODFILE CHECKSUM: d20f8a3f0b4ed3f25669cb1d9674b0705a27c9c8
 

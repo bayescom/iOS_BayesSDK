@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = 'MercurySDK'
-  s.version          = '3.1.1'
+  s.version          = '3.1.2'
   
   s.ios.deployment_target = '9.0'
   s.platform     = :ios, "9.0" 
   s.requires_arc = true
   
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+#  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.summary          = 'bayescom iOS SDK'
   s.description      = <<-DESC
 Blink倍联——免费透明的流量变现神器 
