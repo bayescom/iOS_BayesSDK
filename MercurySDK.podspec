@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
 #  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+
   s.summary          = 'bayescom iOS SDK'
   s.description      = <<-DESC
 Blink倍联——免费透明的流量变现神器 
