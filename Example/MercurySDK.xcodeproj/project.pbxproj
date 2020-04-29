@@ -426,14 +426,14 @@
 		316CBFE523FBC79900B134E5 /* TestSingleController */ = {
 			isa = PBXGroup;
 			children = (
-				316CBFE623FBC79900B134E5 /* MercurySplashAdViewController.h */,
-				316CBFE723FBC79900B134E5 /* MercuryInterstitialAdViewController.m */,
-				316CBFE823FBC79900B134E5 /* MercuryRewardVideoViewController.h */,
+				316CBFED23FBC79900B134E5 /* MercuryBannerAdViewController.h */,
 				316CBFE923FBC79900B134E5 /* MercuryBannerAdViewController.m */,
 				316CBFEA23FBC79900B134E5 /* MercuryInterstitialAdViewController.h */,
-				316CBFEB23FBC79900B134E5 /* MercurySplashAdViewController.m */,
+				316CBFE723FBC79900B134E5 /* MercuryInterstitialAdViewController.m */,
+				316CBFE823FBC79900B134E5 /* MercuryRewardVideoViewController.h */,
 				316CBFEC23FBC79900B134E5 /* MercuryRewardVideoViewController.m */,
-				316CBFED23FBC79900B134E5 /* MercuryBannerAdViewController.h */,
+				316CBFE623FBC79900B134E5 /* MercurySplashAdViewController.h */,
+				316CBFEB23FBC79900B134E5 /* MercurySplashAdViewController.m */,
 			);
 			path = TestSingleController;
 			sourceTree = "<group>";
@@ -708,14 +708,14 @@
 		316EB58C2425953E0010CD33 /* TestCustomController */ = {
 			isa = PBXGroup;
 			children = (
-				316EB58D2425953E0010CD33 /* TestCustomFeedTableViewCell.m */,
-				316EB58E2425953E0010CD33 /* TestCustomViewController.m */,
+				316EB5932425953E0010CD33 /* BYNativeAdCustomView.h */,
 				316EB58F2425953E0010CD33 /* BYNativeAdCustomView.m */,
+				316EB5922425953E0010CD33 /* TestCustomFeedTableViewCell.h */,
+				316EB58D2425953E0010CD33 /* TestCustomFeedTableViewCell.m */,
+				316EB5942425953E0010CD33 /* TestCustomFeedViewController.h */,
 				316EB5902425953E0010CD33 /* TestCustomFeedViewController.m */,
 				316EB5912425953E0010CD33 /* TestCustomViewController.h */,
-				316EB5922425953E0010CD33 /* TestCustomFeedTableViewCell.h */,
-				316EB5932425953E0010CD33 /* BYNativeAdCustomView.h */,
-				316EB5942425953E0010CD33 /* TestCustomFeedViewController.h */,
+				316EB58E2425953E0010CD33 /* TestCustomViewController.m */,
 			);
 			path = TestCustomController;
 			sourceTree = "<group>";
