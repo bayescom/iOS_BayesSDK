@@ -52,12 +52,7 @@
     // 自定义Logo，占位图
     _ad.placeholderImage = [UIImage imageNamed:@"LaunchImage_img"];
     _ad.logoImage = [UIImage imageNamed:@"app_logo"];
-//    [_ad loadAdAndShow];
-    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 200)];
-    v1.backgroundColor = [UIColor redColor];
-    UIView *v2 = [[UIView alloc] initWithFrame:CGRectMake(200, 30, 100, 100)];
-    v2.backgroundColor = [UIColor yellowColor];
-    [_ad loadAdAndShowWithBottomView:v1 skipView:nil];
+    [_ad loadAdAndShow];
 }
 
 // MARK: ======================= MercurySplashAdDelegate =======================
