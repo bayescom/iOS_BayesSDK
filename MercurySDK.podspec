@@ -28,6 +28,8 @@ Blink倍联——免费透明的流量变现神器 
   s.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 
   s.frameworks = 'UIKit', 'Foundation'
+  
+  # s.dependency 'SDWebImage'
 
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = {
