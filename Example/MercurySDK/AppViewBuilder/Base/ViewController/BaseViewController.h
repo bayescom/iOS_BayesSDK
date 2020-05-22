@@ -8,12 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "JDStatusBarNotification.h"
-
 #import <UIKit/UIKit.h>
 
+/// 是否是刘海屏
 static inline BOOL IsIPhoneXSeries() {
     if (@available(iOS 11.0, *)) {
-        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        UIWindow *mainWindow;
+        if (@available(iOS 13, *)) {
+            mainWindow = UIApplication.sharedApplication.windows.firstObject;
+        } else {
+            mainWindow = UIApplication.sharedApplication.keyWindow;
+        }
         if (mainWindow.safeAreaInsets.bottom > 0.0) {
             return YES;
         }

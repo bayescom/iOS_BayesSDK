@@ -8,7 +8,7 @@
 
 #import "MercuryInterstitialAdViewController.h"
 
-#import <MercurySDK/MercurySDK.h>
+#import "MercuryInterstitialAd.h"
 
 @interface MercuryInterstitialAdViewController () <MercuryInterstitialAdDelegate>
 @property (nonatomic, strong) MercuryInterstitialAd *ad;
@@ -23,8 +23,6 @@
     self.initDefSubviewsFlag = YES;
     self.adspotIdsArr = @[
         @{@"addesc": @"插屏图片", @"adspotId": @"10000559"},
-//        @{@"addesc": @"插屏图片", @"adspotId": @"10000558"},
-//        @{@"addesc": @"插屏", @"adspotId": @"30000001"},
     ];
     self.btn1Title = @"加载广告";
     self.btn2Title = @"显示广告";
@@ -45,6 +43,8 @@
 - (void)mercury_interstitialSuccess {
     NSLog(@"插屏广告预加载成功回调");
     [JDStatusBarNotification showWithStatus:@"插屏广告预加载成功" dismissAfter:1.5];
+    
+    [_ad presentAdFromViewController:self];
 }
 
 - (void)mercury_interstitialFailError:(NSError *)error {

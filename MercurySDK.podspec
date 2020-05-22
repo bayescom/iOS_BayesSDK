@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MercurySDK'
-  s.version          = '3.1.3.4'
+  s.version          = '3.1.4'
   
   s.ios.deployment_target = '9.0'
   s.platform     = :ios, "9.0" 
@@ -19,7 +19,7 @@ Blink倍联——免费透明的流量变现神器 
   s.author           = { 'bayescom' => 'http://www.bayescom.com/' }
   s.source           = { :git => 'https://github.com/bayescom/MercurySDK.git', :tag => s.version.to_s }
 
-  s.vendored_frameworks = 'MercurySDK/*.framework'
+  s.source_files = 'MercurySDK/**/*.{h,m}'
    
   s.user_target_xcconfig = {'OTHER_LDFLAGS' => ['-ObjC']}
    
@@ -29,7 +29,7 @@ Blink倍联——免费透明的流量变现神器 
 
   s.frameworks = 'UIKit', 'Foundation'
   
-  # s.dependency 'SDWebImage'
+  s.dependency 'SDWebImage'
 
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = {

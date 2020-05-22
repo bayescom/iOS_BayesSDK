@@ -9,7 +9,7 @@
 #import "MercuryBannerAdViewController.h"
 #import "ViewBuilder.h"
 
-#import <MercurySDK/MercurySDK.h>
+#import "MercuryBannerAdView.h"
 
 @interface MercuryBannerAdViewController () <MercuryBannerAdViewDelegate>
 @property (nonatomic, strong) MercuryBannerAdView *bannerView;
@@ -31,8 +31,6 @@
     self.initDefSubviewsFlag = YES;
     self.adspotIdsArr = @[
         @{@"addesc": @"Banner", @"adspotId": @"10000558"},
-        
-//        @{@"addesc": @"横幅", @"adspotId": @"20000001"},
     ];
     self.btn1Title = @"加载并显示广告";
     self.btn2Title = @"移除广告";
@@ -98,7 +96,7 @@
 
 /// 请求广告条数据失败后调用
 - (void)mercury_bannerViewFailToReceived:(NSError *)error {
-    NSLog(@"请求广告条数据失败后调用 %s", __func__);
+    NSLog(@"请求广告条数据失败后调用 %s %@", __func__, error);
 }
 
 /// banner条被用户关闭时调用

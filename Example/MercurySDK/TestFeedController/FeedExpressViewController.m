@@ -10,9 +10,9 @@
 #import "CellBuilder.h"
 #import "BYExamCellModel.h"
 
-#import <MercurySDK/MercurySDK.h>
+#import "MercuryNativeExpressAd.h"
 
-@interface FeedExpressViewController () <MercuryNativeExpressAdDelegete, UITableViewDelegate, UITableViewDataSource>
+@interface FeedExpressViewController () <MercuryNativeExpressAdDelegete, MercuryNativeExpressAdViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView *tableView;
 
 @property (nonatomic, strong) MercuryNativeExpressAd *ad;
@@ -36,7 +36,6 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.tableFooterView = [UIView new];
-    
     [self loadBtnAction:nil];
 }
 
@@ -44,9 +43,11 @@
     _dataArrM = [NSMutableArray arrayWithArray:[CellBuilder dataFromJsonFile:@"cell01"]];
     _ad = [[MercuryNativeExpressAd alloc] initAdWithAdspotId:_adspotId];
     _ad.delegate = self;
-    _ad.videoMuted = YES;
+    
+    _ad.videoMuted = NO;
     _ad.videoPlayPolicy = MercuryVideoAutoPlayPolicyWIFI;
-    _ad.renderSize = CGSizeMake(self.view.bounds.size.width, 300);
+    
+    _ad.renderSize = CGSizeMake(self.view.bounds.size.width, 100);
     [_ad loadAdWithCount:_count];
 }
 
@@ -55,15 +56,15 @@
 - (void)mercury_nativeExpressAdSuccessToLoad:(MercuryNativeExpressAd *)nativeExpressAd views:(NSArray<MercuryNativeExpressAdView *> *)views {
     NSLog(@"拉取数据成功 ");
     for (NSInteger i=0; i<views.count;i++) {
-        views[i].controller = self;
         views[i].adSizeMode = MercuryNativeExpressAdSizeModeAutoSize;
         if (i == 0) {
             [_dataArrM insertObject:views[i] atIndex:4];
         } else {
             [_dataArrM insertObject:views[i] atIndex:arc4random_uniform((int)views.count)];
         }
+        views[i].delegate = self;
+//        views[i].handle.userControlEnable = YES;
         [views[i] render];
-        views[i].videoMuted = NO;
     }
 }
 
@@ -72,6 +73,7 @@
     NSLog(@"拉取原生模板广告失败 %@", error);
 }
 
+// MARK: ======================= MercuryNativeExpressAdViewDelegate =======================
 /// 原生模板广告渲染成功, 此时的 nativeExpressAdView.size.height 根据 size.width 完成了动态更新。
 - (void)mercury_nativeExpressAdViewRenderSuccess:(MercuryNativeExpressAdView *)nativeExpressAdView {
     NSLog(@"原生模板广告渲染成功, %@", nativeExpressAdView);
@@ -142,10 +144,6 @@
         return cell;
     }
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.navigationController pushViewController:[[NSClassFromString(@"MercuryFeedExpressViewController") alloc] init] animated:YES];
 }
 
 @end

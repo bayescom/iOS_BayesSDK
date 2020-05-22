@@ -8,7 +8,7 @@
 
 #import "MercuryPreVideoViewController.h"
 
-#import <MercurySDK/MercurySDK.h>
+#import "MercuryPrerollAdView.h"
 
 @interface MercuryPreVideoViewController () <MercuryPrerollAdDelegate>
 @property (nonatomic, strong) MercuryPrerollAdView *adView;
@@ -24,8 +24,6 @@
     self.adspotIdsArr = @[
         @{@"addesc": @"视频贴片(视频)", @"adspotId": @"10002664"},
         @{@"addesc": @"视频贴片(图片)", @"adspotId": @"10002665"},
-//        @{@"addesc": @"视频贴片1", @"adspotId": @"60000002"},
-//        @{@"addesc": @"视频贴片2", @"adspotId": @"60000003"},
     ];
     self.btn1Title = @"加载广告";
     self.btn2Title = @"显示广告";
@@ -39,6 +37,7 @@
     _adView.delegate = self;
     _adView.showSkipTime = 0;
     _adView.videoMuted = YES;
+    _adView.controller = self;
     [_adView loadAd];
 }
 

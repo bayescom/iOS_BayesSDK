@@ -8,7 +8,7 @@
 
 #import "MercuryRewardVideoViewController.h"
 
-#import <MercurySDK/MercurySDK.h>
+#import "MercuryRewardVideoAd.h"
 
 @interface MercuryRewardVideoViewController () <MercuryRewardVideoAdDelegate>
 // 竖屏
@@ -23,11 +23,8 @@
     
     self.initDefSubviewsFlag = YES;
     self.adspotIdsArr = @[
-        @{@"addesc": @"竖屏激励视频", @"adspotId": @"10002595"},
+        @{@"addesc": @"横屏激励视频", @"adspotId": @"10002595"},
         @{@"addesc": @"竖屏激励视频", @"adspotId": @"10002596"},
-        
-//        @{@"addesc": @"竖屏激励视频", @"adspotId": @"40000001"},
-//        @{@"addesc": @"横屏激励视频", @"adspotId": @"40000002"},
     ];
     self.btn1Title = @"加载广告";
     self.btn2Title = @"显示广告";
@@ -42,14 +39,6 @@
 - (void)loadAdBtn2Action {
     [self.rewardVideoAd showAdFromVC:self];
 }
-
-//// 仅为方便调试提供的逻辑，应用接入流程中不需要程序设置方向
-//if (UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)) {
-//    self.supportOrientation = UIInterfaceOrientationLandscapeRight;
-//} else {
-//    self.supportOrientation = UIInterfaceOrientationPortrait;
-//}
-//[[UIDevice currentDevice] setValue:@(self.supportOrientation) forKey:@"orientation"];
 
 // MARK: ======================= MercuryRewardedVideoAdDelegate =======================
 - (void)mercury_rewardVideoAdDidLoad {
@@ -66,6 +55,8 @@
 - (void)mercury_rewardVideoAdVideoDidLoad {
     [JDStatusBarNotification showWithStatus:@"视频数据下载成功" dismissAfter:1.5];
     NSLog(@"视频数据下载成功回调，已经下载过的视频会直接回调");
+    
+    [self.rewardVideoAd showAdFromVC:self];
 }
 
 - (void)mercury_rewardVideoAdWillVisible {

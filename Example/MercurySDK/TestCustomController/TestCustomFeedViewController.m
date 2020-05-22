@@ -11,9 +11,9 @@
 #import "BYExamCellModel.h"
 #import "TestCustomFeedTableViewCell.h"
 
-#import <MercurySDK/MercurySDK.h>
+#import "MercuryNativeAd.h"
 
-@interface TestCustomFeedViewController () <MercuryNativeAdDelegate, MercuryNativeAdViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface TestCustomFeedViewController () <MercuryNativeAdDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArrM;
 @property (nonatomic, strong) MercuryNativeAd *nativeAd;
@@ -46,32 +46,16 @@
     [_nativeAd loadAd];
 }
 
-// MARK: ======================= BYNativeAdDelegate =======================
-- (void)mercury_nativeAdLoaded:(NSArray<MercuryNativeAdDataModel *> * _Nullable)nativeAdDataModels error:(NSError * _Nullable)error {
+// MARK: ======================= MercuryNativeAdDelegate =======================
+- (void)mercury_nativeAdLoaded:(NSArray<MercuryImp *> * _Nullable)adImps error:(NSError * _Nullable)error {
     NSLog(@"%s : 广告数据拉取回调 | %@", __func__, error);
-    if (nativeAdDataModels.count <= 0) {
+    if (adImps.count <= 0) {
         [_tableView reloadData];
         return;
     }
-    [_dataArrM insertObject:nativeAdDataModels[0] atIndex:1];
-//    [_dataArrM insertObject:nativeAdDataModels[1] atIndex:3];
+//    [_dataArrM insertObject:adImps.firstObject atIndex:1];
+    [_dataArrM insertObject:adImps.firstObject atIndex:3];
     [_tableView reloadData];
-}
-
-// MARK: ======================= MercuryNativeAdViewDelegate =======================
-/// 广告曝光回调
-- (void)mercury_nativeAdViewWillExpose:(MercuryNativeAdView *)nativeAdView {
-    NSLog(@"%s : 广告曝光回调", __func__);
-}
-
-/// 广告点击回调
-- (void)mercury_nativeAdViewDidClick:(MercuryNativeAdView *)nativeAdView {
-    NSLog(@"%s : 广告点击回调", __func__);
-}
-
-/// 视频广告播放状态更改回调
-- (void)mercury_nativeAdView:(MercuryNativeAdView *)nativeAdView playerStatusChanged:(MercuryMediaPlayerStatus)status {
-    NSLog(@"%s : (%ld)视频广告播放状态更改回调", __func__, status);
 }
 
 // MARK: ======================= UITableViewDelegate, UITableViewDataSource =======================
@@ -80,8 +64,8 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([_dataArrM[indexPath.row] isKindOfClass:[MercuryNativeAdDataModel class]]) {
-        return [TestCustomFeedTableViewCell cellHeightWithModel:_dataArrM[indexPath.row]];
+    if ([_dataArrM[indexPath.row] isKindOfClass:NSClassFromString(@"MercuryImp")]) {
+        return [TestCustomFeedTableViewCell cellHeightWithImp:_dataArrM[indexPath.row]];
     } else if ([_dataArrM[indexPath.row] isKindOfClass:[BYExamCellModelElement class]]) {
         return ((BYExamCellModelElement *)_dataArrM[indexPath.row]).cellh;
     }
@@ -90,11 +74,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell;
-    if ([_dataArrM[indexPath.row] isKindOfClass:[MercuryNativeAdDataModel class]]) {
+    if ([_dataArrM[indexPath.row] isKindOfClass:NSClassFromString(@"MercuryImp")]) {
         cell = [self.tableView dequeueReusableCellWithIdentifier:@"TestCustomFeedTableViewCell" forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        ((TestCustomFeedTableViewCell *)cell).adView.delegate = self;
-        [((TestCustomFeedTableViewCell *)cell) registerNativeAd:_nativeAd dataObject:_dataArrM[indexPath.row]];
+        ((TestCustomFeedTableViewCell *)cell).imp = _dataArrM[indexPath.row];
+//        ((TestCustomFeedTableViewCell *)cell).adView.delegate = self;
+//        [((TestCustomFeedTableViewCell *)cell) registerNativeAd:_nativeAd dataObject:_dataArrM[indexPath.row]];
     } else if ([_dataArrM[indexPath.row] isKindOfClass:[BYExamCellModelElement class]]) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"ExamTableViewCell"];
         ((ExamTableViewCell *)cell).item = _dataArrM[indexPath.row];

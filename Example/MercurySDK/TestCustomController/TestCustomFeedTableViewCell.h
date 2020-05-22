@@ -1,25 +1,19 @@
 //
 //  TestCustomFeedTableViewCell.h
-//  Example
+//  MercurySDKExample
 //
-//  Created by CherryKing on 2019/12/25.
-//  Copyright © 2019 CherryKing. All rights reserved.
+//  Created by CherryKing on 2020/5/7.
+//  Copyright © 2020 mercury. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "BYNativeAdCustomView.h"
-
-@class MercuryNativeAdDataModel;
-
+@class MercuryImp;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TestCustomFeedTableViewCell : UITableViewCell
+@property (nonatomic, strong) MercuryImp *imp;
 
-@property (nonatomic, strong) BYNativeAdCustomView *adView;
-- (void)registerNativeAd:(MercuryNativeAd *)nativeAd
-              dataObject:(MercuryNativeAdDataModel *)model;
-
-+ (CGFloat)cellHeightWithModel:(MercuryNativeAdDataModel *)model;
++ (CGFloat)cellHeightWithImp:(MercuryImp *)imp;
 
 @end
 

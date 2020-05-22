@@ -5,6 +5,9 @@ platform :ios, '9.0'
 target 'MercurySDK_Example' do
   pod 'MercurySDK', :path => '../'
 
+  pod 'JDStatusBarNotification'
+  pod 'Masonry'
+  
   target 'MercurySDK_Tests' do
     inherit! :search_paths
 

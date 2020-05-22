@@ -9,6 +9,23 @@
 #import "BaseViewController.h"
 #import "ViewBuilder.h"
 
+static inline BOOL __IsIPhoneXSeries() {
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow;
+        if (@available(iOS 13, *)) {
+            mainWindow = UIApplication.sharedApplication.windows.firstObject;
+        } else {
+            mainWindow = UIApplication.sharedApplication.keyWindow;
+        }
+        if (mainWindow.safeAreaInsets.bottom > 0.0) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+#define kTopH (__IsIPhoneXSeries()?88:64)
+
 @interface BaseViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UIView *_v1;
 @property (nonatomic, strong) UIView *_v2;
@@ -30,7 +47,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithTitle:@"隐藏键盘" style:UIBarButtonItemStylePlain target:__txtF01 action:@selector(resignFirstResponder)];
     self.navigationItem.rightBarButtonItem = settingItem;
 }
@@ -52,10 +69,10 @@
         [self.view addSubview:self.adShowView];
         __lbl01.text = @"广告位ID";
         
-        self._v1.frame = CGRectMake(0, 0, self.view.bounds.size.width*0.5, 200);
-        self._v2.frame = CGRectMake(self.view.bounds.size.width*0.5, 0, self.view.bounds.size.width*0.5, 200);
+        self._v1.frame = CGRectMake(0, kTopH, self.view.bounds.size.width*0.5, 200);
+        self._v2.frame = CGRectMake(self.view.bounds.size.width*0.5, kTopH, self.view.bounds.size.width*0.5, 200);
         self._v3.frame = CGRectMake(0, CGRectGetMaxY(self._v2.frame), self.view.bounds.size.width, 1);
-        _adShowView.frame = CGRectMake(0, CGRectGetMaxY(self._v3.frame)+118, self.view.bounds.size.width, self.view.bounds.size.height-CGRectGetMaxY(self._v3.frame)-kAppTopH-118);
+        _adShowView.frame = CGRectMake(0, CGRectGetMaxY(self._v3.frame)+118, self.view.bounds.size.width, self.view.bounds.size.height-CGRectGetMaxY(self._v3.frame)-118);
         
         __lbl01.frame = CGRectMake(0, 0, 60, 40);
         __txtF01.frame = CGRectMake(CGRectGetMaxX(self._lbl01.frame), 0,

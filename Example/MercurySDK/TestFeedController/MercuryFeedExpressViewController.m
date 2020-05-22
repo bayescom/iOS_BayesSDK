@@ -18,12 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    50000005
-    
     self.initDefSubviewsFlag = YES;
     self.adspotIdsArr = @[
-//        @{@"addesc": @"图片信息流Mock", @"adspotId": @"50000004"},
-//        @{@"addesc": @"视频信息流Mock", @"adspotId": @"50000002"},
         @{@"addesc": @"图片信息流", @"adspotId": @"10002698"},
         @{@"addesc": @"视频信息流", @"adspotId": @"10002710"},
     ];

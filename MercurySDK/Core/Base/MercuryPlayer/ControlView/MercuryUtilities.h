@@ -1,0 +1,29 @@
+//
+//  MercuryUtilities.m
+//  MercuryPlayer
+//
+// Copyright (c) 2020年 bayescom
+//
+
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+/// iPhoneX  iPhoneXS  iPhoneXS Max  iPhoneXR 机型判断
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? ((NSInteger)(([[UIScreen mainScreen] currentMode].size.height/[[UIScreen mainScreen] currentMode].size.width)*100) == 216) : NO)
+
+// 屏幕的宽
+#define MercuryPlayer_ScreenWidth                 [[UIScreen mainScreen] bounds].size.width
+// 屏幕的高
+#define MercuryPlayer_ScreenHeight                [[UIScreen mainScreen] bounds].size.height
+
+@interface MercuryUtilities : NSObject
+
++ (NSString *)convertTimeSecond:(NSInteger)timeSecond;
+
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
+
++ (UIImage *)imageNamed:(NSString *)name;
+
+@end
+
