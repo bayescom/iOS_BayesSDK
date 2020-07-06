@@ -29,8 +29,8 @@
 //        @{@"addesc": @"竖屏激励视频", @"adspotId": @"40000001"},
 //        @{@"addesc": @"横屏激励视频", @"adspotId": @"40000002"},
     ];
-    self.btn1Title = @"加载广告";
-    self.btn2Title = @"显示广告";
+    self.btn1Title = @"加载并显示广告";
+//    self.btn2Title = @"显示广告";
 }
 
 - (void)loadAdBtn1Action {
@@ -66,6 +66,7 @@
 - (void)mercury_rewardVideoAdVideoDidLoad {
     [JDStatusBarNotification showWithStatus:@"视频数据下载成功" dismissAfter:1.5];
     NSLog(@"视频数据下载成功回调，已经下载过的视频会直接回调");
+    [self.rewardVideoAd showAdFromVC:self];
 }
 
 - (void)mercury_rewardVideoAdWillVisible {
