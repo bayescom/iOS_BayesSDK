@@ -31,7 +31,7 @@ Blink倍联——免费透明的流量变现神器 
   
   # s.dependency 'SDWebImage'
 
-  valid_archs = ['i386', 'armv7', 'armv7s', 'x86_64', 'arm64']
+  valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' '),
   }
