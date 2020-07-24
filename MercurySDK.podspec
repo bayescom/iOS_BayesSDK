@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MercurySDK'
-  s.version          = '3.1.4.3'
+  s.version          = '3.1.4.4'
   
   s.ios.deployment_target = '9.0'
   s.platform     = :ios, "9.0" 
@@ -31,7 +31,7 @@ Blink倍联——免费透明的流量变现神器 
   
   # s.dependency 'SDWebImage'
 
-  valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
+  valid_archs = ['i386', 'armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' '),
   }
