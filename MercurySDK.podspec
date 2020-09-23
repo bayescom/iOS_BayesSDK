@@ -23,15 +23,14 @@ Blink倍联——免费透明的流量变现神器 
    
   s.user_target_xcconfig = {'OTHER_LDFLAGS' => ['-ObjC']}
    
+  valid_archs = ['i386', 'armv7', 'x86_64', 'arm64']
   # bitcode
-  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'VALID_ARCHS' => valid_archs.join(' ') }
   s.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 
   s.frameworks = 'UIKit', 'Foundation'
   
   # s.dependency 'SDWebImage'
-
-  valid_archs = ['i386', 'armv7', 'x86_64', 'arm64']
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' '),
   }
