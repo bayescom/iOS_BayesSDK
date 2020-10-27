@@ -3,7 +3,10 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'MercurySDK_Example' do
+  pod 'Masonry'
+  pod 'SDWebImage'
   pod 'MercurySDK', :path => '../'
+#  pod 'MercurySDK', '3.1.5.1'
 
   target 'MercurySDK_Tests' do
     inherit! :search_paths
