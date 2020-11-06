@@ -1,6 +1,6 @@
 {
   "name": "MercurySDK",
-  "version": "3.1.5.1",
+  "version": "3.1.5.2",
   "platforms": {
     "ios": "9.0"
   },
@@ -17,15 +17,17 @@
   },
   "source": {
     "git": "https://github.com/bayescom/MercurySDK.git",
-    "tag": "3.1.5.1"
+    "tag": "3.1.5.2"
   },
   "vendored_frameworks": "MercurySDK/*.framework",
   "user_target_xcconfig": {
-    "ENABLE_BITCODE": "NO"
+    "ENABLE_BITCODE": "NO",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "pod_target_xcconfig": {
     "ENABLE_BITCODE": "NO",
-    "VALID_ARCHS": "i386 armv7 x86_64 arm64"
+    "VALID_ARCHS": "i386 armv7 x86_64 arm64",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "frameworks": [
     "UIKit",
