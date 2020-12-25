@@ -1,6 +1,6 @@
 {
   "name": "MercurySDK",
-  "version": "3.1.5.3",
+  "version": "3.1.5.4",
   "platforms": {
     "ios": "9.0"
   },
@@ -17,7 +17,7 @@
   },
   "source": {
     "git": "https://github.com/bayescom/MercurySDK.git",
-    "tag": "3.1.5.3"
+    "tag": "3.1.5.4"
   },
   "vendored_frameworks": "MercurySDK/*.framework",
   "user_target_xcconfig": {
