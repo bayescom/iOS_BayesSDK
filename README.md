@@ -55,7 +55,7 @@ end
 platform :ios, '9.0'
 target '你的项目名称' do
   # use_frameworks!
- pod 'MercurySDK', '~> 3.1.3.5' # 输入你想要的版本号
+ pod 'MercurySDK', '~> 3.1.5.5' # 输入你想要的版本号
   # Pods for podTest
 end
 ```
@@ -97,7 +97,7 @@ $ pod install
 指定SDK版本前，请先确保repo库为最新版本，参考上一小节内容进行更新。如果需要指定SDK版本，需要在Podfile文件中，pod那一行指定版本号：
 
 ```
- pod 'MercurySDK', '~> 3.1.3.5'  #这里改成你想要的版本号
+ pod 'MercurySDK', '~> 3.1.5.5'  #这里改成你想要的版本号
 
 ```
 之后运行命令：
@@ -286,24 +286,39 @@ Banner广告(横幅广告)位于app顶部、中部、底部任意一处，横向
 
 ##### 生命周期回调
 
+##### 生命周期回调 (v3.1.5.4之后推荐使用下列代理方法)
 ```Objective-C
 @optional
 /// 请求广告条数据成功后调用
-- (void)mercury_bannerViewDidReceived;
+- (void)mercury_bannerViewDidReceived:(MercuryBannerAdView *_Nonnull)banner;
 
 /// 请求广告条数据失败后调用
-- (void)mercury_bannerViewFailToReceived:(nullable NSError *)error;
+- (void)mercury_bannerViewFailToReceived:(MercuryBannerAdView *_Nonnull)banner error:(nullable NSError *)error;
 
 /// banner条被用户关闭时调用
-- (void)mercury_bannerViewWillClose;
+- (void)mercury_bannerViewWillClose:(MercuryBannerAdView *_Nonnull)banner;
 
 /// banner条曝光回调
-- (void)mercury_bannerViewWillExposure;
+- (void)mercury_bannerViewWillExposure:(MercuryBannerAdView *_Nonnull)banner;
 
 /// banner条点击回调
-- (void)mercury_bannerViewClicked;
-
+- (void)mercury_bannerViewClicked:(MercuryBannerAdView *_Nonnull)banner;
 ```
+
+*v3.1.5.4之前可使用下列代理方法,未来下列方法会被废弃*  
+~~- (void)mercury_bannerViewDidReceived;~~
+
+
+~~- (void)mercury_bannerViewFailToReceived:(nullable NSError *)error;~~
+
+
+~~- (void)mercury_bannerViewWillClose;~~
+
+
+~~- (void)mercury_bannerViewWillExposure;~~
+
+
+~~- (void)mercury_bannerViewClicked;~~
 
 需要实现上述回调，需要先设置delegate:
 
