@@ -92,29 +92,30 @@
 // MARK: ======================= MercuryBannerAdViewDelegate =======================
 
 /// 请求广告条数据成功后调用
-- (void)mercury_bannerViewDidReceived {
+- (void)mercury_bannerViewDidReceived:(MercuryBannerAdView *)banner {
     NSLog(@"请求广告条数据成功后调用 %s", __func__);
 }
 
 /// 请求广告条数据失败后调用
-- (void)mercury_bannerViewFailToReceived:(NSError *)error {
+- (void)mercury_bannerViewFailToReceived:(MercuryBannerAdView *)banner error:(NSError *)error {
     NSLog(@"请求广告条数据失败后调用 %s", __func__);
 }
 
 /// banner条被用户关闭时调用
-- (void)mercury_bannerViewWillClose {
+- (void)mercury_bannerViewWillClose:(MercuryBannerAdView *)banner {
     NSLog(@"banner条被用户关闭时调用 %s", __func__);
 }
 
 /// banner条曝光回调
-- (void)mercury_bannerViewWillExposure {
+- (void)mercury_bannerViewWillExposure:(MercuryBannerAdView *)banner {
     NSLog(@"banner条曝光回调 %s", __func__);
 }
 
 /// banner条点击回调
-- (void)mercury_bannerViewClicked {
+- (void)mercury_bannerViewClicked:(MercuryBannerAdView *)banner {
     NSLog(@"banner条点击回调 %s", __func__);
 }
+
 
 // MARK: ======================= action =======================
 - (void)switchChange:(UISwitch *)sender {
