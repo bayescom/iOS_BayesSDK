@@ -13,6 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 // MARK: ======================= 配置信息Key =======================
 FOUNDATION_EXPORT NSString * const kMercuryConfigIdfaAuth;
 
+// MARK: ======================= 配置信息Key =======================
+// 1. 如果设置了kMercuryConfigCAID  这不需要再传 kMercuryConfigCAIDPublicKey, kMercuryConfigCAIDPublicForApiKey, kMercuryConfigCAIDDevId
+// 2. 若没有设置kMercuryConfigCAID  则必须要传 kMercuryConfigCAIDPublicKey, kMercuryConfigCAIDPublicForApiKey, kMercuryConfigCAIDDevId 否则可能会影响收益
+// 3. 同时设置, 则只有 kMercuryConfigCAID 生效
+// 4. 以下四个字段类型必须为字符串类型
+FOUNDATION_EXPORT NSString * const kMercuryConfigCAID; // CAID 对应的key
+FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDPublicKey; // CAID 用文本编辑打开pub_for_sdk.cer即可获取
+FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDPublicForApiKey;// 用文本编辑打开public_for_api.pem即可获取
+FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDDevId;// 申请获得
+
 @interface MercuryConfigManager : NSObject
 
 /// 设置AppID
@@ -23,7 +33,7 @@ FOUNDATION_EXPORT NSString * const kMercuryConfigIdfaAuth;
 /// 设置AppID
 /// @param appID 应用的AppID
 /// @param mediaKey 媒体Key
-/// @param config 配置信息
+/// @param config 配置信息 如果SDK集成者自己申请CAID 请将其放入config里面
 + (void)setAppID:(NSString *)appID mediaKey:(NSString *)mediaKey config:(NSDictionary *)config;
 
 /// 选择是否开启日志打印

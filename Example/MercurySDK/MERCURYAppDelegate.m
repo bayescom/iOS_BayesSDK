@@ -11,6 +11,12 @@
 #import "MERCURYViewController.h"
 
 #import <MercurySDK/MercurySDK.h>
+#define kPublicKey  @"用文本编辑打开pub_for_sdk.cer即可获取"
+
+#define kPublicForApiKey @"用文本编辑打开public_for_api.pem即可获取"
+
+#define kDevId @""
+
 
 @interface MERCURYAppDelegate () <MercurySplashAdDelegate>
 @property (nonatomic, strong) MercurySplashAd *ad;
@@ -38,6 +44,15 @@
     // 设置AppId MediaKey
     [MercuryConfigManager setAppID:@"100255"
                      mediaKey:@"757d5119466abe3d771a211cc1278df7"];
+    
+//    [MercuryConfigManager setAppID:@"100255"
+//                          mediaKey:@"757d5119466abe3d771a211cc1278df7"
+//                            config:@{kMercuryConfigCAIDPublicForApiKey:kPublicForApiKey,
+//                                     kMercuryConfigCAIDDevId:kDevId,
+//                                     kMercuryConfigCAIDPublicKey:kPublicKey,
+//                            }];
+
+    
     // 开启日志
     [MercuryConfigManager openDebug:YES];
     // 支持预缓存资源
