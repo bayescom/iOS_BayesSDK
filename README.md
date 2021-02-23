@@ -167,11 +167,37 @@ $ pod install
 // MARK: ======================= SDK配置 =======================
 [MercuryConfigManager setAppID:@"100255"
                  mediaKey:@"757d5119466abe3d771a211cc1278df7"];
+// -------------- 或者(如果您想设置CAID的话) ----------------
+ [MercuryConfigManager setAppID:@"100255"
+                                  mediaKey:@"757d5119466abe3d771a211cc1278df7"
+                                       config:@{kMercuryConfigCAID:@"your caid",
+                                            kMercuryConfigCAIDPublicKey:@"your public key",
+                                            kMercuryConfigCAIDPublicForApiKey:@"your [ublic for api key",
+                                            kMercuryConfigCAIDDevId:@"your devid"}];
+
 // 是否打印日志
 [MercuryConfigManager openDebug:YES];
 
 
 ```
+
+
+**关于CAID**</br>
+苹果在iOS14中限制了开发者获取idfa的权限, 因此市面上出现了一些替代品, 这些替代品的大多数原理都是通过采集苹果的非隐私系统参数, 再经过算法生成的, 为了方便开发者快速的获取这些参数, 我们维护了一份文档,[详见此处](http://www.bayescom.com/docsify/docs/#/bayescom/important/api3_0_demo_code_ios?id=_6ios14%e9%83%a8%e5%88%86%e7%b3%bb%e7%bb%9f%e5%8f%82%e6%95%b0%e8%8e%b7%e5%8f%96%e7%a4%ba%e4%be%8b)
+
+
+**注意** </br>
+
+
+1. CAID不是必须设置的, 但是当用户限制的idfa的获取权限, 会导致上游渠道无法对设备进行归因, 从而会影响收益</br>
+
+2. 如果设置了kMercuryConfigCAID  这不需要再传 kMercuryConfigCAIDPublicKey, kMercuryConfigCAIDPublicForApiKey, kMercuryConfigCAIDDevId </br>
+ 
+3. 若没有设置kMercuryConfigCAID  则必须要传 kMercuryConfigCAIDPublicKey, kMercuryConfigCAIDPublicForApiKey, kMercuryConfigCAIDDevId 否则可能会影响收益</br>
+ 
+4. 同时设置, 则只有 kMercuryConfigCAID 生效</br>
+
+5. 这四个字段类型必须为字符串类型</br>
 
 
 ### 开屏广告
