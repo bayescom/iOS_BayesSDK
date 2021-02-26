@@ -25,6 +25,19 @@ FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDDevId;// 申请获得
 
 @interface MercuryConfigManager : NSObject
 
+
+/// 设置AppID
+/// @param appID 应用的AppID
+/// @param appKey 媒体Key
++ (void)setAppID:(NSString *)appID appKey:(NSString *)appKey;
+
+/// 设置AppID
+/// @param appID 应用的AppID
+/// @param appKey 媒体Key
+/// @param config 配置信息 如果SDK集成者自己申请CAID 请将其放入config里面
++ (void)setAppID:(NSString *)appID appKey:(NSString *)appKey config:(NSDictionary *)config;
+
+#pragma 下面两种设置方法 未来会被废弃
 /// 设置AppID
 /// @param appID 应用的AppID
 /// @param mediaKey 媒体Key
@@ -35,6 +48,8 @@ FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDDevId;// 申请获得
 /// @param mediaKey 媒体Key
 /// @param config 配置信息 如果SDK集成者自己申请CAID 请将其放入config里面
 + (void)setAppID:(NSString *)appID mediaKey:(NSString *)mediaKey config:(NSDictionary *)config;
+
+
 
 /// 选择是否开启日志打印
 /// @param isDebug 是否打印日志
@@ -47,6 +62,11 @@ FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDDevId;// 申请获得
 + (void)preloadedResourcesIfNeed:(BOOL)isNeed;
 
 + (void)setDefaultUserAgent:(NSString *)ua;
+
+
+/// 是否允许个性化广告推送 默认为允许
++ (void)openAdTrack:(BOOL)open;
+
 
 @end
 
