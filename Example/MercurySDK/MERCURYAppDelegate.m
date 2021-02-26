@@ -43,10 +43,10 @@
 - (void)splashShow {   // 开屏
     // 设置AppId MediaKey
     [MercuryConfigManager setAppID:@"100255"
-                     mediaKey:@"757d5119466abe3d771a211cc1278df7"];
+                     appKey:@"757d5119466abe3d771a211cc1278df7"];
     
 //    [MercuryConfigManager setAppID:@"100255"
-//                          mediaKey:@"757d5119466abe3d771a211cc1278df7"
+//                          appKey:@"757d5119466abe3d771a211cc1278df7"
 //                            config:@{kMercuryConfigCAIDPublicForApiKey:kPublicForApiKey,
 //                                     kMercuryConfigCAIDDevId:kDevId,
 //                                     kMercuryConfigCAIDPublicKey:kPublicKey,
