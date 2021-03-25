@@ -55,7 +55,7 @@ end
 platform :ios, '9.0'
 target '你的项目名称' do
   # use_frameworks!
- pod 'MercurySDK', '~> 3.1.5.9' # 输入你想要的版本号
+ pod 'MercurySDK', '~> 3.1.6.0' # 输入你想要的版本号
   # Pods for podTest
 end
 ```
@@ -97,7 +97,7 @@ $ pod install
 指定SDK版本前，请先确保repo库为最新版本，参考上一小节内容进行更新。如果需要指定SDK版本，需要在Podfile文件中，pod那一行指定版本号：
 
 ```
- pod 'MercurySDK', '~> 3.1.5.9'  #这里改成你想要的版本号
+ pod 'MercurySDK', '~> 3.1.6.0'  #这里改成你想要的版本号
 
 ```
 之后运行命令：
@@ -167,13 +167,6 @@ $ pod install
 // MARK: ======================= SDK配置 =======================
 [MercuryConfigManager setAppID:@"100255"
                  mediaKey:@"757d5119466abe3d771a211cc1278df7"];
-// -------------- 或者(如果您想设置CAID的话) ----------------
- [MercuryConfigManager setAppID:@"100255"
-                                  mediaKey:@"757d5119466abe3d771a211cc1278df7"
-                                       config:@{kMercuryConfigCAID:@"your caid",
-                                            kMercuryConfigCAIDPublicKey:@"your public key",
-                                            kMercuryConfigCAIDPublicForApiKey:@"your [ublic for api key",
-                                            kMercuryConfigCAIDDevId:@"your devid"}];
 
 // 是否打印日志
 [MercuryConfigManager openDebug:YES];
@@ -182,22 +175,23 @@ $ pod install
 ```
 
 
-**关于CAID**</br>
-苹果在iOS14中限制了开发者获取idfa的权限, 因此市面上出现了一些替代品, 这些替代品的大多数原理都是通过采集苹果的非隐私系统参数, 再经过算法生成的, 为了方便开发者快速的获取这些参数, 我们维护了一份文档,[详见此处](http://www.bayescom.com/docsify/docs/#/bayescom/important/api3_0_demo_code_ios?id=_6ios14%e9%83%a8%e5%88%86%e7%b3%bb%e7%bb%9f%e5%8f%82%e6%95%b0%e8%8e%b7%e5%8f%96%e7%a4%ba%e4%be%8b)
+
+## **注意!!** </br>
+关于提交App Store审核被拒
+Guideline 5.1.2 - Legal - Privacy - Data Use and Sharing</br>
 
 
-**注意** </br>
+Guideline 5.1.2 - Legal - Privacy - Data Use and Sharing
 
 
-1. CAID不是必须设置的, 但是当用户限制的idfa的获取权限, 会导致上游渠道无法对设备进行归因, 从而会影响收益</br>
+We found that your app collects user and device information to create a unique identifier for the user's device.
 
-2. 如果设置了kMercuryConfigCAID  这不需要再传 kMercuryConfigCAIDPublicKey, kMercuryConfigCAIDPublicForApiKey, kMercuryConfigCAIDDevId </br>
- 
-3. 若没有设置kMercuryConfigCAID  则必须要传 kMercuryConfigCAIDPublicKey, kMercuryConfigCAIDPublicForApiKey, kMercuryConfigCAIDDevId 否则可能会影响收益</br>
- 
-4. 同时设置, 则只有 kMercuryConfigCAID 生效</br>
+Specifically, through the implementation of instance methods such as setBootTimeInSec:, setCarrierInfo:, setCountryCode:, setDeviceName:, setDisk:, setLanguage:, setMachine:, setMemory:, setModel:, setSysFileTime:, setSystemVersion:, and setTimeZone:, your app uses algorithmically converted device and usage data to create a unique identifier and track the user.
 
-5. 这四个字段类型必须为字符串类型</br>
+
+**这是因为CAID造成的
+MercurySDK在3.1.6.0版本中移除了对CAID的支持 如果在app提交审核的时候出现问题, 请更新至3.1.6.0及以上版本**
+
 
 
 ### 开屏广告
@@ -288,6 +282,13 @@ _ad.delegate = self;
     _ad.logoImage = [UIImage imageNamed:@"app_logo"];
     // 请求广告
     [_ad loadAdAndShow];
+    
+    
+    /// 拉取广告数据 只拉取 不展示
+       /// [_ad loadAdAndShow];
+       /// 拉取成功会回调mercury_splashAdDidLoad
+    /// 收到回调后再根据业务择机调用
+       ////- (void)showAdWithBottomView:(UIView *)bottomView skipView:(UIView *)skipView;
 }
 
 ```

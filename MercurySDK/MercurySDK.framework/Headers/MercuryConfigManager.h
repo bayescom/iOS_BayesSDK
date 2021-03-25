@@ -18,10 +18,10 @@ FOUNDATION_EXPORT NSString * const kMercuryConfigIdfaAuth;
 // 2. 若没有设置kMercuryConfigCAID  则必须要传 kMercuryConfigCAIDPublicKey, kMercuryConfigCAIDPublicForApiKey, kMercuryConfigCAIDDevId 否则可能会影响收益
 // 3. 同时设置, 则只有 kMercuryConfigCAID 生效
 // 4. 以下四个字段类型必须为字符串类型
-FOUNDATION_EXPORT NSString * const kMercuryConfigCAID; // CAID 对应的key
-FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDPublicKey; // CAID 用文本编辑打开pub_for_sdk.cer即可获取
-FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDPublicForApiKey;// 用文本编辑打开public_for_api.pem即可获取
-FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDDevId;// 申请获得
+//FOUNDATION_EXPORT NSString * const kMercuryConfigCAID; // CAID 对应的key
+//FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDPublicKey; // CAID 用文本编辑打开pub_for_sdk.cer即可获取
+//FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDPublicForApiKey;// 用文本编辑打开public_for_api.pem即可获取
+//FOUNDATION_EXPORT NSString * const kMercuryConfigCAIDDevId;// 申请获得
 
 @interface MercuryConfigManager : NSObject
 
