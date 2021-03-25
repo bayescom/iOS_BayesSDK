@@ -48,6 +48,18 @@ NS_ASSUME_NONNULL_BEGIN
                          customExt:(NSDictionary * _Nonnull)ext
                           delegate:(id<MercurySplashAdDelegate> _Nullable)delegate;
 
+/// 拉取广告数据 只拉取 不展示
+- (void)loadAd;
+
+/// 展示广告在controller上中(Splash广告只支持竖屏) 支持自定义底部View 跳过按钮
+/// @param bottomView 自定义底部View
+/// @param skipView 自定义跳过按钮
+- (void)showAdWithBottomView:(UIView *)bottomView skipView:(UIView *)skipView;
+
+
+
+
+
 /// 广告发起请求并曝光在controller上中(Splash广告只支持竖屏)
 - (void)loadAdAndShow;
 
