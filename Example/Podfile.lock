@@ -1,6 +1,6 @@
 PODS:
   - Masonry (1.1.0)
-  - MercurySDK (3.1.5.9)
+  - MercurySDK (3.1.6.0)
   - SDWebImage (5.9.4):
     - SDWebImage/Core (= 5.9.4)
   - SDWebImage/Core (5.9.4)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MercurySDK: 9560f3a86f275a21e02160a48e912db34af66412
+  MercurySDK: 79c8e68bdb9a86286962376fea11b1243fda2d32
   SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
 
 PODFILE CHECKSUM: 51a3cc9317d214544c169ae8f9fd0ed1e7476ac4
