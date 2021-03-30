@@ -45,12 +45,6 @@
     [MercuryConfigManager setAppID:@"100255"
                      appKey:@"757d5119466abe3d771a211cc1278df7"];
     
-//    [MercuryConfigManager setAppID:@"100255"
-//                          appKey:@"757d5119466abe3d771a211cc1278df7"
-//                            config:@{kMercuryConfigCAIDPublicForApiKey:kPublicForApiKey,
-//                                     kMercuryConfigCAIDDevId:kDevId,
-//                                     kMercuryConfigCAIDPublicKey:kPublicKey,
-//                            }];
 
     
     // 开启日志
