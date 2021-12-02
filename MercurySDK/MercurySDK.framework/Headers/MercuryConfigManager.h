@@ -63,6 +63,9 @@ FOUNDATION_EXPORT NSString * const kMercuryConfigIdfaAuth;
 
 + (void)setDefaultUserAgent:(NSString *)ua;
 
+/// 是否需要支持HTPPS  默认不需要
++ (void)supportHttps:(BOOL)isNeed;
+
 
 /// 是否允许个性化广告推送 默认为允许
 + (void)openAdTrack:(BOOL)open;

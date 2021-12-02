@@ -35,6 +35,7 @@
         @{@"addesc": @"富媒体开屏-Swipe", @"adspotId": @"10003408"},
         
     ];
+    NSLog(@"版本号: %@", [MercuryConfigManager sdkVersion]);
     self.btn1Title = @"加载并显示广告";
 }
 

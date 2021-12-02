@@ -35,7 +35,22 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    [self splashShow]; 
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc]init];
+        appearance.backgroundEffect = nil;
+        [appearance configureWithOpaqueBackground];
+        appearance.backgroundColor = [UIColor whiteColor];
+        appearance.shadowColor = [UIColor whiteColor];
+        [UINavigationBar appearance].scrollEdgeAppearance = appearance;
+        [UINavigationBar appearance].standardAppearance = appearance;
+        nav.navigationBar.scrollEdgeAppearance = appearance;
+        nav.navigationBar.standardAppearance = appearance;
+
+    } else {
+        // Fallback on earlier versions
+    }
+
+    [self splashShow];
     
     return YES;
 }

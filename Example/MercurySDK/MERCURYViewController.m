@@ -22,7 +22,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    if (@available(iOS 15.0, *)) {
+        
+        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc]init];
+//        [appearance configureWithOpaqueBackground];
+        appearance.backgroundColor = [UIColor whiteColor];
+        self.navigationController.navigationBar.scrollEdgeAppearance = appearance;
+        self.navigationController.navigationBar.standardAppearance = appearance;
+    }
+
     [self initSubviews];
     
     _dataArr = @[

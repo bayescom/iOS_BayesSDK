@@ -29,6 +29,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (@available(iOS 15.0, *)) {
+        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+        appearance.backgroundEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleRegular];
+        [appearance configureWithOpaqueBackground];
+        appearance.backgroundColor = nil;
+        appearance.shadowColor = nil;
+        [UINavigationBar appearance].scrollEdgeAppearance = nil;
+        [UINavigationBar appearance].standardAppearance = appearance;
+//        self.navigationController.navigationBar.scrollEdgeAppearance = appearance;
+//        self.navigationController.navigationBar.standardAppearance = appearance;
+    }
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithTitle:@"隐藏键盘" style:UIBarButtonItemStylePlain target:__txtF01 action:@selector(resignFirstResponder)];
