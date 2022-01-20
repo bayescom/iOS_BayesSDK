@@ -50,6 +50,7 @@
         // Fallback on earlier versions
     }
 
+    NSLog(@"version: %@", [MercuryConfigManager sdkVersion]);
     [self splashShow];
     
     return YES;

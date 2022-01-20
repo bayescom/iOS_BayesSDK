@@ -39,6 +39,8 @@
     self.btn1Title = @"加载并显示广告";
 }
 
+
+
 // MARK: ======================= load ad =======================
 - (void)loadAdBtn1Action {
     if (![self checkAdspotId]) { return; }
@@ -48,8 +50,17 @@
     // 自定义Logo，占位图
     _ad.placeholderImage = [UIImage imageNamed:@"LaunchImage_img"];
     _ad.logoImage = [UIImage imageNamed:@"app_logo"];
-    [_ad loadAdAndShow];
+//    [_ad loadAdAndShow];
+    [_ad loadAdAndShowWithBottomView:[self getTestBottomView] skipView:nil];
 }
+
+// 广告素材宽高不确定 所以底部的留白高度不确定
+- (UIView *)getTestBottomView {
+    UIView *test = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 120, self.view.frame.size.width, 120)];
+    test.backgroundColor = [UIColor redColor];
+    return test;
+}
+
 
 // MARK: ======================= MercurySplashAdDelegate =======================
 - (void)mercury_splashAdDidLoad:(MercurySplashAd *)splashAd {
