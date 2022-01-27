@@ -31,7 +31,8 @@
     self.initDefSubviewsFlag = YES;
     self.adspotIdsArr = @[
         @{@"addesc": @"Banner", @"adspotId": @"10000558"},
-        
+        @{@"addesc": @"Banner", @"adspotId": @"10005924"},
+
 //        @{@"addesc": @"横幅", @"adspotId": @"20000001"},
     ];
     self.btn1Title = @"加载并显示广告";
@@ -98,7 +99,7 @@
 
 /// 请求广告条数据失败后调用
 - (void)mercury_bannerViewFailToReceived:(MercuryBannerAdView *)banner error:(NSError *)error {
-    NSLog(@"请求广告条数据失败后调用 %s", __func__);
+    NSLog(@"请求广告条数据失败后调用 %s %@", __func__, error);
 }
 
 /// banner条被用户关闭时调用

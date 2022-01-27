@@ -58,9 +58,12 @@
 
 - (void)splashShow {   // 开屏
     // 设置AppId MediaKey
-    [MercuryConfigManager setAppID:@"100255"
-                     appKey:@"757d5119466abe3d771a211cc1278df7"];
+//    [MercuryConfigManager setAppID:@"100255"
+//                     appKey:@"757d5119466abe3d771a211cc1278df7"];
     
+    [MercuryConfigManager setAppID:@"101859"
+                          appKey:@"9fd708c28a14006344301ef5cac76adb"
+                            config:@{}];
 
     
     // 开启日志
