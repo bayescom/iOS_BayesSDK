@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // MARK: ======================= 配置信息Key =======================
-FOUNDATION_EXPORT NSString * const kMercuryConfigIdfaAuth;
+//FOUNDATION_EXPORT NSString * const kMercuryConfigIdfaAuth;
 
 // MARK: ======================= 配置信息Key =======================
 // 1. 如果设置了kMercuryConfigCAID  这不需要再传 kMercuryConfigCAIDPublicKey, kMercuryConfigCAIDPublicForApiKey, kMercuryConfigCAIDDevId
