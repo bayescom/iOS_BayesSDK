@@ -55,7 +55,7 @@ end
 platform :ios, '9.0'
 target '你的项目名称' do
   # use_frameworks!
- pod 'MercurySDK', '~> 3.1.3.5' # 输入你想要的版本号
+ pod 'MercurySDK', '~> 3.1.6.9' # 输入你想要的版本号
   # Pods for podTest
 end
 ```
@@ -97,7 +97,7 @@ $ pod install
 指定SDK版本前，请先确保repo库为最新版本，参考上一小节内容进行更新。如果需要指定SDK版本，需要在Podfile文件中，pod那一行指定版本号：
 
 ```
- pod 'MercurySDK', '~> 3.1.3.5'  #这里改成你想要的版本号
+ pod 'MercurySDK', '~> 3.1.6.9'  #这里改成你想要的版本号
 
 ```
 之后运行命令：
@@ -167,11 +167,31 @@ $ pod install
 // MARK: ======================= SDK配置 =======================
 [MercuryConfigManager setAppID:@"100255"
                  mediaKey:@"757d5119466abe3d771a211cc1278df7"];
+
 // 是否打印日志
 [MercuryConfigManager openDebug:YES];
 
 
 ```
+
+
+
+## **注意!!** </br>
+关于提交App Store审核被拒
+Guideline 5.1.2 - Legal - Privacy - Data Use and Sharing</br>
+
+
+Guideline 5.1.2 - Legal - Privacy - Data Use and Sharing
+
+
+We found that your app collects user and device information to create a unique identifier for the user's device.
+
+Specifically, through the implementation of instance methods such as setBootTimeInSec:, setCarrierInfo:, setCountryCode:, setDeviceName:, setDisk:, setLanguage:, setMachine:, setMemory:, setModel:, setSysFileTime:, setSystemVersion:, and setTimeZone:, your app uses algorithmically converted device and usage data to create a unique identifier and track the user.
+
+
+**这是因为CAID造成的
+MercurySDK在3.1.6.0版本中移除了对CAID的支持 如果在app提交审核的时候出现问题, 请更新至3.1.6.0及以上版本**
+
 
 
 ### 开屏广告
@@ -262,6 +282,13 @@ _ad.delegate = self;
     _ad.logoImage = [UIImage imageNamed:@"app_logo"];
     // 请求广告
     [_ad loadAdAndShow];
+    
+    
+    /// 拉取广告数据 只拉取 不展示
+       /// [_ad loadAdAndShow];
+       /// 拉取成功会回调mercury_splashAdDidLoad
+    /// 收到回调后再根据业务择机调用
+       ////- (void)showAdWithBottomView:(UIView *)bottomView skipView:(UIView *)skipView;
 }
 
 ```
@@ -286,24 +313,39 @@ Banner广告(横幅广告)位于app顶部、中部、底部任意一处，横向
 
 ##### 生命周期回调
 
+##### 生命周期回调 (v3.1.5.4之后推荐使用下列代理方法)
 ```Objective-C
 @optional
 /// 请求广告条数据成功后调用
-- (void)mercury_bannerViewDidReceived;
+- (void)mercury_bannerViewDidReceived:(MercuryBannerAdView *_Nonnull)banner;
 
 /// 请求广告条数据失败后调用
-- (void)mercury_bannerViewFailToReceived:(nullable NSError *)error;
+- (void)mercury_bannerViewFailToReceived:(MercuryBannerAdView *_Nonnull)banner error:(nullable NSError *)error;
 
 /// banner条被用户关闭时调用
-- (void)mercury_bannerViewWillClose;
+- (void)mercury_bannerViewWillClose:(MercuryBannerAdView *_Nonnull)banner;
 
 /// banner条曝光回调
-- (void)mercury_bannerViewWillExposure;
+- (void)mercury_bannerViewWillExposure:(MercuryBannerAdView *_Nonnull)banner;
 
 /// banner条点击回调
-- (void)mercury_bannerViewClicked;
-
+- (void)mercury_bannerViewClicked:(MercuryBannerAdView *_Nonnull)banner;
 ```
+
+*v3.1.5.4之前可使用下列代理方法,未来下列方法会被废弃*  
+~~- (void)mercury_bannerViewDidReceived;~~
+
+
+~~- (void)mercury_bannerViewFailToReceived:(nullable NSError *)error;~~
+
+
+~~- (void)mercury_bannerViewWillClose;~~
+
+
+~~- (void)mercury_bannerViewWillExposure;~~
+
+
+~~- (void)mercury_bannerViewClicked;~~
 
 需要实现上述回调，需要先设置delegate:
 

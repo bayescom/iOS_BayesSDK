@@ -97,10 +97,18 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/../../MercurySDK/MercurySDKBundle.bundle"
+  install_resource "${PODS_ROOT}/Ads-CN/SDK/LICENSE"
+  install_resource "${PODS_ROOT}/Ads-CN/SDK/CSJAdSDK.bundle"
+  install_resource "${PODS_ROOT}/MSMobAdSDK/MSMobAdSDK/MSAdSDK.bundle"
+  install_resource "${PODS_ROOT}/SJBaseVideoPlayer/SJBaseVideoPlayer/ResourceLoader/SJBaseVideoPlayerResources.bundle"
+  install_resource "${PODS_ROOT}/SJVideoPlayer/SJVideoPlayer/ResourceLoader/SJVideoPlayer.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/../../MercurySDK/MercurySDKBundle.bundle"
+  install_resource "${PODS_ROOT}/Ads-CN/SDK/LICENSE"
+  install_resource "${PODS_ROOT}/Ads-CN/SDK/CSJAdSDK.bundle"
+  install_resource "${PODS_ROOT}/MSMobAdSDK/MSMobAdSDK/MSAdSDK.bundle"
+  install_resource "${PODS_ROOT}/SJBaseVideoPlayer/SJBaseVideoPlayer/ResourceLoader/SJBaseVideoPlayerResources.bundle"
+  install_resource "${PODS_ROOT}/SJVideoPlayer/SJVideoPlayer/ResourceLoader/SJVideoPlayer.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
