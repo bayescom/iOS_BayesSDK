@@ -64,7 +64,7 @@
 
 // MARK: ======================= MercurySplashAdDelegate =======================
 - (void)mercury_splashAdDidLoad:(MercurySplashAd *)splashAd {
-    NSLog(@"开屏广告模型加载成功 %s", __func__);
+    NSLog(@"开屏广告模型加载成功 %s %ld", __func__, (long)splashAd.price);
 }
 
 - (void)mercury_splashAdSuccessPresentScreen:(MercurySplashAd *)splashAd {

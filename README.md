@@ -403,29 +403,32 @@ CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.siz
 ```Objective-C
 @optional
 
+
 /// 插屏广告预加载成功回调，当接收服务器返回的广告数据成功且预加载后调用该函数
-- (void)mercury_interstitialSuccess;
+- (void)mercury_interstitialSuccess:(MercuryInterstitialAd *)interstitialAd;
 
 /// 插屏广告预加载失败回调，当接收服务器返回的广告数据失败后调用该函数
 - (void)mercury_interstitialFailError:(NSError *)error;
 
 /// 插屏广告将要曝光回调，插屏广告即将曝光回调该函数
-- (void)mercury_interstitialWillPresentScreen;
+- (void)mercury_interstitialWillPresentScreen:(MercuryInterstitialAd *)interstitialAd;;
 
 /// 插屏广告视图曝光成功回调，插屏广告曝光成功回调该函数
-- (void)mercury_interstitialDidPresentScreen;
+- (void)mercury_interstitialDidPresentScreen:(MercuryInterstitialAd *)interstitialAd;;
 
 /// 插屏广告视图曝光失败回调，插屏广告曝光失败回调该函数
-- (void)mercury_interstitialFailToPresent;
+- (void)mercury_interstitialFailToPresent:(MercuryInterstitialAd *)interstitialAd;;
 
 /// 插屏广告曝光结束回调，插屏广告曝光结束回调该函数
-- (void)mercury_interstitialDidDismissScreen;
+- (void)mercury_interstitialDidDismissScreen:(MercuryInterstitialAd *)interstitialAd;;
 
 /// 插屏广告曝光回调
-- (void)mercury_interstitialWillExposure;
+- (void)mercury_interstitialWillExposure:(MercuryInterstitialAd *)interstitialAd;;
 
 /// 插屏广告点击回调
-- (void)mercury_interstitialClicked;
+- (void)mercury_interstitialClicked:(MercuryInterstitialAd *)interstitialAd;;
+
+
 ```
 
 需要实现上述回调，需要先设置delegate:
@@ -472,32 +475,36 @@ _ad.delegate = self;
 
 ```Objective-C
 @optional
+
 /// 广告数据加载成功回调
-- (void)mercury_rewardVideoAdDidLoad;
+- (void)mercury_rewardVideoAdDidLoad:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 /// 广告加载失败回调
 - (void)mercury_rewardAdFailError:(nullable NSError *)error;
 
 /// 视频数据下载成功回调，已经下载过的视频会直接回调
-- (void)mercury_rewardVideoAdVideoDidLoad;
+- (void)mercury_rewardVideoAdVideoDidLoad:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 /// 视频播放页即将曝光回调
-- (void)mercury_rewardVideoAdWillVisible;
+- (void)mercury_rewardVideoAdWillVisible:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 /// 视频广告曝光回调
-- (void)mercury_rewardVideoAdDidExposed;
+- (void)mercury_rewardVideoAdDidExposed:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 /// 视频播放页关闭回调
-- (void)mercury_rewardVideoAdDidClose;
+- (void)mercury_rewardVideoAdDidClose:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 /// 视频广告信息点击回调
-- (void)mercury_rewardVideoAdDidClicked;
+- (void)mercury_rewardVideoAdDidClicked:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 /// 视频广告播放达到激励条件回调
-- (void)mercury_rewardVideoAdDidRewardEffective;
+- (void)mercury_rewardVideoAdDidRewardEffective:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 /// 视频广告视频播放完成
-- (void)mercury_rewardVideoAdDidPlayFinish;
+- (void)mercury_rewardVideoAdDidPlayFinish:(MercuryRewardVideoAd *)rewardVideoAd;
+
+
+
 ```
 需要实现上述回调，需要先设置delegate:
 

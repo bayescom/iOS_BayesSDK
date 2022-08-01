@@ -42,7 +42,7 @@
 }
 
 // MARK: ======================= MercuryInterstitialAdDelegate =======================
-- (void)mercury_interstitialSuccess {
+- (void)mercury_interstitialSuccess:(MercuryInterstitialAd *)interstitialAd {
     NSLog(@"插屏广告预加载成功回调");
     [JDStatusBarNotification showWithStatus:@"插屏广告预加载成功" dismissAfter:1.5];
 }
@@ -52,45 +52,30 @@
     [JDStatusBarNotification showWithStatus:@"广告预加载失败" dismissAfter:1.5];
 }
 
-- (void)mercury_interstitialWillPresentScreen {
+- (void)mercury_interstitialWillPresentScreen:(MercuryInterstitialAd *)interstitialAd {
     NSLog(@"广告将要曝光回调");
 }
 
-- (void)mercury_interstitialDidPresentScreen {
+- (void)mercury_interstitialDidPresentScreen:(MercuryInterstitialAd *)interstitialAd {
     NSLog(@"广告视图曝光成功回调");
 }
 
-- (void)mercury_interstitialFailToPresent {
+- (void)mercury_interstitialFailToPresent:(MercuryInterstitialAd *)interstitialAd {
     NSLog(@"广告视图曝光失败回调");
     [JDStatusBarNotification showWithStatus:@"广告视图曝光失败" dismissAfter:1.5];
 }
 
-- (void)mercury_interstitialDidDismissScreen {
+- (void)mercury_interstitialDidDismissScreen:(MercuryInterstitialAd *)interstitialAd {
     NSLog(@"广告曝光结束回调 %@", [NSThread currentThread]);
 }
 
-- (void)mercury_interstitialWillExposure {
+- (void)mercury_interstitialWillExposure:(MercuryInterstitialAd *)interstitialAd {
     NSLog(@"插屏广告曝光回调");
 }
 
-- (void)mercury_interstitialClicked {
+- (void)mercury_interstitialClicked:(MercuryInterstitialAd *)interstitialAd {
     NSLog(@"广告点击回调");
 }
 
-- (void)mercury_interstitialAdWillPresentFullScreenModal {
-    NSLog(@"1. 点击插屏广告即将弹出全屏广告页");
-}
-
-- (void)mercury_interstitialAdDidPresentFullScreenModal {
-    NSLog(@"2. 点击插屏广告以后弹出全屏广告页");
-}
-
-- (void)mercury_interstitialAdWillDismissFullScreenModal {
-    NSLog(@"3. 全屏广告页将要关闭");
-}
-
-- (void)mercury_interstitialAdDidDismissFullScreenModal {
-    NSLog(@"4. 全屏广告页被关闭");
-}
 
 @end
