@@ -26,22 +26,6 @@
 /// banner条点击回调
 - (void)mercury_bannerViewClicked:(MercuryBannerAdView *_Nonnull)banner;
 
-#pragma 以下方法未来会被废弃推荐使用上边的方法
-/// 请求广告条数据成功后调用
-- (void)mercury_bannerViewDidReceived;
-
-/// 请求广告条数据失败后调用
-- (void)mercury_bannerViewFailToReceived:(nullable NSError *)error;
-
-/// banner条被用户关闭时调用
-- (void)mercury_bannerViewWillClose;
-
-/// banner条曝光回调
-- (void)mercury_bannerViewWillExposure;
-
-/// banner条点击回调
-- (void)mercury_bannerViewClicked;
-
 @end
 
 @interface MercuryBannerAdView : UIView
@@ -60,6 +44,10 @@
 
 /// Banner条曝光关闭按钮，默认打开
 @property(nonatomic, assign, getter=isShowCloseBtn) BOOL showCloseBtn;
+
+
+/// 实时价格
+@property(nonatomic, assign) NSInteger price;
 
 /// 初始方法
 - (instancetype _Nullable )initWithAdspotId:(NSString *_Nullable)adspotId;

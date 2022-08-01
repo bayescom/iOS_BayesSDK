@@ -28,6 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 自动播放时，是否静音。默认 NO。
 @property (nonatomic, assign) BOOL videoMuted;
 
+/// 实时价格
+@property (nonatomic, assign) NSInteger price;
+
 /// 按照 MercuryNativeExpressAd.renderSize 渲染广告
 - (void)render;
 

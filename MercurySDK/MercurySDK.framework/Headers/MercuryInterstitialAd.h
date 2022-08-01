@@ -17,28 +17,28 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 
 /// 插屏广告预加载成功回调，当接收服务器返回的广告数据成功且预加载后调用该函数
-- (void)mercury_interstitialSuccess;
+- (void)mercury_interstitialSuccess:(MercuryInterstitialAd *)interstitialAd;
 
 /// 插屏广告预加载失败回调，当接收服务器返回的广告数据失败后调用该函数
 - (void)mercury_interstitialFailError:(NSError *)error;
 
 /// 插屏广告将要曝光回调，插屏广告即将曝光回调该函数
-- (void)mercury_interstitialWillPresentScreen;
+- (void)mercury_interstitialWillPresentScreen:(MercuryInterstitialAd *)interstitialAd;;
 
 /// 插屏广告视图曝光成功回调，插屏广告曝光成功回调该函数
-- (void)mercury_interstitialDidPresentScreen;
+- (void)mercury_interstitialDidPresentScreen:(MercuryInterstitialAd *)interstitialAd;;
 
 /// 插屏广告视图曝光失败回调，插屏广告曝光失败回调该函数
-- (void)mercury_interstitialFailToPresent;
+- (void)mercury_interstitialFailToPresent:(MercuryInterstitialAd *)interstitialAd;;
 
 /// 插屏广告曝光结束回调，插屏广告曝光结束回调该函数
-- (void)mercury_interstitialDidDismissScreen;
+- (void)mercury_interstitialDidDismissScreen:(MercuryInterstitialAd *)interstitialAd;;
 
 /// 插屏广告曝光回调
-- (void)mercury_interstitialWillExposure;
+- (void)mercury_interstitialWillExposure:(MercuryInterstitialAd *)interstitialAd;;
 
 /// 插屏广告点击回调
-- (void)mercury_interstitialClicked;
+- (void)mercury_interstitialClicked:(MercuryInterstitialAd *)interstitialAd;;
 
 @end
 
@@ -49,6 +49,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 插屏广告是否加载完成
 @property (nonatomic, assign, readonly) BOOL isAdValid;
+
+/// 实时价格
+@property (nonatomic, assign) NSInteger price;
 
 
 /// 初始方法

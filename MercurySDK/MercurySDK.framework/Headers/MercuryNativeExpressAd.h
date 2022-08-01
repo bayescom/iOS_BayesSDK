@@ -64,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 构造方法
 /// @param adspotId adspotId
-/// @param customExt 自定义拓展参数
+/// @param ext 自定义拓展参数
 - (instancetype)initAdWithAdspotId:(NSString * _Nonnull)adspotId
                          customExt:(NSDictionary *_Nonnull)ext;
 

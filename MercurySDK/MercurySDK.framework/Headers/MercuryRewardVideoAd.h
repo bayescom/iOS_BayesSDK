@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 素材超时时间
 @property (nonatomic, assign) NSTimeInterval timeoutTime;
 
+/// 实时价格
+@property (nonatomic, assign) NSInteger price;
+
 /// 初始化激励广告
 /// @param adspotId 广告Id
 /// @param delegate 代理对象

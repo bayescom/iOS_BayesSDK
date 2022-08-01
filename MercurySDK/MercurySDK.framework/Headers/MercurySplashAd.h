@@ -33,6 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 父视图 详解：[必选]需设置为显示广告的UIViewController
 @property (nonatomic, weak) UIViewController *controller;
 
+/// 广告的实时价格
+@property (nonatomic, assign) NSInteger price;
+
 /// 构造方法
 /// @param adspotId 广告Id
 /// @param delegate 代理
