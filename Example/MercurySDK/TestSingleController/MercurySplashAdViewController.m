@@ -9,6 +9,8 @@
 #import "MercurySplashAdViewController.h"
 
 #import <MercurySDK/MercurySDK.h>
+#import <objc/runtime.h>
+#import <objc/message.h>
 
 @interface MercurySplashAdViewController () <MercurySplashAdDelegate>
 @property (nonatomic, strong) MercurySplashAd *ad;
@@ -28,12 +30,13 @@
         @{@"addesc": @"开屏(视频)", @"adspotId": @"10002436"},
         @{@"addesc": @"开屏(schemaLink)", @"adspotId": @"10002620"},
         @{@"addesc": @"开屏(universalLink)", @"adspotId": @"10002621"},
-        
+        @{@"addesc": @"开屏(universalLink)", @"adspotId": @"10000556"},
+
         @{@"addesc": @"富媒体开屏-Gallery", @"adspotId": @"10003412"},
         @{@"addesc": @"富媒体开屏-sliding", @"adspotId": @"10003411"},
         @{@"addesc": @"富媒体开屏-Cube", @"adspotId": @"10003409"},
         @{@"addesc": @"富媒体开屏-Swipe", @"adspotId": @"10003408"},
-        
+        @{@"addesc": @"开屏视频", @"adspotId": @"10006703"},
     ];
     NSLog(@"版本号: %@", [MercuryConfigManager sdkVersion]);
     self.btn1Title = @"加载并显示广告";
@@ -46,12 +49,11 @@
     if (![self checkAdspotId]) { return; }
     _ad = [[MercurySplashAd alloc] initAdWithAdspotId:self.adspotId delegate:self];
     _ad.controller = self;
-    _ad.showType = MercurySplashAdShowCutBottom;
+    _ad.showType = MercurySplashAdAutoAdaptScreen;
     // 自定义Logo，占位图
     _ad.placeholderImage = [UIImage imageNamed:@"LaunchImage_img"];
     _ad.logoImage = [UIImage imageNamed:@"app_logo"];
-//    [_ad loadAdAndShow];
-    [_ad loadAdAndShowWithBottomView:[self getTestBottomView] skipView:nil];
+    [_ad loadAdAndShow];
 }
 
 // 广告素材宽高不确定 所以底部的留白高度不确定
@@ -97,6 +99,9 @@
 
 - (void)mercury_splashAdClosed:(MercurySplashAd *)splashAd {
     NSLog(@"开屏广告关闭回调 %s", __func__);
+//    [NSClassFromString(@"MercuryMotionManager") performSelector:@selector(setupSDKWithAppID:andAppKey:) withObject:supplier.mediaid withObject:supplier.mediakey];
+
+//    id manager = ((id(*)(id, SEL))objc_msgSend)(NSClassFromString(@"MercuryMotionManager"), @selector(sharedManager));
 }
 
 @end

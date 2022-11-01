@@ -60,6 +60,11 @@ typedef NS_ENUM(NSUInteger, MercurySplashAdShowType) {
     MercurySplashAdShowDefault = 0,
     /// 必须展示底部控件(Logo BottomView) 会对素材底部进行遮盖
     MercurySplashAdShowCutBottom,
+    /// 自动适应屏幕
+    ///  showtype = MercurySplashAdAutoAdaptScreen 时
+    /// 展示素材后 底部剩余高度 大于 46 则展示Logo 并且logo 会等比进行压缩
+    /// 展示素材后 底部剩余 0 - 46 则不展示Logo 并且拉伸素材至底部
+    MercurySplashAdAutoAdaptScreen
 };
 
 #endif
