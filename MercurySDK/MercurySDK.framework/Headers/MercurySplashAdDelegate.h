@@ -62,9 +62,13 @@ typedef NS_ENUM(NSUInteger, MercurySplashAdShowType) {
     MercurySplashAdShowCutBottom,
     /// 自动适应屏幕
     ///  showtype = MercurySplashAdAutoAdaptScreen 时
-    /// 展示素材后 底部剩余高度 大于 46 则展示Logo 并且logo 会等比进行压缩
-    /// 展示素材后 底部剩余 0 - 46 则不展示Logo 并且拉伸素材至底部
-    MercurySplashAdAutoAdaptScreen
+    /// 展示素材后 底部剩余高度 大于 blankGap 则展示Logo 并且logo 会等比进行压缩
+    /// 展示素材后 底部剩余 0 - blankGap 则不展示Logo 并且拉伸素材至底部
+    MercurySplashAdAutoAdaptScreen,
+    /// 自动适应屏幕
+    ///  showtype = MercurySplashAdAutoAdaptScreenWithLogoFirst 时
+    /// 展示素材后 底部剩余高度 大于 blankGap 则展示Logo 并且logo不会进行压缩且优先展示, 素材会进行压缩或拉伸填充满剩余区域
+    MercurySplashAdAutoAdaptScreenWithLogoFirst,
 };
 
 #endif

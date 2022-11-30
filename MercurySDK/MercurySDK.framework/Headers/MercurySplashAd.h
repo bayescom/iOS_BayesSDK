@@ -21,7 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// Desc: 拉取广告超时时间，开发者调用 loadDataWithResultBlock 方法以后会立即曝光backgroundImage，然后在该超时时间内，如果广告拉取成功，则立马曝光开屏广告，否则放弃此次广告曝光机会。
 @property (nonatomic, assign) NSInteger fetchDelay;
 
-/// 拉取到Model到素材渲染的超时时间
+/// showType =  MercurySplashAdAutoAdaptScreen 或 showType =  MercurySplashAdAutoAdaptScreenWithLogoFirst 生效
+/// 当底部留白 > blankGap 时 会显示logo
+/// 默认值是 55
+@property (nonatomic, assign) NSInteger blankGap;
+
 
 /// 广告底部组件展示样式类型
 @property (nonatomic, assign) MercurySplashAdShowType showType;
