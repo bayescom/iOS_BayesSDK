@@ -26,6 +26,7 @@
 //        @{@"addesc": @"视频信息流Mock", @"adspotId": @"50000002"},
         @{@"addesc": @"图片信息流", @"adspotId": @"10002698"},
         @{@"addesc": @"视频信息流", @"adspotId": @"10002710"},
+        @{@"addesc": @"视频信息流", @"adspotId": @"10006500"},
     ];
     self.btn1Title = @"展示广告";
 }
