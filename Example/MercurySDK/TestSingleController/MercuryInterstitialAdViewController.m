@@ -23,7 +23,7 @@
     self.initDefSubviewsFlag = YES;
     self.adspotIdsArr = @[
         @{@"addesc": @"插屏图片", @"adspotId": @"10000559"},
-//        @{@"addesc": @"插屏图片", @"adspotId": @"10000558"},
+        @{@"addesc": @"插屏图片", @"adspotId": @"10006962"},
 //        @{@"addesc": @"插屏", @"adspotId": @"30000001"},
     ];
     self.btn1Title = @"加载广告";
