@@ -61,6 +61,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否需要预缓存资源
 + (void)preloadedResourcesIfNeed:(BOOL)isNeed;
 
+/// 设置ua
+/// 联调时发现ua不符合规范 可用此方法传入ua 此处需传原始ua
+/// 需在初始化时 调用该方法
 + (void)setDefaultUserAgent:(NSString *)ua;
 
 /// 是否需要支持HTPPS  默认不需要

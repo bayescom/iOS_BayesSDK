@@ -51,23 +51,21 @@
     }
 
     NSLog(@"version: %@", [MercuryConfigManager sdkVersion]);
-    [self splashShow];
+    
+    [self initMercury];
     
     return YES;
 }
 
-- (void)splashShow {   // 开屏
+- (void)initMercury {   // 开屏
     // 设置AppId MediaKey
     [MercuryConfigManager setAppID:@"100255"
                      appKey:@"757d5119466abe3d771a211cc1278df7"];
     
-//    [MercuryConfigManager setAppID:@"101859"
-//                          appKey:@"9fd708c28a14006344301ef5cac76adb"
-//                            config:@{}];
-
-    
     // 开启日志
+    [MercuryConfigManager supportHttps:YES];
     [MercuryConfigManager openDebug:YES];
+    [MercuryConfigManager preloadedResourcesIfNeed:YES];
 }
 
 @end
