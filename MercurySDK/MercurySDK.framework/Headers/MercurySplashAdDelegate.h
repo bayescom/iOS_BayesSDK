@@ -53,6 +53,11 @@
 /// 开屏广告剩余时间回调
 - (void)mercury_splashAdLifeTime:(NSUInteger)time;
 
+
+/// ServerBid时会回调胜出渠道信息
+/// @param info  sdkId说明具体是哪个sdk完成了广告返回并胜出，sdkInfo表明渠道返回的需要的字段， 此回调会在mercury_splashAdDidLoad前触发
+- (void)mercury_splashAdServerBiddingResponse:(MercurySplashAd * _Nullable)splashAd info:(NSDictionary *)info;
+
 @end
 
 typedef NS_ENUM(NSUInteger, MercurySplashAdShowType) {

@@ -79,7 +79,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param skipView 自定义跳过按钮
 - (void)loadAdAndShowWithBottomView:(UIView * _Nullable)bottomView skipView:(UIView * _Nullable)skipView;
 
-//
+/// 销毁广告
+- (void)destory;
+
+
+/// ServerBidding时 其他渠道曝光时 需调用该方法, 非ServerBidding是调用该方法则无效
+- (void)reportAdExposured;
+
+/// ServerBidding时 其他渠道被点击时 需调用该方法, 非ServerBidding是调用该方法则无效
+- (void)reportAdClicked;
+
 @end
 
 NS_ASSUME_NONNULL_END
