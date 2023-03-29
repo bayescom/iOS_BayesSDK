@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'MercurySDK'
-  s.version          = '3.1.8.4'
+  s.version          = '3.1.8.5'
   
-  s.ios.deployment_target = '9.0'
-  s.platform     = :ios, "9.0" 
+  s.ios.deployment_target = '10.0'
+  s.platform     = :ios, "10.0" 
   s.requires_arc = true
   
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
