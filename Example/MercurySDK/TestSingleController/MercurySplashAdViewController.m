@@ -53,7 +53,7 @@
     // 自定义Logo，占位图
     _ad.placeholderImage = [UIImage imageNamed:@"LaunchImage_img"];
     _ad.logoImage = [UIImage imageNamed:@"app_logo"];
-    [_ad loadAdAndShow];
+    [_ad loadAd];
 }
 
 // 广告素材宽高不确定 所以底部的留白高度不确定
@@ -63,10 +63,14 @@
     return test;
 }
 
+- (void)showAd {
+    [self.ad showAdInWindow:self.view.window];
+}
 
 // MARK: ======================= MercurySplashAdDelegate =======================
 - (void)mercury_splashAdDidLoad:(MercurySplashAd *)splashAd {
     NSLog(@"开屏广告模型加载成功 %s %ld", __func__, (long)splashAd.price);
+    [self showAd];
 }
 
 - (void)mercury_splashAdSuccessPresentScreen:(MercurySplashAd *)splashAd {
@@ -95,6 +99,7 @@
 
 - (void)mercury_splashAdWillClosed:(MercurySplashAd *)splashAd {
     NSLog(@"开屏广告将要关闭回调 %s", __func__);
+    
 }
 
 - (void)mercury_splashAdClosed:(MercurySplashAd *)splashAd {

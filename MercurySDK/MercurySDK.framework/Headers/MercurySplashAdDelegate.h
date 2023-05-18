@@ -18,6 +18,10 @@
 /// @param splashAd 广告数据
 - (void)mercury_splashAdDidLoad:(MercurySplashAd * _Nullable)splashAd;
 
+/// 开屏广告物料加载成功
+/// isFromCache: 物料是否为缓存物料
+- (void)mercury_materialDidLoad:(MercurySplashAd * _Nullable)splashAd isFromCache:(BOOL)isFromCache;
+
 /// 开屏广告成功曝光
 /// @param splashAd 广告数据
 - (void)mercury_splashAdSuccessPresentScreen:(MercurySplashAd * _Nullable)splashAd;

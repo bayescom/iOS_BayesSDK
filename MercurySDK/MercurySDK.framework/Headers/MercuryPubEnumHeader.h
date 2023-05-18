@@ -42,6 +42,20 @@ typedef NS_ENUM(NSInteger, MercuryVideoAutoPlayPolicy) {
     MercuryVideoAutoPlayPolicyNever  = 2, // 从不自动播放，无论网络条件
 };
 
+typedef NS_ENUM(NSInteger, MercuryMaterialType) { // 物料类型
+    MercuryMaterialTypeUnKnow  = 0, // 未知, 还未获取素材是为该类型
+    MercuryMaterialTypeImage   = 1, // 图片
+    MercuryMaterialTypeGif     = 2, // Gif
+    MercuryMaterialTypeVideo   = 3, // video
+};
+
+typedef NS_ENUM(NSInteger, MercuryTargetLinkType) { // 点击广告时 跳转link的类型
+    MercuryTargetLinkTypeDeepLink  = 0, // deeplink
+    MercuryTargetLinkTypeLDLink    = 1, // 普通落地页
+    MercuryTargetLinkTypeOther     = 2, // 其他 (目前没用)
+};
+
+
 // MARK: ======================= Enum Helper =======================
 //static NSString * kMercuryMediaPlayerStatusParseToString(MercuryMediaPlayerStatus status) {
 //    if (status == MercuryMediaPlayerStatusInitial) {

@@ -88,6 +88,7 @@
 /// 原生模板广告被关闭
 - (void)mercury_nativeExpressAdViewClosed:(MercuryNativeExpressAdView *)nativeExpressAdView {
     NSLog(@"原生模板广告被关闭, %@", nativeExpressAdView);
+    [self.dataArrM removeObject:nativeExpressAdView];
     [self.tableView reloadData];
 }
 

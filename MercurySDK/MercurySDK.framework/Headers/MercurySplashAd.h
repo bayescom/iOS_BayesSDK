@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "MercurySplashAdDelegate.h"
-
+#import "MercuryPubEnumHeader.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MercurySplashAd : NSObject
@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIImage *placeholderImage;
 /// Logo广告
 @property (nonatomic, strong) UIImage *logoImage;
-/// 父视图 详解：[必选]需设置为显示广告的UIViewController
+/// controller 控制器 用于落地页的跳转 不传则获取当前最上层的viewcontroller
 @property (nonatomic, weak) UIViewController *controller;
 
 /// 广告的实时价格
@@ -58,26 +58,21 @@ NS_ASSUME_NONNULL_BEGIN
 /// 拉取广告数据 只拉取 不展示
 - (void)loadAd;
 
-/// 展示广告在controller上中(Splash广告只支持竖屏) 支持自定义底部View 跳过按钮
-/// @param bottomView 自定义底部View
-/// @param skipView 自定义跳过按钮
-- (void)showAdWithBottomView:(UIView *)bottomView skipView:(UIView *)skipView;
 
+/// 展示广告 最好是keywindow, 且不要做遮挡
+- (void)showAdInWindow:(UIWindow *)window;
 
+/// 获取本次开屏广告的价格
+- (NSInteger)getPrice;
 
+/// 获取素材链接
+//- (NSString *)getMaterialLink;
 
+/// 获取本次广告的物料类型
+//- (MercuryMaterialType)getMaterialType;
 
-/// 广告发起请求并曝光在controller上中(Splash广告只支持竖屏)
-- (void)loadAdAndShow;
-
-/// 广告发起请求并曝光在controller上中(Splash广告只支持竖屏) 支持自定义底部View
-/// @param bottomView 自定义底部View
-- (void)loadAdAndShowWithBottomView:(UIView * _Nullable)bottomView;
-
-/// 广告发起请求并曝光在controller上中(Splash广告只支持竖屏) 支持自定义底部View 跳过按钮
-/// @param bottomView 自定义底部View
-/// @param skipView 自定义跳过按钮
-- (void)loadAdAndShowWithBottomView:(UIView * _Nullable)bottomView skipView:(UIView * _Nullable)skipView;
+/// 物料是否准备好
+//- (BOOL)materialIsReady;
 
 /// 销毁广告
 - (void)destory;
