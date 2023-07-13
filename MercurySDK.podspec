@@ -15,7 +15,6 @@ Blink倍联——免费透明的流量变现神器 
                        DESC
 
   s.homepage         = 'http://www.bayescom.com/'
-  
   s.author           = { 'bayescom' => 'http://www.bayescom.com/' }
   s.source           = { :git => 'https://github.com/bayescom/MercurySDK.git', :tag => s.version.to_s }
 
