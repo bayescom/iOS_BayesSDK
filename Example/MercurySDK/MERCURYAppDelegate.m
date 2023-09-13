@@ -54,6 +54,8 @@
     
     [self initMercury];
     
+    [MercuryConfigManager setAAIDWithMediaId:@"" mediaSecret:@""];
+    
     return YES;
 }
 

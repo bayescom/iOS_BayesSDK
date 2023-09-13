@@ -49,8 +49,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param config 配置信息 如果SDK集成者自己申请CAID 请将其放入config里面
 + (void)setAppID:(NSString *)appID mediaKey:(NSString *)mediaKey config:(NSDictionary *)config;
 
-
-
 /// 选择是否开启日志打印
 /// @param isDebug 是否打印日志
 + (void)openDebug:(BOOL)isDebug;
@@ -72,6 +70,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 是否允许个性化广告推送 默认为允许
 + (void)openAdTrack:(BOOL)open;
+
+
+/// 设置AAID
+/// - Parameters:
+///   - mediaId: 阿里提供给媒体的mediaId
+///   - mediaSecret: 阿里提供给媒体的mediaSecret
++ (void)setAAIDWithMediaId:(NSString *)mediaId mediaSecret:(NSString *)mediaSecret;
 
 
 @end
