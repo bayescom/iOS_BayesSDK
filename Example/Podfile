@@ -25,10 +25,4 @@ target 'MercurySDK_Example' do
 #  pod 'AdvanceSDK/BD' # 如果需要导入百青藤SDK 如果不需要则不添加 看需求选择是否添加
 # pod  'AdvanceSDK/KS' # 如果需要导入快手广告则添加 如果不需要则不添加 看需求选择是否添加
 
-
-  target 'MercurySDK_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

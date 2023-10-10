@@ -86,7 +86,6 @@
 		704E6E494A06EA86348E495BBF3C0590 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE3A35A7D602128063770181C1A97CA /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		77982BF1FC30849369236F2E1EBA6F85 /* SDInternalMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F3727C12AF5F87E356E34017497CB /* SDInternalMacros.m */; };
 		79AAF68E5DB5F1957AA8EC66B0DD8E13 /* SDImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2B5CFE1513FDBA12CF8B3F6FF8CF59 /* SDImageIOCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7BFB9079A43A5E4EE42420C556AE38B6 /* Pods-MercurySDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58292F7796ECC0811FF6D534ED0397B9 /* Pods-MercurySDK_Tests-dummy.m */; };
 		7D3C95EC3D03819B04305BAA05130251 /* SDImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E45F4C62AE22A6DEEFC1594D5DD418D /* SDImageLoader.m */; };
 		7FD78BABEF54A5C97CBD6EBC0635CC5E /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D96F2C9AE1C08020C8162211CF105D /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		806C660746A84937DD7058D3D72EBFA7 /* SDImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = E73532879886F891316F223DB8D04460 /* SDImageFrame.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -144,7 +143,7 @@
 		CB191345BCC56C623BB5B802261183A7 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 042B9B23C75F47830002C01A729C2996 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CB68C5F4AD3107402F58C7A84E359712 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F351F0577C2EC3F294FF9F6B393EB06 /* MASConstraint.m */; };
 		CD12B6AC301CC6D3E89D64742EADC39F /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7C3F4F4B4B24E04D8E4B6F257174A9 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CD2A5D50A6D44A75D6E79E680E93877B /* Pods-MercurySDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 123E81B6EC9DD2E272A06AFFB54309D0 /* Pods-MercurySDK_Example-dummy.m */; };
+		CD2A5D50A6D44A75D6E79E680E93877B /* Pods-MercurySDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0D03D0AEE6C0A1EE0C37045341004C /* Pods-MercurySDK_Example-dummy.m */; };
 		CD9625B3EC6DEAAF655D824BFFCD2161 /* SDInternalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DDD0438DC83B79CEDCA7BD223C0DD91 /* SDInternalMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CF4F24464F119A4912C777C96A3D9D2E /* SDWebImageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DED1402BD47BE2ED4F22EEF7F47D65 /* SDWebImageIndicator.m */; };
 		CFF762F254B1670E7BC3EF54C0603698 /* SDFileAttributeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C75ECB48E5B1A33A44277D9612F124 /* SDFileAttributeHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -209,13 +208,6 @@
 			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
 			remoteInfo = Masonry;
 		};
-		64BA673C4AAA78BAD52B7CF1B182C6EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B3AD462259448580EDBF5D05BCC178C2;
-			remoteInfo = "Pods-MercurySDK_Example";
-		};
 		8D125DDB92481952715CD826A5FDA880 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -246,7 +238,6 @@
 		0F351F0577C2EC3F294FF9F6B393EB06 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		106F75DE93E6150CC41FC5E4163F4760 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		11D775319480877AFF733300FFAC8024 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		123E81B6EC9DD2E272A06AFFB54309D0 /* Pods-MercurySDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MercurySDK_Example-dummy.m"; sourceTree = "<group>"; };
 		16EA6D8D8766C9691732E914C0970C0C /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/Core/UIImage+GIF.m"; sourceTree = "<group>"; };
 		16FA724B4FBBBC9A0BADB4594FA55778 /* SDDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDiskCache.m; path = SDWebImage/Core/SDDiskCache.m; sourceTree = "<group>"; };
 		185A76D574DF3597E49890B56A1ACB0D /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
@@ -261,7 +252,6 @@
 		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Masonry; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		212CAD047A65599821C72E5CD01D4DED /* SDImageCachesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManager.h; path = SDWebImage/Core/SDImageCachesManager.h; sourceTree = "<group>"; };
 		22014FC09A650011881349EC6C63A4AE /* SDImageCacheDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheDefine.m; path = SDWebImage/Core/SDImageCacheDefine.m; sourceTree = "<group>"; };
-		2315E047027AB1324B2C0C32FB261B0F /* Pods-MercurySDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MercurySDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		25321E26D30FB123FFFEFD4592050EE2 /* SDGraphicsImageRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDGraphicsImageRenderer.h; path = SDWebImage/Core/SDGraphicsImageRenderer.h; sourceTree = "<group>"; };
 		25D96F2C9AE1C08020C8162211CF105D /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/Core/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		28F8C0DC6DCD25BB400E744DF5FACFDC /* SDImageCachesManagerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCachesManagerOperation.m; path = SDWebImage/Private/SDImageCachesManagerOperation.m; sourceTree = "<group>"; };
@@ -289,6 +279,7 @@
 		3F32918370DDC39023D24AB975965855 /* MercurySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MercurySDK.framework; path = MercurySDK/MercurySDK.framework; sourceTree = "<group>"; };
 		3FE9CA4EC0ADF55EB8D481E91D145ED9 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		4399B689D0FB1E1A3D27EF1A16C769B3 /* SDImageAssetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAssetManager.h; path = SDWebImage/Private/SDImageAssetManager.h; sourceTree = "<group>"; };
+		43AD385E204EB451BC0E031FC6DDA3E7 /* Pods-MercurySDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MercurySDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		44B695228D69169020F341A957852339 /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/Core/SDAnimatedImageRep.m; sourceTree = "<group>"; };
 		4514D20992C7E4A574F7675CFE1721F4 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/Core/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		46D4C0047031D0559EC322CB4DEB5DE2 /* SDImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageIOCoder.m; path = SDWebImage/Core/SDImageIOCoder.m; sourceTree = "<group>"; };
@@ -298,11 +289,9 @@
 		4CDD50FCC78564A1F67887561E5741E3 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/Core/UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		4E01EA5EB28E8B4700E4D534F295F3C2 /* UIImage+ForceDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ForceDecode.m"; path = "SDWebImage/Core/UIImage+ForceDecode.m"; sourceTree = "<group>"; };
 		5066406B41CE6442CFE1E1B8733BC5D4 /* NSButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSButton+WebCache.m"; path = "SDWebImage/Core/NSButton+WebCache.m"; sourceTree = "<group>"; };
-		50EFCC8BF486A8045324C7F3FBE99501 /* Pods-MercurySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercurySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		52202FA3B897B25364847421BC9BD436 /* SDImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGIFCoder.m; path = SDWebImage/Core/SDImageGIFCoder.m; sourceTree = "<group>"; };
 		5565C08DF44E6F7C111F3AE39A7E31EF /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		57DC2AAEDC65EDE371414B592A83747E /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		58292F7796ECC0811FF6D534ED0397B9 /* Pods-MercurySDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MercurySDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		585BC2B62D0E391CD4A14D246FF3F3FF /* SDWebImageDownloaderConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderConfig.h; path = SDWebImage/Core/SDWebImageDownloaderConfig.h; sourceTree = "<group>"; };
 		5AC15BE5172BFE227A8AE2D18C8297AE /* SDWebImageTransitionInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransitionInternal.h; path = SDWebImage/Private/SDWebImageTransitionInternal.h; sourceTree = "<group>"; };
 		5B2A084FCFEF9098CECD9FAA3270B0DF /* SDImageAssetManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAssetManager.m; path = SDWebImage/Private/SDImageAssetManager.m; sourceTree = "<group>"; };
@@ -312,7 +301,6 @@
 		5FF0A40AB5C96F1D66A32753EF4BEBC8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		626A932128EA20336D733338EDFEE993 /* NSBezierPath+SDRoundedCorners.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+SDRoundedCorners.m"; path = "SDWebImage/Private/NSBezierPath+SDRoundedCorners.m"; sourceTree = "<group>"; };
 		65D4EB7A110A703D5B14EE4241FF7351 /* SDImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCodersManager.h; path = SDWebImage/Core/SDImageCodersManager.h; sourceTree = "<group>"; };
-		6A83235B614B9F80D87D008F84D95393 /* Pods-MercurySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercurySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6CE01020A58C986CF0F218961D74FCF3 /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/Core/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
 		6DF9F1C1C874B43ADC95804741DE3070 /* SDDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDiskCache.h; path = SDWebImage/Core/SDDiskCache.h; sourceTree = "<group>"; };
 		6F1009EF1CCD153A0CA66569629D320C /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
@@ -328,14 +316,10 @@
 		7B4592330B5A2633D980999E3D5EDBD2 /* UIImage+MemoryCacheCost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MemoryCacheCost.h"; path = "SDWebImage/Core/UIImage+MemoryCacheCost.h"; sourceTree = "<group>"; };
 		7BDABD5F53C90E8609E29CD5445A6ADE /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/Core/UIView+WebCache.m"; sourceTree = "<group>"; };
 		7F9279971B23E3924479D85A1E5D600D /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/Core/UIImage+GIF.h"; sourceTree = "<group>"; };
-		80F8F8ECB4A3A7FA15311D075E10BD7E /* Pods-MercurySDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MercurySDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8367CD0A3CDDF13EE355EBE3AB241B83 /* UIImage+ExtendedCacheData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ExtendedCacheData.m"; path = "SDWebImage/Core/UIImage+ExtendedCacheData.m"; sourceTree = "<group>"; };
-		87DDC5D10D1FD39A56C8482E49869265 /* Pods-MercurySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercurySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		887FDE5A560773B0E9B5681BCB9757C9 /* Pods-MercurySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercurySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8E45F4C62AE22A6DEEFC1594D5DD418D /* SDImageLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoader.m; path = SDWebImage/Core/SDImageLoader.m; sourceTree = "<group>"; };
 		907680746C858A08836AD8984D5EC7B2 /* NSBezierPath+SDRoundedCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+SDRoundedCorners.h"; path = "SDWebImage/Private/NSBezierPath+SDRoundedCorners.h"; sourceTree = "<group>"; };
 		90EAE37795203F14194CC94250335F03 /* SDMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDMemoryCache.h; path = SDWebImage/Core/SDMemoryCache.h; sourceTree = "<group>"; };
-		92A262F673BB87284F762F8555A4AA36 /* Pods-MercurySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercurySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		936DC6980F713B90B30B333B8CB7335B /* SDWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImage.h; path = WebImage/SDWebImage.h; sourceTree = "<group>"; };
 		9404C4B6C850EB4AF304ACC2ECD97B2E /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		940D335241284F00640B68A8EB730DA9 /* SDWebImageDownloaderResponseModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderResponseModifier.h; path = SDWebImage/Core/SDWebImageDownloaderResponseModifier.h; sourceTree = "<group>"; };
@@ -359,6 +343,7 @@
 		A7A43409D6B3FAD93FC8C6D747F5E113 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
 		A9C22D6C55EAFA2B6E5D3C76EFD914B5 /* SDMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDMemoryCache.m; path = SDWebImage/Core/SDMemoryCache.m; sourceTree = "<group>"; };
 		A9DC55E743D3C20E46A5275A907AAF97 /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAsyncBlockOperation.m; path = SDWebImage/Private/SDAsyncBlockOperation.m; sourceTree = "<group>"; };
+		A9F362C49A3CA643CBBF5E7D996B6256 /* Pods-MercurySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercurySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AC267D399528589557D34FF1D06DD443 /* NSImage+Compatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+Compatibility.m"; path = "SDWebImage/Core/NSImage+Compatibility.m"; sourceTree = "<group>"; };
 		ADE0EEEE9D7CF11E36A01755FF2EBED2 /* SDDeviceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDeviceHelper.h; path = SDWebImage/Private/SDDeviceHelper.h; sourceTree = "<group>"; };
 		AE952F226E241248027275A69E8A53AB /* SDAnimatedImagePlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImagePlayer.m; path = SDWebImage/Core/SDAnimatedImagePlayer.m; sourceTree = "<group>"; };
@@ -377,11 +362,11 @@
 		BAEDA1C3BA69351BF9AEA619A82C02CE /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/Core/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		BC7C3F4F4B4B24E04D8E4B6F257174A9 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		BCFF7E8470DF63666B6BC3135334F8D6 /* SDImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoderHelper.m; path = SDWebImage/Core/SDImageCoderHelper.m; sourceTree = "<group>"; };
+		BF87C3BEB79A6944E09A41523C2044D7 /* Pods-MercurySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercurySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C03E3CD6B01EB6E0E01CACBC92934B07 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/Core/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		C5337428058B4D1C96A26037CBBF5F37 /* SDImageLoadersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoadersManager.m; path = SDWebImage/Core/SDImageLoadersManager.m; sourceTree = "<group>"; };
 		C5F7CD8C41048A4AA0898055D51CABD3 /* SDImageAWebPCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAWebPCoder.m; path = SDWebImage/Core/SDImageAWebPCoder.m; sourceTree = "<group>"; };
 		C60B7097A676CA78322E779D927C4FF9 /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/Core/SDWebImageDefine.m; sourceTree = "<group>"; };
-		C630F0BA46F036FF867CBEAD35659D03 /* Pods-MercurySDK_Tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-MercurySDK_Tests"; path = "libPods-MercurySDK_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C0196794A65425EFAAB686BCBF9F9D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		C9A1CA7DA8ECD52981B9B0DA5DF6F32A /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		CBC88EAD277C73FECC26E99E6DBCE380 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/Core/SDImageCacheConfig.m; sourceTree = "<group>"; };
@@ -408,6 +393,7 @@
 		EF0D899036D71F83CB4BDA33EA2C251C /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/Core/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
 		EF7F3727C12AF5F87E356E34017497CB /* SDInternalMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDInternalMacros.m; path = SDWebImage/Private/SDInternalMacros.m; sourceTree = "<group>"; };
 		EFD1C5C06EBD56ADC0F7DB6BB3B0E077 /* SDAnimatedImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SDAnimatedImageView+WebCache.m"; path = "SDWebImage/Core/SDAnimatedImageView+WebCache.m"; sourceTree = "<group>"; };
+		F3433D7B3FD55038480522246B9099A9 /* Pods-MercurySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercurySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F3C0A1D832FEA5A01AC4E6827C2B42CB /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/Core/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		F5CBBF7359C4A35983D4FCF57261084A /* SDDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDisplayLink.h; path = SDWebImage/Private/SDDisplayLink.h; sourceTree = "<group>"; };
 		F6FFB9A71F59140B7683969C5FECC00A /* SDAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageView.m; path = SDWebImage/Core/SDAnimatedImageView.m; sourceTree = "<group>"; };
@@ -418,9 +404,9 @@
 		F9A8D23F34B0591881184A9106FFE98E /* SDWebImageDownloaderDecryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderDecryptor.m; path = SDWebImage/Core/SDWebImageDownloaderDecryptor.m; sourceTree = "<group>"; };
 		FA2E5C05D615063719F5D9C840FBFA2F /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		FA780CB0DE7F158146FE79B499A3969C /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/Core/SDWebImageTransition.h; sourceTree = "<group>"; };
-		FB17392CF33BE0C763A152CE7FBFF3B2 /* Pods-MercurySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercurySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FBDFCDB1A3DA3C724E3E9B341ABD072F /* SDWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWeakProxy.m; path = SDWebImage/Private/SDWeakProxy.m; sourceTree = "<group>"; };
 		FD815C167DD96D8E2A8E55F9E9B75585 /* SDImageAPNGCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoder.h; path = SDWebImage/Core/SDImageAPNGCoder.h; sourceTree = "<group>"; };
+		FE0D03D0AEE6C0A1EE0C37045341004C /* Pods-MercurySDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MercurySDK_Example-dummy.m"; sourceTree = "<group>"; };
 		FE11960BB6F22E28EA11494D9D6D76EE /* UIColor+SDHexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDHexString.h"; path = "SDWebImage/Private/UIColor+SDHexString.h"; sourceTree = "<group>"; };
 		FE1A7A9E7D9B18F3408E56B1778EA8F5 /* SDImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCodersManager.m; path = SDWebImage/Core/SDImageCodersManager.m; sourceTree = "<group>"; };
 		FFD27E0E69D732902D141EF041B88E66 /* SDWebImageError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageError.m; path = SDWebImage/Core/SDWebImageError.m; sourceTree = "<group>"; };
@@ -435,13 +421,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C497C360D3B36BB79DD5C83AF689D482 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F33BFF5F02C38C034802E1A19862F65F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -464,19 +443,6 @@
 				3F32918370DDC39023D24AB975965855 /* MercurySDK.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		37E728B6A7C22BAE618D5052009B6CB0 /* Pods-MercurySDK_Example */ = {
-			isa = PBXGroup;
-			children = (
-				2315E047027AB1324B2C0C32FB261B0F /* Pods-MercurySDK_Example-acknowledgements.markdown */,
-				887FDE5A560773B0E9B5681BCB9757C9 /* Pods-MercurySDK_Example-acknowledgements.plist */,
-				123E81B6EC9DD2E272A06AFFB54309D0 /* Pods-MercurySDK_Example-dummy.m */,
-				92A262F673BB87284F762F8555A4AA36 /* Pods-MercurySDK_Example.debug.xcconfig */,
-				FB17392CF33BE0C763A152CE7FBFF3B2 /* Pods-MercurySDK_Example.release.xcconfig */,
-			);
-			name = "Pods-MercurySDK_Example";
-			path = "Target Support Files/Pods-MercurySDK_Example";
 			sourceTree = "<group>";
 		};
 		5556B0105F3E4B676B17210D84BB5C6A /* SDWebImage */ = {
@@ -719,28 +685,25 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		9672F8B9DA8B2205F465C65A122600AF /* Products */ = {
+		AFA2E3B426DABEE6DC89B9A2EF3CE36D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1FFED36A657123030ABB700256D73F15 /* Masonry */,
-				042D5CDA59B5F0AFF9FC2FEED4F6B284 /* Pods-MercurySDK_Example */,
-				C630F0BA46F036FF867CBEAD35659D03 /* Pods-MercurySDK_Tests */,
-				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */,
+				B74693493C48941E302ACAD2BE013627 /* Pods-MercurySDK_Example */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C84E8BDA883CCBA416613871EF32BED3 /* Pods-MercurySDK_Tests */ = {
+		B74693493C48941E302ACAD2BE013627 /* Pods-MercurySDK_Example */ = {
 			isa = PBXGroup;
 			children = (
-				80F8F8ECB4A3A7FA15311D075E10BD7E /* Pods-MercurySDK_Tests-acknowledgements.markdown */,
-				87DDC5D10D1FD39A56C8482E49869265 /* Pods-MercurySDK_Tests-acknowledgements.plist */,
-				58292F7796ECC0811FF6D534ED0397B9 /* Pods-MercurySDK_Tests-dummy.m */,
-				50EFCC8BF486A8045324C7F3FBE99501 /* Pods-MercurySDK_Tests.debug.xcconfig */,
-				6A83235B614B9F80D87D008F84D95393 /* Pods-MercurySDK_Tests.release.xcconfig */,
+				43AD385E204EB451BC0E031FC6DDA3E7 /* Pods-MercurySDK_Example-acknowledgements.markdown */,
+				F3433D7B3FD55038480522246B9099A9 /* Pods-MercurySDK_Example-acknowledgements.plist */,
+				FE0D03D0AEE6C0A1EE0C37045341004C /* Pods-MercurySDK_Example-dummy.m */,
+				BF87C3BEB79A6944E09A41523C2044D7 /* Pods-MercurySDK_Example.debug.xcconfig */,
+				A9F362C49A3CA643CBBF5E7D996B6256 /* Pods-MercurySDK_Example.release.xcconfig */,
 			);
-			name = "Pods-MercurySDK_Tests";
-			path = "Target Support Files/Pods-MercurySDK_Tests";
+			name = "Pods-MercurySDK_Example";
+			path = "Target Support Files/Pods-MercurySDK_Example";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -750,8 +713,8 @@
 				EF48A39A03FF7487F58D0709E41E5848 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				E04533583F9CBC10B8A8FA930BA0120A /* Pods */,
-				9672F8B9DA8B2205F465C65A122600AF /* Products */,
-				F04F7DEC5CF179138BA9B06AADC0E361 /* Targets Support Files */,
+				FD04E05E10490F001C2ACDDF35C73464 /* Products */,
+				AFA2E3B426DABEE6DC89B9A2EF3CE36D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -789,13 +752,14 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		F04F7DEC5CF179138BA9B06AADC0E361 /* Targets Support Files */ = {
+		FD04E05E10490F001C2ACDDF35C73464 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37E728B6A7C22BAE618D5052009B6CB0 /* Pods-MercurySDK_Example */,
-				C84E8BDA883CCBA416613871EF32BED3 /* Pods-MercurySDK_Tests */,
+				1FFED36A657123030ABB700256D73F15 /* Masonry */,
+				042D5CDA59B5F0AFF9FC2FEED4F6B284 /* Pods-MercurySDK_Example */,
+				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -911,13 +875,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		996D1DE8292AD568A7A31A87BEDE01F3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -975,24 +932,6 @@
 			productReference = 042D5CDA59B5F0AFF9FC2FEED4F6B284 /* Pods-MercurySDK_Example */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D3CF68CAE8C8E9C4617A8E429FCDB271 /* Pods-MercurySDK_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 836BDB40F6EA42E63BB3FB5C9E44A420 /* Build configuration list for PBXNativeTarget "Pods-MercurySDK_Tests" */;
-			buildPhases = (
-				996D1DE8292AD568A7A31A87BEDE01F3 /* Headers */,
-				22E6758B093A40A3EAEFA0AF721D57A1 /* Sources */,
-				F33BFF5F02C38C034802E1A19862F65F /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3EEE4E22C54FA99C05C0D9A59B46678A /* PBXTargetDependency */,
-			);
-			name = "Pods-MercurySDK_Tests";
-			productName = "Pods-MercurySDK_Tests";
-			productReference = C630F0BA46F036FF867CBEAD35659D03 /* Pods-MercurySDK_Tests */;
-			productType = "com.apple.product-type.library.static";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1011,28 +950,19 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9672F8B9DA8B2205F465C65A122600AF /* Products */;
+			productRefGroup = FD04E05E10490F001C2ACDDF35C73464 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
 				232F5CCE6E6E61702317597597DC4B2B /* MercurySDK */,
 				B3AD462259448580EDBF5D05BCC178C2 /* Pods-MercurySDK_Example */,
-				D3CF68CAE8C8E9C4617A8E429FCDB271 /* Pods-MercurySDK_Tests */,
 				3847153A6E5EEFB86565BA840768F429 /* SDWebImage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22E6758B093A40A3EAEFA0AF721D57A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7BFB9079A43A5E4EE42420C556AE38B6 /* Pods-MercurySDK_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		375FDB568BC4E6D5E37AEEA9CD7D77A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1146,12 +1076,6 @@
 			target = 232F5CCE6E6E61702317597597DC4B2B /* MercurySDK */;
 			targetProxy = 8D125DDB92481952715CD826A5FDA880 /* PBXContainerItemProxy */;
 		};
-		3EEE4E22C54FA99C05C0D9A59B46678A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-MercurySDK_Example";
-			target = B3AD462259448580EDBF5D05BCC178C2 /* Pods-MercurySDK_Example */;
-			targetProxy = 64BA673C4AAA78BAD52B7CF1B182C6EC /* PBXContainerItemProxy */;
-		};
 		5336CC552D8ACBC8A15820670AA5D35E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDWebImage;
@@ -1250,7 +1174,7 @@
 		};
 		39AC088316E5A6E3816774A905BD7713 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB17392CF33BE0C763A152CE7FBFF3B2 /* Pods-MercurySDK_Example.release.xcconfig */;
+			baseConfigurationReference = A9F362C49A3CA643CBBF5E7D996B6256 /* Pods-MercurySDK_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1293,47 +1217,6 @@
 			};
 			name = Release;
 		};
-		4DB587B6B059DFA7876D5EA2158562B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A83235B614B9F80D87D008F84D95393 /* Pods-MercurySDK_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		538405FC6B3201487EDCEFA4A47DF1F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50EFCC8BF486A8045324C7F3FBE99501 /* Pods-MercurySDK_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		7628E77745F1D49AFC8EBD35E28DC1EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B256B25779A5988B5C672C32C65E9CC1 /* Masonry.release.xcconfig */;
@@ -1374,7 +1257,7 @@
 		};
 		A96C3800F22C0F005C89B89CC50438FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92A262F673BB87284F762F8555A4AA36 /* Pods-MercurySDK_Example.debug.xcconfig */;
+			baseConfigurationReference = BF87C3BEB79A6944E09A41523C2044D7 /* Pods-MercurySDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1535,15 +1418,6 @@
 			buildConfigurations = (
 				CE2609C09A7EEA62AD1870C31248F6F1 /* Debug */,
 				4336F128054FBD59EA00C95B5D262272 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		836BDB40F6EA42E63BB3FB5C9E44A420 /* Build configuration list for PBXNativeTarget "Pods-MercurySDK_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				538405FC6B3201487EDCEFA4A47DF1F9 /* Debug */,
-				4DB587B6B059DFA7876D5EA2158562B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
