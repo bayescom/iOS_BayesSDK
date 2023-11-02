@@ -78,6 +78,9 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - mediaSecret: 阿里提供给媒体的mediaSecret
 + (void)setAAIDWithMediaId:(NSString *)mediaId mediaSecret:(NSString *)mediaSecret;
 
+/// 禁止倍业SDK获取IDFA信息，默认值为NO：即允许获取
++ (void)forbiddenIDFA:(BOOL)forbidden;
+
 
 @end
 

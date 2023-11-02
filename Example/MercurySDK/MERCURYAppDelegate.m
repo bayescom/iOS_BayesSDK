@@ -56,6 +56,8 @@
     
     [MercuryConfigManager setAAIDWithMediaId:@"" mediaSecret:@""];
     
+//    [MercuryConfigManager forbiddenIDFA:YES];
+    
     return YES;
 }
 
