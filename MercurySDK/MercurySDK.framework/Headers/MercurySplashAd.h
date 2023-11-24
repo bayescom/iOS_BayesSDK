@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "MercurySplashAdDelegate.h"
-#import "MercuryPubEnumHeader.h"
+#import "MercuryPublicEnum.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MercurySplashAd : NSObject
@@ -65,18 +65,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取本次开屏广告的价格
 - (NSInteger)getPrice;
 
-/// 获取素材链接
-//- (NSString *)getMaterialLink;
-
-/// 获取本次广告的物料类型
-//- (MercuryMaterialType)getMaterialType;
-
-/// 物料是否准备好
-//- (BOOL)materialIsReady;
-
 /// 销毁广告
 - (void)destory;
-
 
 /// ServerBidding时 其他渠道曝光时 需调用该方法, 非ServerBidding是调用该方法则无效
 - (void)reportAdExposured;

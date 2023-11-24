@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MercuryPubEnumHeader.h"
+#import "MercuryPublicEnum.h"
 #import "MercuryNativeExpressAdView.h"
 
 //@class MercuryNativeExpressAdView;

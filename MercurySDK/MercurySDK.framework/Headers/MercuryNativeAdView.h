@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MercuryPubEnumHeader.h"
+#import "MercuryPublicEnum.h"
 #import "MercuryMediaView.h"
 
 @class MercuryNativeAd;

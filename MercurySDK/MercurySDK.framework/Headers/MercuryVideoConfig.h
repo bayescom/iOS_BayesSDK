@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MercuryPubEnumHeader.h"
+#import "MercuryPublicEnum.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

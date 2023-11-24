@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MercuryPubEnumHeader.h"
+#import "MercuryPublicEnum.h"
 
 @class MercuryPrerollAdView;
 NS_ASSUME_NONNULL_BEGIN

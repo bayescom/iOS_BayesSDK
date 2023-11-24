@@ -1,13 +1,13 @@
 //
-//  MercuryPubEnumHeader.h
+//  MercuryPublicEnum.h
 //  Example
 //
 //  Created by CherryKing on 2019/12/9.
 //  Copyright © 2019 CherryKing. All rights reserved.
 //
 
-#ifndef MercuryPubEnumHeader_h
-#define MercuryPubEnumHeader_h
+#ifndef MercuryPublicEnum_h
+#define MercuryPublicEnum_h
 
 typedef NS_ENUM(NSUInteger, MercuryMediaPlayerStatus) {
     MercuryMediaPlayerStatusInitial = 0,    // 初始状态
@@ -55,23 +55,5 @@ typedef NS_ENUM(NSInteger, MercuryTargetLinkType) { // 点击广告时 跳转lin
     MercuryTargetLinkTypeOther     = 2, // 其他 (目前没用)
 };
 
-
-// MARK: ======================= Enum Helper =======================
-//static NSString * kMercuryMediaPlayerStatusParseToString(MercuryMediaPlayerStatus status) {
-//    if (status == MercuryMediaPlayerStatusInitial) {
-//        return @"MercuryMediaPlayerStatusInitial";
-//    } else if (status == MercuryMediaPlayerStatusLoading) {
-//        return @"MercuryMediaPlayerStatusLoading";
-//    } else if (status == MercuryMediaPlayerStatusPlaying) {
-//        return @"MercuryMediaPlayerStatusPlaying";
-//    } else if (status == MercuryMediaPlayerStatusPaused) {
-//        return @"MercuryMediaPlayerStatusPaused";
-//    } else if (status == MercuryMediaPlayerStatusStoped) {
-//        return @"MercuryMediaPlayerStatusStoped";
-//    } else if (status == MercuryMediaPlayerStatusError) {
-//        return @"MercuryMediaPlayerStatusError";
-//    }
-//    return @"status 不存在";
-//}
 
 #endif

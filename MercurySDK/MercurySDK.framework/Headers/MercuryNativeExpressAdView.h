@@ -7,16 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MercuryPubEnumHeader.h"
+#import "MercuryPublicEnum.h"
 
-@class BYImp;
+@class MercuryImp;
 @class MercuryNativeExpressAd;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MercuryNativeExpressAdView : UIView
 /// 广告model
-@property (nonatomic, strong, readonly) BYImp *imp;
+@property (nonatomic, strong, readonly) MercuryImp *imp;
 
 /// 控制器
 @property (nonatomic, weak) UIViewController *controller;
