@@ -70,6 +70,9 @@
     [MercuryConfigManager supportHttps:YES];
     [MercuryConfigManager openDebug:YES];
     [MercuryConfigManager preloadedResourcesIfNeed:YES];
+    
+    NSString * version = [MercuryConfigManager sdkVersion];
+    
 }
 
 @end
