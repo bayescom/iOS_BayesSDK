@@ -63,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param ext 自定义拓展参数
 
 - (instancetype)initAdWithAdspotId:(NSString * _Nonnull)adspotId
-                         customExt:(NSDictionary *_Nonnull)ext;
+                         customExt:(NSDictionary *_Nullable)ext;
 
 
 /// 初始方法
@@ -78,7 +78,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param delegate 代理对象
 /// @param ext 自定义拓展参数
 - (instancetype)initAdWithAdspotId:(NSString * _Nonnull)adspotId
-                         customExt:(NSDictionary *_Nonnull)ext
+                         customExt:(NSDictionary *_Nullable)ext
                           delegate:(id<MercuryInterstitialAdDelegate> _Nullable)delegate;
 
 /**

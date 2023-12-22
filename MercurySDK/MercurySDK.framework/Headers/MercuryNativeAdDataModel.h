@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly)   NSArray<NSString *> *image;
 @property (nonatomic, copy, readonly)   NSString *desc;
 @property (nonatomic, copy, readonly)   NSString *source_logo;
+@property (nonatomic, assign, readonly) NSInteger price;
 
 /// 视频广告播放配置
 @property (nonatomic, strong) MercuryVideoConfig *videoConfig;

@@ -1,13 +1,11 @@
 //
 //  MercuryRewardVideoAdDelegate.h
-//  MercurySDKExample
+//  MercurySDK
 //
-//  Created by 程立卿 on 2020/4/23.
-//  Copyright © 2020 mercury. All rights reserved.
+//  Created by guangyao on 2023/12/18.
+//  Copyright © 2023 mercury. All rights reserved.
 //
 
-#ifndef MercuryRewardVideoAdDelegate_h
-#define MercuryRewardVideoAdDelegate_h
 @class MercuryRewardVideoAd;
 @protocol MercuryRewardVideoAdDelegate <NSObject>
 
@@ -16,7 +14,10 @@
 - (void)mercury_rewardVideoAdDidLoad:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 /// 广告加载失败回调
-- (void)mercury_rewardAdFailError:(nullable NSError *)error;
+- (void)mercury_rewardAdFailError:(nullable NSError *)error __attribute__((deprecated("接口即将废弃，请使用 mercury_rewardVideoAd:didFailWithError")));
+
+/// 视频广告各种错误信息回调
+- (void)mercury_rewardVideoAd:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd didFailWithError:(NSError *_Nullable)error;
 
 /// 视频数据下载成功回调，已经下载过的视频会直接回调
 - (void)mercury_rewardVideoAdVideoDidLoad:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
@@ -37,8 +38,6 @@
 - (void)mercury_rewardVideoAdDidRewardEffective:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 /// 视频广告视频播放完成
-- (void)mercury_rewardVideoAdDidPlayFinish:(MercuryRewardVideoAd *)rewardVideoAd;
+- (void)mercury_rewardVideoAdDidPlayFinish:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 @end
-
-#endif

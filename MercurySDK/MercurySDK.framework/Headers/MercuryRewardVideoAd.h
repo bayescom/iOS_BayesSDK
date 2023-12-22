@@ -1,9 +1,9 @@
 //
 //  MercuryRewardVideoAd.h
-//  Example
+//  MercurySDK
 //
-//  Created by CherryKing on 2019/11/26.
-//  Copyright © 2019 CherryKing. All rights reserved.
+//  Created by guangyao on 2023/12/19.
+//  Copyright © 2023 mercury. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,15 +13,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MercuryRewardVideoAd : NSObject
+
 @property (nonatomic, weak) id<MercuryRewardVideoAdDelegate> delegate;
 
-/// 插屏广告是否加载完成
+/// 广告是否有效
 @property (nonatomic, assign, readonly) BOOL isAdValid;
 
-/// 素材超时时间
-@property (nonatomic, assign) NSTimeInterval timeoutTime;
-
-/// 实时价格
+/// 实时价格（分）
 @property (nonatomic, assign) NSInteger price;
 
 /// 初始化激励广告
@@ -39,10 +37,15 @@ NS_ASSUME_NONNULL_BEGIN
                           delegate:(id<MercuryRewardVideoAdDelegate> _Nullable)delegate;
 
 /// 加载广告
-- (void)loadRewardVideoAd;
+- (void)loadAd;
 
-/// 弹出激励广告
-- (void)showAdFromVC:(UIViewController *)vc;
+- (void)loadRewardVideoAd __attribute__((deprecated("接口即将废弃，请使用loadAd")));
+
+/// 展示广告
+- (void)showAdFromRootViewController:(UIViewController *)rootViewController;
+
+- (void)showAdFromVC:(UIViewController *)vc __attribute__((deprecated("接口即将废弃，请使用showAdFromRootViewController:")));
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 回调
 @property (nonatomic, weak) id<MercurySplashAdDelegate> delegate;
 
-/// 拉取广告超时时间，默认为3秒
+/// 拉取广告超时时间，默认为5秒
 /// Desc: 拉取广告超时时间，开发者调用 loadDataWithResultBlock 方法以后会立即曝光backgroundImage，然后在该超时时间内，如果广告拉取成功，则立马曝光开屏广告，否则放弃此次广告曝光机会。
 @property (nonatomic, assign) NSInteger fetchDelay;
 
@@ -52,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param ext 自定义参数
 /// @param delegate 代理
 - (instancetype)initAdWithAdspotId:(NSString * _Nonnull)adspotId
-                         customExt:(NSDictionary * _Nonnull)ext
+                         customExt:(NSDictionary * _Nullable)ext
                           delegate:(id<MercurySplashAdDelegate> _Nullable)delegate;
 
 /// 拉取广告数据 只拉取 不展示
