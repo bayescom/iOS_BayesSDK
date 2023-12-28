@@ -14,7 +14,7 @@
 - (void)mercury_rewardVideoAdDidLoad:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
 /// 广告加载失败回调
-- (void)mercury_rewardAdFailError:(nullable NSError *)error __attribute__((deprecated("接口即将废弃，请使用 mercury_rewardVideoAd:didFailWithError")));
+- (void)mercury_rewardAdFailError:(nullable NSError *)error __attribute__((deprecated("接口即将废弃，请使用 mercury_rewardVideoAd:didFailWithError:")));
 
 /// 视频广告各种错误信息回调
 - (void)mercury_rewardVideoAd:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd didFailWithError:(NSError *_Nullable)error;

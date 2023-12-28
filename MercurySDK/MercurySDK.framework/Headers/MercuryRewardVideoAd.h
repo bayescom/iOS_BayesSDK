@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param ext 自定义参数
 /// @param delegate 代理
 - (instancetype)initAdWithAdspotId:(NSString * _Nonnull)adspotId
-                         customExt:(NSDictionary * _Nonnull)ext
+                         customExt:(NSDictionary * _Nullable)ext
                           delegate:(id<MercuryRewardVideoAdDelegate> _Nullable)delegate;
 
 /// 加载广告

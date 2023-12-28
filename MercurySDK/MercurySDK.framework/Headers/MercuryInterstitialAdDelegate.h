@@ -1,0 +1,77 @@
+//
+//  MercuryInterstitialAdDelegate.h
+//  MercurySDK
+//
+//  Created by guangyao on 2023/12/18.
+//  Copyright © 2023 mercury. All rights reserved.
+//
+
+@class MercuryInterstitialAd;
+@protocol MercuryInterstitialAdDelegate <NSObject>
+
+@optional
+
+/**
+ *  插屏广告预加载成功回调
+ *  当接收服务器返回的广告数据成功且预加载后调用该函数
+ */
+- (void)mercury_interstitialSuccessToLoadAd:(MercuryInterstitialAd *)interstitialAd;
+- (void)mercury_interstitialSuccess:(MercuryInterstitialAd *)interstitialAd __attribute__((deprecated("接口即将废弃，请使用 mercury_interstitialSuccessToLoadAd:")));
+
+/**
+ *  插屏广告预加载失败回调
+ *  当接收服务器返回的广告数据失败后调用该函数
+ */
+- (void)mercury_interstitialFailToLoadAd:(MercuryInterstitialAd *)interstitialAd error:(NSError *)error;
+- (void)mercury_interstitialFailError:(NSError *)error __attribute__((deprecated("接口即将废弃，请使用 mercury_interstitialFailToLoadAd:error:")));
+
+/**
+ *  插屏广告视频缓存完成
+ */
+- (void)mercury_interstitialDidDownloadVideo:(MercuryInterstitialAd *)interstitialAd;
+
+/**
+ *  插屏广告渲染成功
+ */
+- (void)mercury_interstitialRenderSuccess:(MercuryInterstitialAd *)interstitialAd;
+
+/**
+ *  插屏广告渲染失败
+ */
+- (void)mercury_interstitialRenderFail:(MercuryInterstitialAd *)interstitialAd error:(NSError *)error;
+
+/**
+ *  插屏广告将要展示回调
+ *  插屏广告即将展示回调该函数
+ */
+- (void)mercury_interstitialWillPresentScreen:(MercuryInterstitialAd *)interstitialAd;
+
+/**
+ *  插屏广告视图展示成功回调
+ *  插屏广告展示成功回调该函数
+ */
+- (void)mercury_interstitialDidPresentScreen:(MercuryInterstitialAd *)interstitialAd;
+
+/**
+ *  插屏广告视图展示失败回调
+ *  插屏广告展示失败回调该函数
+ */
+- (void)mercury_interstitialFailToPresent:(MercuryInterstitialAd *)interstitialAd;
+
+/**
+ *  插屏广告展示结束回调
+ *  插屏广告展示结束回调该函数
+ */
+- (void)mercury_interstitialDidDismissScreen:(MercuryInterstitialAd *)interstitialAd;
+
+/**
+ *  插屏广告曝光回调
+ */
+- (void)mercury_interstitialWillExposure:(MercuryInterstitialAd *)interstitialAd __attribute__((deprecated("接口即将废弃，请使用 mercury_interstitialDidPresentScreen:")));
+
+/**
+ *  插屏广告点击回调
+ */
+- (void)mercury_interstitialClicked:(MercuryInterstitialAd *)interstitialAd;
+
+@end
