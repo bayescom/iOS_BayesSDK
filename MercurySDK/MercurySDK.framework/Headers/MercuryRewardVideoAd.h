@@ -38,13 +38,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 加载广告
 - (void)loadAd;
-
 - (void)loadRewardVideoAd __attribute__((deprecated("接口即将废弃，请使用loadAd")));
 
 /// 展示广告
 - (void)showAdFromRootViewController:(UIViewController *)rootViewController;
-
 - (void)showAdFromVC:(UIViewController *)vc __attribute__((deprecated("接口即将废弃，请使用showAdFromRootViewController:")));
+
+#pragma mark: - S2S Bidding
+/// 获取 sdkInfo 用于 Server Bidding 请求获取 token
+- (NSString *)getSDKInfo;
+
+/// 请求bidding广告
+/// - Parameter token: 媒体传入竞价成功的广告token
+- (void)loadBiddingAd:(NSString *)token;
 
 @end
 
