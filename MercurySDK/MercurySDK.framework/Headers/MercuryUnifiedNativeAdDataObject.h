@@ -29,10 +29,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSInteger price;
 /// 广告对应的按钮展示文案
 @property (nonatomic, readonly) NSString *buttonText;
-/// 倍业广告logoUrl
-@property (nonatomic, readonly) NSString *logoUrl;
-/// 倍业广告logoText
-@property (nonatomic, readonly) NSString *logoText;
 
 @end
 

@@ -24,9 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// MercuryMediaView 回调对象
 @property (nonatomic, weak) id <MercuryMediaViewDelegate> delegate;
 
-/// 获取视频尺寸
-- (void)fetchMediaSize:(void (^)(CGSize mediaSize))completion;
-
 /// 播放静音开关
 /// - Parameter flag: 是否静音
 - (void)muteEnable:(BOOL)flag;
@@ -36,9 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 暂停
 - (void)pause;
-
-/// 重新播放
-- (void)replay;
 
 /// 销毁播放器视图
 - (void)destory;
