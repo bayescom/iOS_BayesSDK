@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MercuryVideoConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -28,7 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 实时价格（分）
 @property (nonatomic, readonly) NSInteger price;
 /// 广告对应的按钮展示文案
-@property (nonatomic, readonly) NSString *buttonText;
+@property (nonatomic, copy, readonly) NSString *buttonText;
+/// 视频广告播放配置
+@property (nonatomic, strong) MercuryVideoConfig *videoConfig;
 
 @end
 

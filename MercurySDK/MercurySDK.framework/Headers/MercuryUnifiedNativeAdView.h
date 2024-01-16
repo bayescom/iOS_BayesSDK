@@ -63,13 +63,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong, readonly) MercuryMediaView *mediaView;
 
-/// 视频广告播放配置
-@property (nonatomic, strong, nullable) MercuryVideoConfig *videoConfig;
-
 /**
  自渲染 视图注册方法
  
- @warning 需要注意的是 -[MercuryUnifiedNativeAdView registerDataObject:clickableViews:closeableViews:]方法需要避免重复多次调用的情况
  @warning 当广告不需要展示并且销毁的时候，需要调用 -[MercuryUnifiedNativeAdView unregisterDataObject]方法
  
  @param dataObject 数据对象，必传字段
