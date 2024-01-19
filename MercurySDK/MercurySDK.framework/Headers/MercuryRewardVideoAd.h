@@ -58,6 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 实时价格（分）
 @property (nonatomic, assign) NSInteger price;
 
+@property (nonatomic, assign) NSTimeInterval timeoutTime __attribute__((deprecated("该字段已废弃，请忽略")));
+
 /// 初始化激励广告
 /// @param adspotId 广告Id
 /// @param delegate 代理对象
