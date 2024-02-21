@@ -74,14 +74,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// ServerBidding时 其他渠道被点击时 需调用该方法, 非ServerBidding是调用该方法则无效
 - (void)reportAdClicked;
 
-#pragma mark: - S2S Bidding
-/// 获取 sdkInfo 用于 Server Bidding 请求获取 token
-- (NSString *)getSDKInfo;
-
-/// 请求bidding广告
-/// - Parameter token: 媒体传入竞价成功的广告token
-- (void)loadBiddingAd:(NSString *)token;
-
 @end
 
 NS_ASSUME_NONNULL_END

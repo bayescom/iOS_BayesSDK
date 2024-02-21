@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 @class MercuryBannerAdView;
-
-NS_ASSUME_NONNULL_BEGIN
-
 @protocol MercuryBannerAdViewDelegate <NSObject>
 
 @optional
@@ -80,17 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 拉取并展示广告
+/// 拉取并曝光广告
 - (void)loadAdAndShow;
 
-#pragma mark: - S2S Bidding
-/// 获取 sdkInfo 用于 Server Bidding 请求获取 token
-- (NSString *)getSDKInfo;
-
-/// 请求bidding广告
-/// - Parameter token: 媒体传入竞价成功的广告token
-- (void)loadBiddingAd:(NSString *)token;
-
 @end
-
-NS_ASSUME_NONNULL_END

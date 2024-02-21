@@ -66,18 +66,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param adspotId adspotId
 /// @param ext 自定义拓展参数
 - (instancetype)initAdWithAdspotId:(NSString * _Nonnull)adspotId
-                         customExt:(NSDictionary *_Nullable)ext;
+                         customExt:(NSDictionary *_Nonnull)ext;
 
 /// 加载广告
 - (void)loadAdWithCount:(NSInteger)count;
-
-#pragma mark: - S2S Bidding
-/// 获取 sdkInfo 用于 Server Bidding 请求获取 token
-- (NSString *)getSDKInfo;
-
-/// 请求bidding广告
-/// - Parameter token: 媒体传入竞价成功的广告token
-- (void)loadBiddingAd:(NSString *)token;
 
 
 @end
