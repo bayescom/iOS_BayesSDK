@@ -8,13 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "MercuryPublicDefine.h"
+#import "MercuryNativeExpressAdView.h"
 #import "MercuryAdMaterial.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class MercuryNativeExpressAd;
-@class MercuryNativeExpressAdView;
-
 @protocol MercuryNativeExpressAdDelegete <NSObject>
 
 @optional
