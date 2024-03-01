@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "MercurySplashAdDelegate.h"
-#import "MercuryPublicEnum.h"
+#import "MercuryPublicDefine.h"
 #import "MercuryAdMaterial.h"
 
 NS_ASSUME_NONNULL_BEGIN

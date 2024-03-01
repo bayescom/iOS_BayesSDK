@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MercuryPublicEnum.h"
+#import "MercuryPublicDefine.h"
 #import "MercuryUnifiedNativeAdDataObject.h"
 #import "MercuryLogoView.h"
 #import "MercuryMediaView.h"

@@ -10,7 +10,7 @@
 
 #import "MercuryConfigManager.h"
 
-#import "MercuryPublicEnum.h"
+#import "MercuryPublicDefine.h"
 
 #import "MercuryBannerAdView.h"
 
@@ -22,8 +22,10 @@
 
 #import "MercuryNativeExpressAd.h"
 
+#import "MercuryNativeExpressAdView.h"
+
 #import "MercuryUnifiedNativeAd.h"
 
-#import "MercuryUnifiedNativeAdDataObject.h"
-
 #import "MercuryUnifiedNativeAdView.h"
+
+#import "MercuryUnifiedNativeAdDataObject.h"
