@@ -22,6 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *imageUrl;
 /// 三小图广告的图片Url集合
 @property (nonatomic, strong, readonly) NSArray *imageUrlList;
+/// 素材宽度（单图、三图、视频）
+@property (nonatomic, assign) NSInteger mediaWidth;
+/// 素材高度（单图、三图、视频）
+@property (nonatomic, assign) NSInteger mediaHeight;
 /// 是否为三小图广告
 @property (nonatomic, readonly) BOOL isThreeImgsAd;
 /// 是否为视频广告
