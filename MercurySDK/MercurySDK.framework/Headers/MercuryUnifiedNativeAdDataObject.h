@@ -34,6 +34,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSInteger price;
 /// 广告对应的按钮展示文案
 @property (nonatomic, copy, readonly) NSString *buttonText;
+/// 广告平台logo图
+@property (nonatomic, copy, readonly) NSString *logoUrl;
+/// 广告平台logo文字
+@property (nonatomic, copy, readonly) NSString *logoText;
 /// 视频广告播放配置
 @property (nonatomic, strong) MercuryVideoConfig *videoConfig;
 
