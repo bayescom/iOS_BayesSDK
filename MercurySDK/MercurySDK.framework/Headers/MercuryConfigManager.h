@@ -17,12 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param appKey 媒体Key
 + (void)setAppID:(NSString *)appID appKey:(NSString *)appKey;
 
-/// 设置AppID
-/// @param appID 应用的AppID
-/// @param appKey 媒体Key
-/// @param config 配置信息 如果SDK集成者自己申请CAID 请将其放入config里面
-+ (void)setAppID:(NSString *)appID appKey:(NSString *)appKey config:(nullable NSDictionary *)config;
-
 /// 选择是否开启日志打印
 /// @param enable 是否打印日志，默认为YES
 + (void)openDebug:(BOOL)enable;
@@ -30,12 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取 SDK 版本
 + (NSString *)sdkVersion;
 
-/// 是否需要预缓存资源
-+ (void)preloadedResourcesIfNeed:(BOOL)isNeed;
+/// 预缓存素材资源
++ (void)preloadResources;
 
-/// 设置ua
-/// 联调时发现ua不符合规范 可用此方法传入ua 此处需传原始ua
-/// 需在初始化时 调用该方法
+/// 设置标准UA
 + (void)setDefaultUserAgent:(NSString *)ua;
 
 /// 是否需要支持HTTPS  默认不需要
@@ -50,9 +42,19 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - mediaSecret: 阿里提供给媒体的mediaSecret
 + (void)setAAIDWithMediaId:(NSString *)mediaId mediaSecret:(NSString *)mediaSecret;
 
-/// 禁止倍业SDK获取IDFA信息，默认值为NO：即允许获取
+/// 禁止SDK获取IDFA信息，默认值为NO：即允许获取
 + (void)forbiddenIDFA:(BOOL)forbidden;
 
+
+#pragma mark: - Location
+
+/// 禁止SDK获取位置信息，默认值为NO：即允许获取
++ (void)forbiddenLocation:(BOOL)forbidden;
+
+/// 当用户禁止SDK获取位置信息时，可自行传入位置信息
+/// @param latitude 实时的地理位置纬度
+/// @param longitude 实时的地理位置经度
++ (void)setUserLocationLatitude:(NSString *)latitude longitude:(NSString *)longitude;
 
 @end
 
