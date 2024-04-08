@@ -10,11 +10,9 @@
 
 #import "MercuryConfigManager.h"
 
-#import "MercuryPublicDefine.h"
+#import "MercurySplashAd.h"
 
 #import "MercuryBannerAdView.h"
-
-#import "MercurySplashAd.h"
 
 #import "MercuryInterstitialAd.h"
 

@@ -1,46 +1,84 @@
 //
 //  MercurySplashAd.h
-//  MercurySDKExample
+//  MercurySDK
 //
-//  Created by 程立卿 on 2020/4/22.
-//  Copyright © 2020 mercury. All rights reserved.
+//  Created by guangyao on 2024/3/27.
+//  Copyright © 2024 Mercury. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "MercurySplashAdDelegate.h"
-#import "MercuryPublicDefine.h"
 #import "MercuryAdMaterial.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class MercurySplashAd;
+@protocol MercurySplashAdDelegate <NSObject>
+
+@optional
+
+/// 开屏广告物料加载成功
+/// - Parameters:
+///   - splashAd: 开屏广告对象
+///   - isFromCache: 物料是否从缓存获取
+- (void)mercury_materialDidLoad:(MercurySplashAd * _Nullable)splashAd isFromCache:(BOOL)isFromCache __attribute__((deprecated("接口即将废弃，请使用 mercury_splashAdDidLoad:")));
+
+/// 开屏广告素材加载成功
+- (void)mercury_splashAdDidLoad:(MercurySplashAd * _Nullable)splashAd;
+
+/// 开屏广告加载失败
+- (void)mercury_splashAdFailToLoad:(MercurySplashAd * _Nullable)splashAd error:(NSError * _Nullable)error;
+- (void)mercury_splashAdFailError:(NSError * _Nullable)error __attribute__((deprecated("接口即将废弃，请使用 mercury_splashAdFailToLoad:")));
+
+/// 开屏广告视图渲染成功
+- (void)mercury_splashAdRenderSuccess:(MercurySplashAd * _Nullable)splashAd;
+
+/// 开屏广告视图渲染失败
+- (void)mercury_splashAdRenderFail:(MercurySplashAd * _Nullable)splashAd error:(NSError * _Nullable)error;
+
+/// 开屏广告曝光
+- (void)mercury_splashAdExposured:(MercurySplashAd * _Nullable)splashAd;
+
+/// 开屏广告点击
+- (void)mercury_splashAdClicked:(MercurySplashAd * _Nullable)splashAd;
+
+/// 开屏广告跳过按钮点击
+- (void)mercury_splashAdSkipClicked:(MercurySplashAd * _Nullable)splashAd;
+
+/// 开屏广告关闭
+- (void)mercury_splashAdClosed:(MercurySplashAd * _Nullable)splashAd;
+
+/// 开屏广告剩余时间
+- (void)mercury_splashAdLifeTime:(NSUInteger)time;
+
+@end
+
 @interface MercurySplashAd : NSObject
 
-/// 回调
+/// 代理对象
 @property (nonatomic, weak) id<MercurySplashAdDelegate> delegate;
 
 /// 拉取广告超时时间，默认为5秒
-/// Desc: 拉取广告超时时间，开发者调用 loadDataWithResultBlock 方法以后会立即曝光backgroundImage，然后在该超时时间内，如果广告拉取成功，则立马曝光开屏广告，否则放弃此次广告曝光机会。
 @property (nonatomic, assign) NSInteger fetchDelay;
 
-/// showType =  MercurySplashAdAutoAdaptScreen 或 showType =  MercurySplashAdAutoAdaptScreenWithLogoFirst 生效
-/// 当底部留白 > blankGap 时 会显示logo
-/// 默认值是 55
-@property (nonatomic, assign) NSInteger blankGap;
-
-
-/// 广告底部组件展示样式类型
-@property (nonatomic, assign) MercurySplashAdShowType showType;
-
-/// 广告占位图
+/**
+ *  开屏广告的背景图片
+ *  可设置背景图片作为开屏加载时的默认背景
+ */
 @property (nonatomic, strong) UIImage *placeholderImage;
-/// Logo广告
-@property (nonatomic, strong) UIImage *logoImage;
-/// controller 控制器 用于落地页的跳转 不传则获取当前最上层的viewcontroller
+
+/// 开屏广告底部Logo视图
+@property (nonatomic, strong) UIView *bottomLogoView;
+
+/// 开发者需传入用来弹出目标页的ViewController，一般为当前ViewController
 @property (nonatomic, weak) UIViewController *controller;
 
-/// 广告的实时价格
+/// 实时价格（分）
 @property (nonatomic, assign) NSInteger price;
+
+/// 开屏广告底部Logo图片
+@property (nonatomic, strong) UIImage *logoImage __attribute__((deprecated("该字段即将废弃，请使用`bottomLogoView`属性")));
+@property (nonatomic, assign) NSInteger blankGap __attribute__((deprecated("该字段已废弃，请忽略")));
 
 /// 构造方法
 /// @param adspotId 广告Id
@@ -48,33 +86,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initAdWithAdspotId:(NSString * _Nonnull)adspotId
                           delegate:(id<MercurySplashAdDelegate> _Nullable)delegate;
 
-
-/// 构造方法 (可携带自定义参数)
-/// @param adspotId 广告id
+/// 构造方法
+/// @param adspotId 广告Id
 /// @param ext 自定义参数
 /// @param delegate 代理
 - (instancetype)initAdWithAdspotId:(NSString * _Nonnull)adspotId
                          customExt:(NSDictionary * _Nullable)ext
                           delegate:(id<MercurySplashAdDelegate> _Nullable)delegate;
 
-/// 拉取广告数据 只拉取 不展示
+/// 拉取广告数据
 - (void)loadAd;
 
-
-/// 展示广告 最好是keywindow, 且不要做遮挡
+/// 展示广告
 - (void)showAdInWindow:(UIWindow *)window;
 
 /// 获取本次开屏广告的价格
-- (NSInteger)getPrice;
-
-/// 销毁广告
-- (void)destory;
-
-/// ServerBidding时 其他渠道曝光时 需调用该方法, 非ServerBidding是调用该方法则无效
-- (void)reportAdExposured;
-
-/// ServerBidding时 其他渠道被点击时 需调用该方法, 非ServerBidding是调用该方法则无效
-- (void)reportAdClicked;
+- (NSInteger)getPrice __attribute__((deprecated("该方法即将废弃，请使用`price`属性获取")));
 
 #pragma mark: - S2S Bidding
 /// 获取 sdkInfo 用于 Server Bidding 请求获取 token

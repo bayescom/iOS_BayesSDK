@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MercuryPublicDefine.h"
 #import "MercuryUnifiedNativeAdDataObject.h"
 #import "MercuryLogoView.h"
 #import "MercuryMediaView.h"
@@ -59,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  视频广告的媒体View，自动生成
  
- @warning 开发者无需 addSubview 操作，建议自行指定视图尺寸进行布局
+ @warning 开发者无需 addSubview 操作，建议使用视频素材宽高比尺寸进行布局
  */
 @property (nonatomic, strong, readonly) MercuryMediaView *mediaView;
 

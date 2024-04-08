@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MercuryPublicDefine.h"
 #import "MercuryNativeExpressAdView.h"
 #import "MercuryAdMaterial.h"
 
@@ -55,9 +54,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 代理
 @property (nonatomic, weak) id<MercuryNativeExpressAdDelegete> delegate;
-
-/// 播放策略
-@property (nonatomic, assign) MercuryVideoAutoPlayPolicy videoPlayPolicy __attribute__((deprecated("该字段已废弃，请忽略")));
 
 /// 是否静音。默认 YES。
 @property (nonatomic, assign) BOOL videoMuted;
