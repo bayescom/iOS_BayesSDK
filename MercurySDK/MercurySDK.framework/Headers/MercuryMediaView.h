@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)pause;
 
 /// 销毁播放器视图
-- (void)destory;
+- (void)destroy;
 
 @end
 
