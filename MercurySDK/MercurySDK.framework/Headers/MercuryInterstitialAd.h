@@ -48,12 +48,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)mercury_interstitialRenderFail:(MercuryInterstitialAd *)interstitialAd error:(NSError *)error;
 
 /**
- *  插屏广告将要展示回调
- *  插屏广告即将展示回调该函数
- */
-- (void)mercury_interstitialWillPresentScreen:(MercuryInterstitialAd *)interstitialAd;
-
-/**
  *  插屏广告视图展示成功回调
  *  插屏广告展示成功回调该函数
  */

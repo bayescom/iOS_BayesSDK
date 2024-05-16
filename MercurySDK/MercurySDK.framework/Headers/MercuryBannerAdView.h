@@ -73,6 +73,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 拉取并展示广告
 - (void)loadAdAndShow;
 
+/// 重新布局
+- (void)relayout;
+
 #pragma mark: - S2S Bidding
 /// 获取 sdkInfo 用于 Server Bidding 请求获取 token
 - (NSString *)getSDKInfo;
