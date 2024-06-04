@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "MercuryAdMaterial.h"
+#import "MercuryBaseAdObject.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -78,7 +79,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface MercuryInterstitialAd : NSObject
+@interface MercuryInterstitialAd : MercuryBaseAdObject
 
 /// 代理对象
 @property (nonatomic, weak) id<MercuryInterstitialAdDelegate> delegate;

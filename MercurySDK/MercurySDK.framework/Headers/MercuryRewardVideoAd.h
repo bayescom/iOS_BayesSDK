@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "MercuryAdMaterial.h"
+#import "MercuryBaseAdObject.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -49,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface MercuryRewardVideoAd : NSObject
+@interface MercuryRewardVideoAd : MercuryBaseAdObject
 
 @property (nonatomic, weak) id<MercuryRewardVideoAdDelegate> delegate;
 

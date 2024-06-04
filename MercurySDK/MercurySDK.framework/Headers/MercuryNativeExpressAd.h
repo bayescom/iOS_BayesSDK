@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MercuryNativeExpressAdView.h"
 #import "MercuryAdMaterial.h"
+#import "MercuryBaseAdObject.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -46,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface MercuryNativeExpressAd : NSObject
+@interface MercuryNativeExpressAd : MercuryBaseAdObject
 
 /// 广告展示的尺寸
 /// 可将宽度设置为屏宽，自适应时，可将高度直接设置为0
