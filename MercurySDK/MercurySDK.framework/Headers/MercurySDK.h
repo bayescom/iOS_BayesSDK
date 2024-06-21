@@ -8,22 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MercuryConfigManager.h"
+#import <MercurySDK/MercuryConfigManager.h>
 
-#import "MercurySplashAd.h"
+#import <MercurySDK/MercurySplashAd.h>
 
-#import "MercuryBannerAdView.h"
+#import <MercurySDK/MercuryBannerAdView.h>
 
-#import "MercuryInterstitialAd.h"
+#import <MercurySDK/MercuryInterstitialAd.h>
 
-#import "MercuryRewardVideoAd.h"
+#import <MercurySDK/MercuryRewardVideoAd.h>
 
-#import "MercuryNativeExpressAd.h"
+#import <MercurySDK/MercuryNativeExpressAd.h>
 
-#import "MercuryNativeExpressAdView.h"
+#import <MercurySDK/MercuryNativeExpressAdView.h>
 
-#import "MercuryUnifiedNativeAd.h"
+#import <MercurySDK/MercuryUnifiedNativeAd.h>
 
-#import "MercuryUnifiedNativeAdView.h"
+#import <MercurySDK/MercuryUnifiedNativeAdView.h>
 
-#import "MercuryUnifiedNativeAdDataObject.h"
+#import <MercurySDK/MercuryUnifiedNativeAdDataObject.h>

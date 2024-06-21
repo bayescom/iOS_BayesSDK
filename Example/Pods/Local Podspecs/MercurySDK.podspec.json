@@ -1,6 +1,6 @@
 {
   "name": "MercurySDK",
-  "version": "3.2.4",
+  "version": "4.2.7",
   "platforms": {
     "ios": "10.0"
   },
@@ -16,8 +16,8 @@
     "bayescom": "http://www.bayescom.com/"
   },
   "source": {
-    "git": "https://github.com/bayescom/MercurySDK.git",
-    "tag": "3.2.4"
+    "git": "https://github.com/bayescom/iOS_BayesSDK.git",
+    "tag": "4.2.7"
   },
   "vendored_frameworks": "MercurySDK/*.framework",
   "user_target_xcconfig": {

@@ -69,7 +69,7 @@
     // 开启日志
     [MercuryConfigManager supportHttps:YES];
     [MercuryConfigManager openDebug:YES];
-    [MercuryConfigManager preloadedResourcesIfNeed:YES];
+    [MercuryConfigManager preloadResources];
     
 }
 

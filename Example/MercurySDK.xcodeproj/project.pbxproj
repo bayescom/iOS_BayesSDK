@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		316CC00723FBC79900B134E5 /* MercuryFeedExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFDE23FBC79900B134E5 /* MercuryFeedExpressViewController.m */; };
-		316CC00823FBC79900B134E5 /* FeedExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFE023FBC79900B134E5 /* FeedExpressViewController.m */; };
-		316CC00923FBC79900B134E5 /* MercuryPreVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFE323FBC79900B134E5 /* MercuryPreVideoViewController.m */; };
 		316CC00A23FBC79900B134E5 /* MercuryInterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFE723FBC79900B134E5 /* MercuryInterstitialAdViewController.m */; };
 		316CC00B23FBC79900B134E5 /* MercuryBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFE923FBC79900B134E5 /* MercuryBannerAdViewController.m */; };
 		316CC00C23FBC79900B134E5 /* MercurySplashAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFEB23FBC79900B134E5 /* MercurySplashAdViewController.m */; };
@@ -24,10 +21,6 @@
 		316CC01523FBC79900B134E5 /* cell01.json in Resources */ = {isa = PBXBuildFile; fileRef = 316CBFFF23FBC79900B134E5 /* cell01.json */; };
 		316CC01623FBC79900B134E5 /* ExamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CC00123FBC79900B134E5 /* ExamTableViewCell.m */; };
 		316CC01723FBC79900B134E5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CC00523FBC79900B134E5 /* BaseViewController.m */; };
-		316EB5952425953E0010CD33 /* TestCustomFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 316EB58D2425953E0010CD33 /* TestCustomFeedTableViewCell.m */; };
-		316EB5962425953E0010CD33 /* TestCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316EB58E2425953E0010CD33 /* TestCustomViewController.m */; };
-		316EB5972425953E0010CD33 /* BYNativeAdCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316EB58F2425953E0010CD33 /* BYNativeAdCustomView.m */; };
-		316EB5982425953E0010CD33 /* TestCustomFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316EB5902425953E0010CD33 /* TestCustomFeedViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -42,12 +35,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		316CBFDE23FBC79900B134E5 /* MercuryFeedExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercuryFeedExpressViewController.m; sourceTree = "<group>"; };
-		316CBFDF23FBC79900B134E5 /* FeedExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedExpressViewController.h; sourceTree = "<group>"; };
-		316CBFE023FBC79900B134E5 /* FeedExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedExpressViewController.m; sourceTree = "<group>"; };
-		316CBFE123FBC79900B134E5 /* MercuryFeedExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercuryFeedExpressViewController.h; sourceTree = "<group>"; };
-		316CBFE323FBC79900B134E5 /* MercuryPreVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercuryPreVideoViewController.m; sourceTree = "<group>"; };
-		316CBFE423FBC79900B134E5 /* MercuryPreVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercuryPreVideoViewController.h; sourceTree = "<group>"; };
 		316CBFE623FBC79900B134E5 /* MercurySplashAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercurySplashAdViewController.h; sourceTree = "<group>"; };
 		316CBFE723FBC79900B134E5 /* MercuryInterstitialAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercuryInterstitialAdViewController.m; sourceTree = "<group>"; };
 		316CBFE823FBC79900B134E5 /* MercuryRewardVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercuryRewardVideoViewController.h; sourceTree = "<group>"; };
@@ -75,14 +62,6 @@
 		316CC00223FBC79900B134E5 /* CellBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellBuilder.h; sourceTree = "<group>"; };
 		316CC00523FBC79900B134E5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		316CC00623FBC79900B134E5 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		316EB58D2425953E0010CD33 /* TestCustomFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCustomFeedTableViewCell.m; sourceTree = "<group>"; };
-		316EB58E2425953E0010CD33 /* TestCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCustomViewController.m; sourceTree = "<group>"; };
-		316EB58F2425953E0010CD33 /* BYNativeAdCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYNativeAdCustomView.m; sourceTree = "<group>"; };
-		316EB5902425953E0010CD33 /* TestCustomFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCustomFeedViewController.m; sourceTree = "<group>"; };
-		316EB5912425953E0010CD33 /* TestCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCustomViewController.h; sourceTree = "<group>"; };
-		316EB5922425953E0010CD33 /* TestCustomFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCustomFeedTableViewCell.h; sourceTree = "<group>"; };
-		316EB5932425953E0010CD33 /* BYNativeAdCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYNativeAdCustomView.h; sourceTree = "<group>"; };
-		316EB5942425953E0010CD33 /* TestCustomFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCustomFeedViewController.h; sourceTree = "<group>"; };
 		370F269FA753CCD3BE6C0A60 /* MercurySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MercurySDK.podspec; path = ../MercurySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* MercurySDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercurySDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,26 +111,6 @@
 				7F0D6F4FD58FDE2DB8E1BEE4 /* Pods-MercurySDK_Tests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		316CBFDD23FBC79900B134E5 /* TestFeedController */ = {
-			isa = PBXGroup;
-			children = (
-				316CBFDE23FBC79900B134E5 /* MercuryFeedExpressViewController.m */,
-				316CBFDF23FBC79900B134E5 /* FeedExpressViewController.h */,
-				316CBFE023FBC79900B134E5 /* FeedExpressViewController.m */,
-				316CBFE123FBC79900B134E5 /* MercuryFeedExpressViewController.h */,
-			);
-			path = TestFeedController;
-			sourceTree = "<group>";
-		};
-		316CBFE223FBC79900B134E5 /* TestPreVideoController */ = {
-			isa = PBXGroup;
-			children = (
-				316CBFE323FBC79900B134E5 /* MercuryPreVideoViewController.m */,
-				316CBFE423FBC79900B134E5 /* MercuryPreVideoViewController.h */,
-			);
-			path = TestPreVideoController;
 			sourceTree = "<group>";
 		};
 		316CBFE523FBC79900B134E5 /* TestSingleController */ = {
@@ -235,21 +194,6 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		316EB58C2425953E0010CD33 /* TestCustomController */ = {
-			isa = PBXGroup;
-			children = (
-				316EB5932425953E0010CD33 /* BYNativeAdCustomView.h */,
-				316EB58F2425953E0010CD33 /* BYNativeAdCustomView.m */,
-				316EB5922425953E0010CD33 /* TestCustomFeedTableViewCell.h */,
-				316EB58D2425953E0010CD33 /* TestCustomFeedTableViewCell.m */,
-				316EB5942425953E0010CD33 /* TestCustomFeedViewController.h */,
-				316EB5902425953E0010CD33 /* TestCustomFeedViewController.m */,
-				316EB5912425953E0010CD33 /* TestCustomViewController.h */,
-				316EB58E2425953E0010CD33 /* TestCustomViewController.m */,
-			);
-			path = TestCustomController;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -292,10 +236,7 @@
 				6003F5A6195388D20070C39A /* MERCURYViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
-				316EB58C2425953E0010CD33 /* TestCustomController */,
 				316CBFEE23FBC79900B134E5 /* AppViewBuilder */,
-				316CBFDD23FBC79900B134E5 /* TestFeedController */,
-				316CBFE223FBC79900B134E5 /* TestPreVideoController */,
 				316CBFE523FBC79900B134E5 /* TestSingleController */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -425,14 +366,9 @@
 			files = (
 				316CC01723FBC79900B134E5 /* BaseViewController.m in Sources */,
 				316CC01623FBC79900B134E5 /* ExamTableViewCell.m in Sources */,
-				316EB5952425953E0010CD33 /* TestCustomFeedTableViewCell.m in Sources */,
-				316CC00923FBC79900B134E5 /* MercuryPreVideoViewController.m in Sources */,
 				316CC00A23FBC79900B134E5 /* MercuryInterstitialAdViewController.m in Sources */,
-				316EB5972425953E0010CD33 /* BYNativeAdCustomView.m in Sources */,
 				6003F59E195388D20070C39A /* MERCURYAppDelegate.m in Sources */,
 				316CC01323FBC79900B134E5 /* BYExamCellModel.m in Sources */,
-				316EB5982425953E0010CD33 /* TestCustomFeedViewController.m in Sources */,
-				316EB5962425953E0010CD33 /* TestCustomViewController.m in Sources */,
 				316CC01223FBC79900B134E5 /* JDStatusBarStyle.m in Sources */,
 				316CC00D23FBC79900B134E5 /* MercuryRewardVideoViewController.m in Sources */,
 				316CC01023FBC79900B134E5 /* JDStatusBarView.m in Sources */,
@@ -440,9 +376,7 @@
 				316CC00E23FBC79900B134E5 /* ViewBuilder.m in Sources */,
 				316CC00B23FBC79900B134E5 /* MercuryBannerAdViewController.m in Sources */,
 				316CC01423FBC79900B134E5 /* CellBuilder.m in Sources */,
-				316CC00723FBC79900B134E5 /* MercuryFeedExpressViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* MERCURYViewController.m in Sources */,
-				316CC00823FBC79900B134E5 /* FeedExpressViewController.m in Sources */,
 				316CC00F23FBC79900B134E5 /* JDStatusBarNotification.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				316CC01123FBC79900B134E5 /* JDStatusBarLayoutMarginHelper.m in Sources */,

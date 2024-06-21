@@ -49,7 +49,6 @@
     if (![self checkAdspotId]) { return; }
     _ad = [[MercurySplashAd alloc] initAdWithAdspotId:self.adspotId delegate:self];
     _ad.controller = self;
-    _ad.showType = MercurySplashAdAutoAdaptScreen;
     // 自定义Logo，占位图
     _ad.placeholderImage = [UIImage imageNamed:@"LaunchImage_img"];
     _ad.logoImage = [UIImage imageNamed:@"app_logo"];
