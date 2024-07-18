@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "MercuryAdMaterial.h"
 #import "MercuryBaseAdObject.h"
+#import "MercuryRewardedVideoModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -44,6 +45,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 视频广告播放达到激励条件回调
 - (void)mercury_rewardVideoAdDidRewardEffective:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
+/// 服务端验证奖励失败回调
+- (void)mercury_rewardVideoAdServerRewardDidFail:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd error:(NSError *_Nullable)error;
+
 /// 视频广告视频播放完成
 - (void)mercury_rewardVideoAdDidPlayFinish:(MercuryRewardVideoAd *_Nonnull)rewardVideoAd;
 
@@ -53,6 +57,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MercuryRewardVideoAd : MercuryBaseAdObject
 
 @property (nonatomic, weak) id<MercuryRewardVideoAdDelegate> delegate;
+
+@property (nonatomic, strong) MercuryRewardedVideoModel *rewardedVideoModel;
 
 /// 广告是否有效
 @property (nonatomic, assign, readonly) BOOL isAdValid;

@@ -46,12 +46,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 实时价格（分）
 @property(nonatomic, assign) NSInteger price;
 
-/// Banner曝光和轮播时的动画效果开关，默认打开
-@property(nonatomic, assign) BOOL animationOn __attribute__((deprecated("该字段已废弃，请忽略")));
-
-/// Banner条曝光关闭按钮，默认打开
-@property(nonatomic, assign) BOOL showCloseBtn __attribute__((deprecated("该字段已废弃，请忽略")));
-
 /// 初始方法
 /// @param frame banner 展示的位置和大小
 /// @param adspotId 广告位id
@@ -72,9 +66,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 拉取并展示广告
 - (void)loadAdAndShow;
-
-/// 重新布局
-- (void)relayout;
 
 #pragma mark: - S2S Bidding
 /// 获取 sdkInfo 用于 Server Bidding 请求获取 token
