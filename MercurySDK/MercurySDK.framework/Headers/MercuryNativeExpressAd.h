@@ -53,6 +53,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 可将宽度设置为屏宽，自适应时，可将高度直接设置为0
 @property (nonatomic, assign) CGSize renderSize;
 
+/// 广告展示的内部间距。范围[0, 30] pt，默认值12.f
+@property (nonatomic, assign) CGFloat padding;
+
 /// 代理
 @property (nonatomic, weak) id<MercuryNativeExpressAdDelegete> delegate;
 
