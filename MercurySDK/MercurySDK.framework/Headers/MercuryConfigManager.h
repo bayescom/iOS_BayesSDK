@@ -15,7 +15,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// 设置AppID
 /// @param appID 应用的AppID
 /// @param appKey 媒体Key
-+ (void)setAppID:(NSString *)appID appKey:(NSString *)appKey;
++ (void)setAppID:(NSString *)appID appKey:(NSString *)appKey __attribute__((deprecated("接口即将废弃，请使用initWithAppId:appKey和startWithCompletionHandler新接口")));
+
+/// SDK初始化
+/// @param appId 应用Id
+/// @param appKey 应用Key
+/// @note 调用initWithAppId:appKey接口后，请尽快调用startWithCompletionHandler接口；否则会影响SDK功能。
++ (void)initWithAppId:(NSString *)appId appKey:(NSString *)appKey;
+
+/// 启动SDK
+/// @param handler 启动成功/失败的结果回调
+/// @note 请先调用initWithAppId:appKey接口，再调用startWithCompletionHandler接口。
++ (void)startWithCompletionHandler:(void(^)(BOOL success, NSError *error))handler;
 
 /// 选择是否开启日志打印
 /// @param enable 是否打印日志，默认为YES
