@@ -40,8 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 用来显示广告的ViewController [必选]
 @property (nonatomic, weak) UIViewController *controller;
 
-/// 广告刷新间隔，范围 [30, 120] 秒，默认值 30 秒。设 0 则不刷新。 [可选]
-@property(nonatomic, assign) int interval;
+/// 广告刷新间隔，范围 [10, 120] 秒，设 0 则不刷新。[可选]
+@property(nonatomic, assign) NSInteger interval;
 
 /// 实时价格（分）
 @property(nonatomic, assign) NSInteger price;
