@@ -72,8 +72,8 @@
                                                adspotId:self.adspotId
                                                delegate:self];
     _bannerView.controller = self;
-    _bannerView.showCloseBtn = _switch01.on;
-    _bannerView.animationOn = _switch02.on;
+//    _bannerView.showCloseBtn = _switch01.on;
+//    _bannerView.animationOn = _switch02.on;
     _bannerView.interval = 30;//[_updateTimeTxtf.text intValue];
     _bannerView.delegate = self;
     
@@ -120,11 +120,11 @@
 
 // MARK: ======================= action =======================
 - (void)switchChange:(UISwitch *)sender {
-    if (sender == _switch01) {
-        _bannerView.showCloseBtn = !_switch01.on;
-    } else if (sender == _switch02) {
-        _bannerView.animationOn = _switch02.on;
-    }
+//    if (sender == _switch01) {
+//        _bannerView.showCloseBtn = !_switch01.on;
+//    } else if (sender == _switch02) {
+//        _bannerView.animationOn = _switch02.on;
+//    }
 }
 
 - (void)updateTimeChange:(UIButton *)sender {
