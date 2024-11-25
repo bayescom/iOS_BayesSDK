@@ -22,7 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 拉取原生模板广告失败
 - (void)mercury_nativeExpressAdFailToLoad:(MercuryNativeExpressAd *)nativeExpressAd error:(NSError *)error;
-- (void)mercury_nativeExpressAdFailToLoadWithError:(NSError *)error __attribute__((deprecated("接口即将废弃，请使用 mercury_nativeExpressAdFailToLoad:error:")));
 
 /// 原生模板广告渲染成功, 此时的 nativeExpressAdView.size.height 根据 size.width 完成了动态更新。
 - (void)mercury_nativeExpressAdViewRenderSuccess:(MercuryNativeExpressAdView *)nativeExpressAdView;

@@ -24,14 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
  *  当接收服务器返回的广告数据成功且预加载后调用该函数
  */
 - (void)mercury_interstitialSuccessToLoadAd:(MercuryInterstitialAd *)interstitialAd;
-- (void)mercury_interstitialSuccess:(MercuryInterstitialAd *)interstitialAd __attribute__((deprecated("接口即将废弃，请使用 mercury_interstitialSuccessToLoadAd:")));
 
 /**
  *  插屏广告预加载失败回调
  *  当接收服务器返回的广告数据失败后调用该函数
  */
 - (void)mercury_interstitialFailToLoadAd:(MercuryInterstitialAd *)interstitialAd error:(NSError *)error;
-- (void)mercury_interstitialFailError:(NSError *)error __attribute__((deprecated("接口即将废弃，请使用 mercury_interstitialFailToLoadAd:error:")));
 
 /**
  *  插屏广告视频缓存完成

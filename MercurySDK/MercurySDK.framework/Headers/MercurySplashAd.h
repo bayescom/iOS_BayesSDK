@@ -17,19 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol MercurySplashAdDelegate <NSObject>
 
 @optional
-
-/// 开屏广告物料加载成功
-/// - Parameters:
-///   - splashAd: 开屏广告对象
-///   - isFromCache: 物料是否从缓存获取
-- (void)mercury_materialDidLoad:(MercurySplashAd * _Nullable)splashAd isFromCache:(BOOL)isFromCache __attribute__((deprecated("接口即将废弃，请使用 mercury_splashAdDidLoad:")));
-
 /// 开屏广告素材加载成功
 - (void)mercury_splashAdDidLoad:(MercurySplashAd * _Nullable)splashAd;
 
 /// 开屏广告加载失败
 - (void)mercury_splashAdFailToLoad:(MercurySplashAd * _Nullable)splashAd error:(NSError * _Nullable)error;
-- (void)mercury_splashAdFailError:(NSError * _Nullable)error __attribute__((deprecated("接口即将废弃，请使用 mercury_splashAdFailToLoad:")));
 
 /// 开屏广告视图渲染成功
 - (void)mercury_splashAdRenderSuccess:(MercurySplashAd * _Nullable)splashAd;
