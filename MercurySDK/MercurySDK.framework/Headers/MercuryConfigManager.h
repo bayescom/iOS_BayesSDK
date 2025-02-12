@@ -57,12 +57,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameters:
 ///   - caid: caid值
 ///   - version: caid版本号
-/// - note: caid支持传入多个不同版本，用户可多次调用此方法
+/// - note: caid支持传入多个不同版本，开发者可多次调用此方法
 + (void)setCAID:(NSString *)caid version:(NSString *)version;
 
 /// 禁止SDK获取IDFA信息，默认值为NO：即允许获取
 + (void)forbiddenIDFA:(BOOL)forbidden;
 
+/// 设置微信OpenSDK的appId和universalLink
+/// - Parameters:
+///   - appId: 微信开放平台App ID
+///   - universalLink: 微信开放平台Universal Link
+/// - note: 若媒体已使用OpenSDK初始化，此方法无需调用
++ (void)setWXAppId:(NSString *)appId universalLink:(NSString *)universalLink;
 
 #pragma mark: - Location
 
