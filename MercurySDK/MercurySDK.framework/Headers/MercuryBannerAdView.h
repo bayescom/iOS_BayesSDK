@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 请求广告条数据失败后调用
 - (void)mercury_bannerViewFailToReceived:(MercuryBannerAdView *_Nonnull)banner error:(NSError *_Nullable)error;
 
+/// banner条渲染失败回调
+- (void)mercury_bannerViewRenderFail:(MercuryBannerAdView *_Nonnull)banner error:(NSError *_Nullable)error;
+
 /// banner条曝光回调
 - (void)mercury_bannerViewWillExposure:(MercuryBannerAdView *_Nonnull)banner;
 

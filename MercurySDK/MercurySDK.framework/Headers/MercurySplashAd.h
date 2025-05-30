@@ -69,6 +69,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 实时价格（分）
 @property (nonatomic, assign) NSInteger price;
 
+/// 广告是否有效，建议在展示广告之前判断，否则会影响计费或展示失败
+@property (nonatomic, assign, readonly) BOOL isAdValid;
+
 /// 开屏广告底部Logo图片
 @property (nonatomic, strong) UIImage *logoImage __attribute__((deprecated("该字段即将废弃，请使用`bottomLogoView`属性")));
 @property (nonatomic, assign) NSInteger blankGap __attribute__((deprecated("该字段已废弃，请忽略")));

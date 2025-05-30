@@ -82,7 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 代理对象
 @property (nonatomic, weak) id<MercuryInterstitialAdDelegate> delegate;
 
-/// 广告是否有效
+/// 广告是否有效，建议在展示广告之前判断，否则会影响计费或展示失败
 @property (nonatomic, assign, readonly) BOOL isAdValid;
 
 /// 实时价格（分）

@@ -40,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *logoText;
 /// 视频广告播放配置
 @property (nonatomic, strong) MercuryVideoConfig *videoConfig;
+/// 广告是否有效，建议在展示广告之前判断，否则会影响计费或展示失败
+@property (nonatomic, assign, readonly) BOOL isAdValid;
 
 @end
 
