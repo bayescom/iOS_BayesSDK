@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  倍业广告 LogoView，自动生成
  
- @warning 开发者无需 addSubview 操作，建议使用autolayout布局，宽度约束自适应，高度约束建议值：15.0f
+ @warning 开发者无需 addSubview 操作，建议布局尺寸：{ width: 40.0f, width: 15.0f }
  */
 @property (nonatomic, strong, readonly) MercuryLogoView *logoView;
 
