@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 广告请求id
 @property (nonatomic, copy) NSString *reqId;
 /// 广告位初始化扩展参数
-@property (nonatomic, strong) NSDictionary *ext;
+@property (nonatomic, strong) NSMutableDictionary *ext;
 /// 埋点事件对象
 @property (nonatomic, strong) MercuryAdEventModel *eventModel;
 

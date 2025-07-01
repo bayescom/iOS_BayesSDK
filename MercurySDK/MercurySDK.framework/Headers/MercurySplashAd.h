@@ -51,9 +51,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 代理对象
 @property (nonatomic, weak) id<MercurySplashAdDelegate> delegate;
 
-/// 拉取广告超时时间，默认为5秒
-@property (nonatomic, assign) NSInteger fetchDelay;
-
 /**
  *  开屏广告的背景图片
  *  可设置背景图片作为开屏加载时的默认背景
@@ -66,11 +63,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 开发者需传入用来弹出目标页的ViewController，一般为当前ViewController
 @property (nonatomic, weak) UIViewController *controller;
 
+/// 广告是否有效，建议在展示广告之前判断，否则会影响计费或展示失败
+@property (nonatomic, assign, readonly) BOOL isAdValid;
+
 /// 实时价格（分）
 @property (nonatomic, assign) NSInteger price;
 
-/// 广告是否有效，建议在展示广告之前判断，否则会影响计费或展示失败
-@property (nonatomic, assign, readonly) BOOL isAdValid;
+/// 拉取广告超时时间，默认为5秒
+@property (nonatomic, assign) NSInteger fetchDelay __attribute__((deprecated("该字段已废弃，请忽略")));
 
 /// 开屏广告底部Logo图片
 @property (nonatomic, strong) UIImage *logoImage __attribute__((deprecated("该字段即将废弃，请使用`bottomLogoView`属性")));
@@ -95,9 +95,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 展示广告
 - (void)showAdInWindow:(UIWindow *)window;
-
-/// 获取本次开屏广告的价格
-- (NSInteger)getPrice __attribute__((deprecated("该方法即将废弃，请使用`price`属性获取")));
 
 #pragma mark: - S2S Bidding
 /// 获取 sdkInfo 用于 Server Bidding 请求获取 token

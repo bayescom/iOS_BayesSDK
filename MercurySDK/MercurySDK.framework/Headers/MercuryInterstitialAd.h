@@ -65,11 +65,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)mercury_interstitialDidDismissScreen:(MercuryInterstitialAd *)interstitialAd;
 
 /**
- *  插屏广告曝光回调
- */
-- (void)mercury_interstitialWillExposure:(MercuryInterstitialAd *)interstitialAd __attribute__((deprecated("接口即将废弃，请使用 mercury_interstitialDidPresentScreen:")));
-
-/**
  *  插屏广告点击回调
  */
 - (void)mercury_interstitialClicked:(MercuryInterstitialAd *)interstitialAd;

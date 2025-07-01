@@ -58,9 +58,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 代理
 @property (nonatomic, weak) id<MercuryNativeExpressAdDelegete> delegate;
 
-/// 是否静音。默认 YES。
-@property (nonatomic, assign) BOOL videoMuted __attribute__((deprecated("该字段已废弃，请在Blink后台广告位下进行配置")));
-
 /// 构造方法
 /// @param adspotId 广告位 ID
 - (instancetype)initAdWithAdspotId:(NSString * _Nonnull)adspotId;

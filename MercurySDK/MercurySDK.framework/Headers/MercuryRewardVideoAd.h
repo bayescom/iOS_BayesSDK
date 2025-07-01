@@ -63,8 +63,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 实时价格（分）
 @property (nonatomic, assign) NSInteger price;
 
-@property (nonatomic, assign) NSTimeInterval timeoutTime __attribute__((deprecated("该字段已废弃，请忽略")));
-
 /// 初始化激励广告
 /// @param adspotId 广告Id
 /// @param delegate 代理对象
@@ -81,11 +79,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 加载广告
 - (void)loadAd;
-- (void)loadRewardVideoAd __attribute__((deprecated("接口即将废弃，请使用loadAd")));
 
 /// 展示广告
 - (void)showAdFromRootViewController:(UIViewController *)rootViewController;
-- (void)showAdFromVC:(UIViewController *)vc __attribute__((deprecated("接口即将废弃，请使用showAdFromRootViewController:")));
 
 #pragma mark: - S2S Bidding
 /// 获取 sdkInfo 用于 Server Bidding 请求获取 token

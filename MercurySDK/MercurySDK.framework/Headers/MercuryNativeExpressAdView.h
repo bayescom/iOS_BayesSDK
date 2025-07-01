@@ -18,11 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, weak) UIViewController *controller;
 
-/// 实时价格（分）
-@property (nonatomic, assign, readonly) NSInteger price;
-
 /// 广告是否有效，建议在调用render之前判断
 @property (nonatomic, assign, readonly) BOOL isAdValid;
+
+/// 实时价格（分）
+@property (nonatomic, assign, readonly) NSInteger price;
 
 /**
  *[必选]

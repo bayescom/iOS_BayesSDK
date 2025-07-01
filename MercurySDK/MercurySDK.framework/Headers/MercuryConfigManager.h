@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)sdkVersion;
 
 /// 预缓存素材资源
-+ (void)preloadResources;
++ (void)preloadResources __attribute__((deprecated("接口已废弃，改为SDK获取配置后内部执行")));
 
 /// 设置标准UA
 + (void)setDefaultUserAgent:(NSString *)ua;
