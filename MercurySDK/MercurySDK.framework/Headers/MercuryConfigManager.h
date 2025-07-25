@@ -63,6 +63,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 禁止SDK获取IDFA信息，默认值为NO：即允许获取
 + (void)forbiddenIDFA:(BOOL)forbidden;
 
+/// 禁止SDK使用加速度传感器，默认值为NO：即允许使用
+/// 传入YES将限制摇一摇等交互能力
++ (void)forbiddenAccelerometer:(BOOL)forbidden;
+
 /// 设置微信OpenSDK的appId和universalLink
 /// - Parameters:
 ///   - appId: 微信开放平台App ID
