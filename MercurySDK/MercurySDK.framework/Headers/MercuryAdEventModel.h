@@ -70,6 +70,8 @@
 @property (nonatomic, assign) NSInteger ad_cache_keeped_duration;
 /// 缓存命中原因，1- 代表实时获取广告失败（具体原因在ext_msg字段说明） 2- 代表实时广告价格落败
 @property (nonatomic, assign) NSInteger cached_hit_reason;
+/// 缓存广告是否成功删除，0- 失败  1- 成功
+@property (nonatomic, assign) NSInteger cached_deleted;
 
 @end
 
