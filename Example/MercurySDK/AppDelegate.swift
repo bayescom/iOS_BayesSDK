@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        MercuryConfigManager.initWithAppId("", appKey: "")
+        let sdkVersion = MercuryConfigManager.sdkVersion()
+        print("sdk版本号：\(sdkVersion)")
         
         return true
     }

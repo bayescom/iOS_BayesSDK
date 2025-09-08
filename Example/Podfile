@@ -4,5 +4,6 @@ platform :ios, '10.0'
 
 target 'MercurySDK_Example' do
   pod 'MercurySDK', :path => '../'
+#  pod 'MercurySDK', '4.5.7'
   
 end
