@@ -7,273 +7,121 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		316CC00A23FBC79900B134E5 /* MercuryInterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFE723FBC79900B134E5 /* MercuryInterstitialAdViewController.m */; };
-		316CC00B23FBC79900B134E5 /* MercuryBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFE923FBC79900B134E5 /* MercuryBannerAdViewController.m */; };
-		316CC00C23FBC79900B134E5 /* MercurySplashAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFEB23FBC79900B134E5 /* MercurySplashAdViewController.m */; };
-		316CC00D23FBC79900B134E5 /* MercuryRewardVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFEC23FBC79900B134E5 /* MercuryRewardVideoViewController.m */; };
-		316CC00E23FBC79900B134E5 /* ViewBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFF123FBC79900B134E5 /* ViewBuilder.m */; };
-		316CC00F23FBC79900B134E5 /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFF323FBC79900B134E5 /* JDStatusBarNotification.m */; };
-		316CC01023FBC79900B134E5 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFF523FBC79900B134E5 /* JDStatusBarView.m */; };
-		316CC01123FBC79900B134E5 /* JDStatusBarLayoutMarginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFF623FBC79900B134E5 /* JDStatusBarLayoutMarginHelper.m */; };
-		316CC01223FBC79900B134E5 /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFF923FBC79900B134E5 /* JDStatusBarStyle.m */; };
-		316CC01323FBC79900B134E5 /* BYExamCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFFC23FBC79900B134E5 /* BYExamCellModel.m */; };
-		316CC01423FBC79900B134E5 /* CellBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CBFFD23FBC79900B134E5 /* CellBuilder.m */; };
-		316CC01523FBC79900B134E5 /* cell01.json in Resources */ = {isa = PBXBuildFile; fileRef = 316CBFFF23FBC79900B134E5 /* cell01.json */; };
-		316CC01623FBC79900B134E5 /* ExamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CC00123FBC79900B134E5 /* ExamTableViewCell.m */; };
-		316CC01723FBC79900B134E5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CC00523FBC79900B134E5 /* BaseViewController.m */; };
-		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
-		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* MERCURYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* MERCURYAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* MERCURYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* MERCURYViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		7CFCE8476F86F1FD5C6B7248 /* libPods-MercurySDK_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3536429C876EAABBF1732C /* libPods-MercurySDK_Example.a */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
+		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		94BA45C307853BE72A38598A /* Pods_MercurySDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60144FFD76171B1AED4707ED /* Pods_MercurySDK_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		316CBFE623FBC79900B134E5 /* MercurySplashAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercurySplashAdViewController.h; sourceTree = "<group>"; };
-		316CBFE723FBC79900B134E5 /* MercuryInterstitialAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercuryInterstitialAdViewController.m; sourceTree = "<group>"; };
-		316CBFE823FBC79900B134E5 /* MercuryRewardVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercuryRewardVideoViewController.h; sourceTree = "<group>"; };
-		316CBFE923FBC79900B134E5 /* MercuryBannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercuryBannerAdViewController.m; sourceTree = "<group>"; };
-		316CBFEA23FBC79900B134E5 /* MercuryInterstitialAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercuryInterstitialAdViewController.h; sourceTree = "<group>"; };
-		316CBFEB23FBC79900B134E5 /* MercurySplashAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercurySplashAdViewController.m; sourceTree = "<group>"; };
-		316CBFEC23FBC79900B134E5 /* MercuryRewardVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercuryRewardVideoViewController.m; sourceTree = "<group>"; };
-		316CBFED23FBC79900B134E5 /* MercuryBannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercuryBannerAdViewController.h; sourceTree = "<group>"; };
-		316CBFF023FBC79900B134E5 /* ViewBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewBuilder.h; sourceTree = "<group>"; };
-		316CBFF123FBC79900B134E5 /* ViewBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewBuilder.m; sourceTree = "<group>"; };
-		316CBFF323FBC79900B134E5 /* JDStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarNotification.m; sourceTree = "<group>"; };
-		316CBFF423FBC79900B134E5 /* JDStatusBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarStyle.h; sourceTree = "<group>"; };
-		316CBFF523FBC79900B134E5 /* JDStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarView.m; sourceTree = "<group>"; };
-		316CBFF623FBC79900B134E5 /* JDStatusBarLayoutMarginHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarLayoutMarginHelper.m; sourceTree = "<group>"; };
-		316CBFF723FBC79900B134E5 /* JDStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarNotification.h; sourceTree = "<group>"; };
-		316CBFF823FBC79900B134E5 /* JDStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarView.h; sourceTree = "<group>"; };
-		316CBFF923FBC79900B134E5 /* JDStatusBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarStyle.m; sourceTree = "<group>"; };
-		316CBFFA23FBC79900B134E5 /* JDStatusBarLayoutMarginHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarLayoutMarginHelper.h; sourceTree = "<group>"; };
-		316CBFFC23FBC79900B134E5 /* BYExamCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYExamCellModel.m; sourceTree = "<group>"; };
-		316CBFFD23FBC79900B134E5 /* CellBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellBuilder.m; sourceTree = "<group>"; };
-		316CBFFE23FBC79900B134E5 /* ExamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamTableViewCell.h; sourceTree = "<group>"; };
-		316CBFFF23FBC79900B134E5 /* cell01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cell01.json; sourceTree = "<group>"; };
-		316CC00023FBC79900B134E5 /* BYExamCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYExamCellModel.h; sourceTree = "<group>"; };
-		316CC00123FBC79900B134E5 /* ExamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamTableViewCell.m; sourceTree = "<group>"; };
-		316CC00223FBC79900B134E5 /* CellBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellBuilder.h; sourceTree = "<group>"; };
-		316CC00523FBC79900B134E5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		316CC00623FBC79900B134E5 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		370F269FA753CCD3BE6C0A60 /* MercurySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MercurySDK.podspec; path = ../MercurySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6003F58A195388D20070C39A /* MercurySDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercurySDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* MercurySDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MercurySDK-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* MercurySDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MercurySDK-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* MERCURYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MERCURYAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* MERCURYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MERCURYAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* MERCURYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MERCURYViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* MERCURYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MERCURYViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7CAC9C01704508BD5AFB8FA5 /* libPods-MercurySDK_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MercurySDK_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D3536429C876EAABBF1732C /* libPods-MercurySDK_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MercurySDK_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F0D6F4FD58FDE2DB8E1BEE4 /* Pods-MercurySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercurySDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-MercurySDK_Tests/Pods-MercurySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C5853537C9B14B23002A8C31 /* Pods-MercurySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercurySDK_Example.release.xcconfig"; path = "Target Support Files/Pods-MercurySDK_Example/Pods-MercurySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D610E223A6FE12E4988C3CE7 /* Pods-MercurySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercurySDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MercurySDK_Tests/Pods-MercurySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D703D68DCB0140712783B652 /* Pods-MercurySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercurySDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-MercurySDK_Example/Pods-MercurySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		08D026BAE5C1FE66B79F3CB1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4BEEE2AC14A7275C3123676B /* Pods-MercurySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercurySDK_Example.release.xcconfig"; path = "Target Support Files/Pods-MercurySDK_Example/Pods-MercurySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		60144FFD76171B1AED4707ED /* Pods_MercurySDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercurySDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* MercurySDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercurySDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		65089E43CDAEF9CB5EC488F1 /* MercurySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MercurySDK.podspec; path = ../MercurySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6BF3343407D5CBAF13694DB7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		864898F9EA40166616D3AE8A /* Pods-MercurySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercurySDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-MercurySDK_Example/Pods-MercurySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6003F587195388D20070C39A /* Frameworks */ = {
+		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
-				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				7CFCE8476F86F1FD5C6B7248 /* libPods-MercurySDK_Example.a in Frameworks */,
+				94BA45C307853BE72A38598A /* Pods_MercurySDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		097FF2CF45CEBA4F22D72D48 /* Pods */ = {
+		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				D703D68DCB0140712783B652 /* Pods-MercurySDK_Example.debug.xcconfig */,
-				C5853537C9B14B23002A8C31 /* Pods-MercurySDK_Example.release.xcconfig */,
-				D610E223A6FE12E4988C3CE7 /* Pods-MercurySDK_Tests.debug.xcconfig */,
-				7F0D6F4FD58FDE2DB8E1BEE4 /* Pods-MercurySDK_Tests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		316CBFE523FBC79900B134E5 /* TestSingleController */ = {
-			isa = PBXGroup;
-			children = (
-				316CBFED23FBC79900B134E5 /* MercuryBannerAdViewController.h */,
-				316CBFE923FBC79900B134E5 /* MercuryBannerAdViewController.m */,
-				316CBFEA23FBC79900B134E5 /* MercuryInterstitialAdViewController.h */,
-				316CBFE723FBC79900B134E5 /* MercuryInterstitialAdViewController.m */,
-				316CBFE823FBC79900B134E5 /* MercuryRewardVideoViewController.h */,
-				316CBFEC23FBC79900B134E5 /* MercuryRewardVideoViewController.m */,
-				316CBFE623FBC79900B134E5 /* MercurySplashAdViewController.h */,
-				316CBFEB23FBC79900B134E5 /* MercurySplashAdViewController.m */,
-			);
-			path = TestSingleController;
-			sourceTree = "<group>";
-		};
-		316CBFEE23FBC79900B134E5 /* AppViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				316CBFEF23FBC79900B134E5 /* ViewBuilder */,
-				316CBFF223FBC79900B134E5 /* JDStatusBarNotification */,
-				316CBFFB23FBC79900B134E5 /* CellBuilder */,
-				316CC00323FBC79900B134E5 /* Base */,
-			);
-			path = AppViewBuilder;
-			sourceTree = "<group>";
-		};
-		316CBFEF23FBC79900B134E5 /* ViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				316CBFF023FBC79900B134E5 /* ViewBuilder.h */,
-				316CBFF123FBC79900B134E5 /* ViewBuilder.m */,
-			);
-			path = ViewBuilder;
-			sourceTree = "<group>";
-		};
-		316CBFF223FBC79900B134E5 /* JDStatusBarNotification */ = {
-			isa = PBXGroup;
-			children = (
-				316CBFF323FBC79900B134E5 /* JDStatusBarNotification.m */,
-				316CBFF423FBC79900B134E5 /* JDStatusBarStyle.h */,
-				316CBFF523FBC79900B134E5 /* JDStatusBarView.m */,
-				316CBFF623FBC79900B134E5 /* JDStatusBarLayoutMarginHelper.m */,
-				316CBFF723FBC79900B134E5 /* JDStatusBarNotification.h */,
-				316CBFF823FBC79900B134E5 /* JDStatusBarView.h */,
-				316CBFF923FBC79900B134E5 /* JDStatusBarStyle.m */,
-				316CBFFA23FBC79900B134E5 /* JDStatusBarLayoutMarginHelper.h */,
-			);
-			path = JDStatusBarNotification;
-			sourceTree = "<group>";
-		};
-		316CBFFB23FBC79900B134E5 /* CellBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				316CBFFC23FBC79900B134E5 /* BYExamCellModel.m */,
-				316CBFFD23FBC79900B134E5 /* CellBuilder.m */,
-				316CBFFE23FBC79900B134E5 /* ExamTableViewCell.h */,
-				316CBFFF23FBC79900B134E5 /* cell01.json */,
-				316CC00023FBC79900B134E5 /* BYExamCellModel.h */,
-				316CC00123FBC79900B134E5 /* ExamTableViewCell.m */,
-				316CC00223FBC79900B134E5 /* CellBuilder.h */,
-			);
-			path = CellBuilder;
-			sourceTree = "<group>";
-		};
-		316CC00323FBC79900B134E5 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				316CC00423FBC79900B134E5 /* ViewController */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		316CC00423FBC79900B134E5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				316CC00523FBC79900B134E5 /* BaseViewController.m */,
-				316CC00623FBC79900B134E5 /* BaseViewController.h */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		6003F581195388D10070C39A = {
-			isa = PBXGroup;
-			children = (
-				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for MercurySDK */,
-				6003F58C195388D20070C39A /* Frameworks */,
-				6003F58B195388D20070C39A /* Products */,
-				097FF2CF45CEBA4F22D72D48 /* Pods */,
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACD21AFB9204008FA782 /* Example for MercurySDK */,
+				607FACD11AFB9204008FA782 /* Products */,
+				E05BC704FCA0287745346600 /* Pods */,
+				EA44CA08A14A2315FF814917 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		6003F58B195388D20070C39A /* Products */ = {
+		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* MercurySDK_Example.app */,
+				607FACD01AFB9204008FA782 /* MercurySDK_Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6003F58C195388D20070C39A /* Frameworks */ = {
+		607FACD21AFB9204008FA782 /* Example for MercurySDK */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58D195388D20070C39A /* Foundation.framework */,
-				6003F58F195388D20070C39A /* CoreGraphics.framework */,
-				6003F591195388D20070C39A /* UIKit.framework */,
-				6003F5AF195388D20070C39A /* XCTest.framework */,
-				7D3536429C876EAABBF1732C /* libPods-MercurySDK_Example.a */,
-				7CAC9C01704508BD5AFB8FA5 /* libPods-MercurySDK_Tests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6003F593195388D20070C39A /* Example for MercurySDK */ = {
-			isa = PBXGroup;
-			children = (
-				6003F59C195388D20070C39A /* MERCURYAppDelegate.h */,
-				6003F59D195388D20070C39A /* MERCURYAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* MERCURYViewController.h */,
-				6003F5A6195388D20070C39A /* MERCURYViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				316CBFEE23FBC79900B134E5 /* AppViewBuilder */,
-				316CBFE523FBC79900B134E5 /* TestSingleController */,
-				6003F594195388D20070C39A /* Supporting Files */,
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for MercurySDK";
 			path = MercurySDK;
 			sourceTree = "<group>";
 		};
-		6003F594195388D20070C39A /* Supporting Files */ = {
+		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* MercurySDK-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
-				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* MercurySDK-Prefix.pch */,
+				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				370F269FA753CCD3BE6C0A60 /* MercurySDK.podspec */,
+				65089E43CDAEF9CB5EC488F1 /* MercurySDK.podspec */,
+				6BF3343407D5CBAF13694DB7 /* README.md */,
+				08D026BAE5C1FE66B79F3CB1 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		E05BC704FCA0287745346600 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				864898F9EA40166616D3AE8A /* Pods-MercurySDK_Example.debug.xcconfig */,
+				4BEEE2AC14A7275C3123676B /* Pods-MercurySDK_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA44CA08A14A2315FF814917 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60144FFD76171B1AED4707ED /* Pods_MercurySDK_Example.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* MercurySDK_Example */ = {
+		607FACCF1AFB9204008FA782 /* MercurySDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MercurySDK_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MercurySDK_Example" */;
 			buildPhases = (
-				5CB2B566EA7C1E5090759C72 /* [CP] Check Pods Manifest.lock */,
-				6003F586195388D20070C39A /* Sources */,
-				6003F587195388D20070C39A /* Frameworks */,
-				6003F588195388D20070C39A /* Resources */,
+				2D724886A80896DDDABB9592 /* [CP] Check Pods Manifest.lock */,
+				607FACCC1AFB9204008FA782 /* Sources */,
+				607FACCD1AFB9204008FA782 /* Frameworks */,
+				607FACCE1AFB9204008FA782 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -281,26 +129,27 @@
 			);
 			name = MercurySDK_Example;
 			productName = MercurySDK;
-			productReference = 6003F58A195388D20070C39A /* MercurySDK_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* MercurySDK_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6003F582195388D10070C39A /* Project object */ = {
+		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = MERCURY;
-				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = Cheng455153666;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					6003F589195388D20070C39A = {
+					607FACCF1AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 9ST9FLC84N;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "MercurySDK" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "MercurySDK" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -309,33 +158,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 6003F581195388D10070C39A;
-			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* MercurySDK_Example */,
+				607FACCF1AFB9204008FA782 /* MercurySDK_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6003F588195388D20070C39A /* Resources */ = {
+		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				316CC01523FBC79900B134E5 /* cell01.json in Resources */,
+				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5CB2B566EA7C1E5090759C72 /* [CP] Check Pods Manifest.lock */ = {
+		2D724886A80896DDDABB9592 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,52 +207,38 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6003F586195388D20070C39A /* Sources */ = {
+		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				316CC01723FBC79900B134E5 /* BaseViewController.m in Sources */,
-				316CC01623FBC79900B134E5 /* ExamTableViewCell.m in Sources */,
-				316CC00A23FBC79900B134E5 /* MercuryInterstitialAdViewController.m in Sources */,
-				6003F59E195388D20070C39A /* MERCURYAppDelegate.m in Sources */,
-				316CC01323FBC79900B134E5 /* BYExamCellModel.m in Sources */,
-				316CC01223FBC79900B134E5 /* JDStatusBarStyle.m in Sources */,
-				316CC00D23FBC79900B134E5 /* MercuryRewardVideoViewController.m in Sources */,
-				316CC01023FBC79900B134E5 /* JDStatusBarView.m in Sources */,
-				316CC00C23FBC79900B134E5 /* MercurySplashAdViewController.m in Sources */,
-				316CC00E23FBC79900B134E5 /* ViewBuilder.m in Sources */,
-				316CC00B23FBC79900B134E5 /* MercuryBannerAdViewController.m in Sources */,
-				316CC01423FBC79900B134E5 /* CellBuilder.m in Sources */,
-				6003F5A7195388D20070C39A /* MERCURYViewController.m in Sources */,
-				316CC00F23FBC79900B134E5 /* JDStatusBarNotification.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
-				316CC01123FBC79900B134E5 /* JDStatusBarLayoutMarginHelper.m in Sources */,
+				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F597195388D20070C39A /* en */,
+				607FACDA1AFB9204008FA782 /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
+				607FACDF1AFB9204008FA782 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6003F5BD195388D20070C39A /* Debug */ = {
+		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,19 +246,31 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -438,14 +283,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		6003F5BE195388D20070C39A /* Release */ = {
+		607FACEE1AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -453,95 +299,100 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		6003F5C0195388D20070C39A /* Debug */ = {
+		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D703D68DCB0140712783B652 /* Pods-MercurySDK_Example.debug.xcconfig */;
+			baseConfigurationReference = 864898F9EA40166616D3AE8A /* Pods-MercurySDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ST9FLC84N;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MercurySDK/MercurySDK-Prefix.pch";
-				INFOPLIST_FILE = "MercurySDK/MercurySDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				INFOPLIST_FILE = MercurySDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = MercurySDK.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		6003F5C1195388D20070C39A /* Release */ = {
+		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5853537C9B14B23002A8C31 /* Pods-MercurySDK_Example.release.xcconfig */;
+			baseConfigurationReference = 4BEEE2AC14A7275C3123676B /* Pods-MercurySDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MercurySDK/MercurySDK-Prefix.pch";
-				INFOPLIST_FILE = "MercurySDK/MercurySDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				DEVELOPMENT_TEAM = 9ST9FLC84N;
+				INFOPLIST_FILE = MercurySDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = MercurySDK.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "MercurySDK" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "MercurySDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6003F5BD195388D20070C39A /* Debug */,
-				6003F5BE195388D20070C39A /* Release */,
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MercurySDK_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MercurySDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6003F5C0195388D20070C39A /* Debug */,
-				6003F5C1195388D20070C39A /* Release */,
+				607FACF01AFB9204008FA782 /* Debug */,
+				607FACF11AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6003F582195388D10070C39A /* Project object */;
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

@@ -1,29 +1,16 @@
 PODS:
-  - Masonry (1.1.0)
-  - MercurySDK (4.2.7)
-  - SDWebImage (5.13.2):
-    - SDWebImage/Core (= 5.13.2)
-  - SDWebImage/Core (5.13.2)
+  - MercurySDK (4.5.7)
 
 DEPENDENCIES:
-  - Masonry
   - MercurySDK (from `../`)
-  - SDWebImage
-
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Masonry
-    - SDWebImage
 
 EXTERNAL SOURCES:
   MercurySDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MercurySDK: ef34d3af1f757afbf6f526ff6a1b00fcbcc8650f
-  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  MercurySDK: 7ada8af76bfcaadce613a114704a46e5c3444291
 
-PODFILE CHECKSUM: 29ed7cf92d5b885c7704e14dcd815a852cecb817
+PODFILE CHECKSUM: 51487687cef7f8d4438c91a3572b6b8e0a1b39cf
 
 COCOAPODS: 1.12.1
