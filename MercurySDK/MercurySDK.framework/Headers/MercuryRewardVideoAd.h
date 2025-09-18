@@ -11,6 +11,7 @@
 #import "MercuryAdMaterial.h"
 #import "MercuryBaseAdObject.h"
 #import "MercuryRewardedVideoModel.h"
+#import "MercuryAdProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -51,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface MercuryRewardVideoAd : MercuryBaseAdObject
+@interface MercuryRewardVideoAd : MercuryBaseAdObject <MercuryAdProtocol>
 
 @property (nonatomic, weak) id<MercuryRewardVideoAdDelegate> delegate;
 

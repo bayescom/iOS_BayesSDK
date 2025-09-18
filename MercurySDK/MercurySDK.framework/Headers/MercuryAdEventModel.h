@@ -44,6 +44,12 @@
 @property (nonatomic, assign) NSInteger show_time;
 /// 广告曝光耗时，单位ms，广告调用show到广告曝光的时间间隔。
 @property (nonatomic, assign) NSInteger expose_cost;
+/// 广告来源标记，上游广告主id
+@property (nonatomic, copy) NSString *bid_source;
+/// 倍业竞价落败时，竞胜方出价，单位: 分
+@property (nonatomic, assign) NSInteger win_price;
+/// 倍业竞价是否落败，1代表落败，0默认
+@property (nonatomic, assign) NSInteger loss_win;
 /// 广告素材对象
 @property (nonatomic, strong) MercuryAdMaterialObject *ad_material;
 /// 广告缓存对象
@@ -70,7 +76,7 @@
 @property (nonatomic, assign) NSInteger ad_cache_keeped_duration;
 /// 缓存命中原因，1- 代表实时获取广告失败（具体原因在ext_msg字段说明） 2- 代表实时广告价格落败
 @property (nonatomic, assign) NSInteger cached_hit_reason;
-/// 缓存广告是否成功删除，0- 失败  1- 成功
+/// 缓存广告是否成功删除，-1- 默认值  0- 失败  1- 成功
 @property (nonatomic, assign) NSInteger cached_deleted;
 
 @end

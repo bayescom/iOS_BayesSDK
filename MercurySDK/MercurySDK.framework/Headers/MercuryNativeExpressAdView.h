@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MercuryAdProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MercuryNativeExpressAdView : UIView
+@interface MercuryNativeExpressAdView : UIView <MercuryAdProtocol>
 
 /**
  *  viewControllerForPresentingModalView

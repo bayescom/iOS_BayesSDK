@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "MercuryAdMaterial.h"
 #import "MercuryBaseAdObject.h"
+#import "MercuryAdProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -46,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface MercurySplashAd : MercuryBaseAdObject
+@interface MercurySplashAd : MercuryBaseAdObject <MercuryAdProtocol>
 
 /// 代理对象
 @property (nonatomic, weak) id<MercurySplashAdDelegate> delegate;
@@ -68,13 +69,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 实时价格（分）
 @property (nonatomic, assign) NSInteger price;
-
-/// 拉取广告超时时间，默认为5秒
-@property (nonatomic, assign) NSInteger fetchDelay __attribute__((deprecated("该字段已废弃，请忽略")));
-
-/// 开屏广告底部Logo图片
-@property (nonatomic, strong) UIImage *logoImage __attribute__((deprecated("该字段即将废弃，请使用`bottomLogoView`属性")));
-@property (nonatomic, assign) NSInteger blankGap __attribute__((deprecated("该字段已废弃，请忽略")));
 
 /// 构造方法
 /// @param adspotId 广告Id

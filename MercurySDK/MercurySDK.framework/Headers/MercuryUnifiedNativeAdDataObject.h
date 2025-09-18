@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "MercuryVideoConfig.h"
+#import "MercuryAdProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MercuryUnifiedNativeAdDataObject : NSObject
+@interface MercuryUnifiedNativeAdDataObject : NSObject <MercuryAdProtocol>
 /// 广告标题
 @property (nonatomic, copy, readonly) NSString *title;
 /// 广告描述

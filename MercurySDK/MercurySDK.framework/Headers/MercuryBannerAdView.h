@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MercuryAdMaterial.h"
+#import "MercuryAdProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -35,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface MercuryBannerAdView : UIView
+@interface MercuryBannerAdView : UIView <MercuryAdProtocol>
 
 /// 委托 [可选]
 @property(nonatomic, weak) id<MercuryBannerAdViewDelegate> delegate;
