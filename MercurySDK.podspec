@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MercurySDK'
-  s.version          = '4.5.8.1'
+  s.version          = '4.6.0'
   s.summary          = 'bayescom iOS SDK'
   s.description      = <<-DESC
 Blink倍联——免费透明的流量变现神器 
