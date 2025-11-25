@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MercurySDK'
-  s.version          = '4.6.3'
+  s.version          = '4.6.3.1'
   s.summary          = 'bayescom iOS SDK'
   s.description      = <<-DESC
 Blink倍联——免费透明的流量变现神器 
@@ -14,10 +14,10 @@ Blink倍联——免费透明的流量变现神器 
 
   s.platform     = :ios, "10.0"
   s.frameworks   = 'StoreKit', 'CoreTelephony', 'AdSupport', 'SystemConfiguration', 'AVFoundation'
-  s.vendored_frameworks = 'MercurySDK/*.framework'
+  s.vendored_frameworks = 'MercurySDK/*.xcframework'
    
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  #s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.xcconfig = {
           'OTHER_LDFLAGS' => '-ObjC'
       }
