@@ -2,8 +2,8 @@
 //  MercurySDK.h
 //  MercurySDK
 //
-//  Created by Bayes on 2019/11/4.
-//  Copyright © 2019 Bayes.com. All rights reserved.
+//  Created by YAO on 2019/11/4.
+//  Copyright © 2019 Mercury. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -2,11 +2,12 @@
 //  MercuryConfigManager.h
 //  MercurySDK
 //
-//  Created by Bayes on 2019/11/4.
-//  Copyright © 2019 Bayes.com. All rights reserved.
+//  Created by YAO on 2019/11/4.
+//  Copyright © 2019 Mercury. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -41,11 +42,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 设置标准UA
 + (void)setDefaultUserAgent:(NSString *)ua;
 
+/// 自定义广告角标
++ (void)setCustomLogoImage:(UIImage *)logo;
+
 /// 是否需要支持HTTPS  默认不需要
 + (void)supportHttps:(BOOL)isNeed;
 
 /// 是否允许个性化广告推送 默认为允许
-+ (void)openAdTrack:(BOOL)open;
++ (void)openAdTrack:(BOOL)enable;
 
 /// 设置AAID
 /// - Parameters:

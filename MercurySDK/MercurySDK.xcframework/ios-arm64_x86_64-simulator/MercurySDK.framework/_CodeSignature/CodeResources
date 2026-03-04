@@ -26,11 +26,11 @@
 		</data>
 		<key>Headers/MercuryConfigManager.h</key>
 		<data>
-		Nl8bwHz4wu5bcjg5Z2wWXVHeGvQ=
+		1kAFbhybMPpW5MchnSMiztagM/8=
 		</data>
 		<key>Headers/MercuryInterstitialAd.h</key>
 		<data>
-		2rd+UDjzntbve53sVy66duF3vQ8=
+		R+ucKuOolLU/FgsiRdlmgL1CGao=
 		</data>
 		<key>Headers/MercuryLogoView.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/MercuryRewardVideoAd.h</key>
 		<data>
-		qjwKFk0w+dmNN/O5MWglsopeBJ8=
+		PdsyJpL2he6YGensPhTWXytYsr0=
 		</data>
 		<key>Headers/MercuryRewardedVideoModel.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/MercurySDK.h</key>
 		<data>
-		kMougNdkGysQhfr5f9ipnmJlaJM=
+		A7cKrn5UvHs+XX8hgeyde1Qn8bA=
 		</data>
 		<key>Headers/MercurySplashAd.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VIFTVI12vBIiWwjU2951ri4S7WI=
+		wZp1Tx4vmmjFBBXPqF1364+qSHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -134,14 +134,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TT8aNdUXgercVnp/pFN+SGi9t+BBqYYluMAT2RbUxg4=
+			97/hoz8kV6Ftrq22Mc6GIlSGS2Hf0L0txJLdMpo14tk=
 			</data>
 		</dict>
 		<key>Headers/MercuryInterstitialAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VIaIQ5UWrT0236pL/dFMWPqsUNqCZkcMnfnRyTWpe68=
+			aZdyzsks8ghivFgiD1mqWCQHcE4O2znNEBjOglL23Hk=
 			</data>
 		</dict>
 		<key>Headers/MercuryLogoView.h</key>
@@ -176,7 +176,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VeFC0V7bNnDEGahM4MjyvUlGWw5KvX4m6WlmEU3wsPQ=
+			SOc3BxWyrB7QpdswGJMLFusCFEMklK3l4KQSHLeRoEo=
 			</data>
 		</dict>
 		<key>Headers/MercuryRewardedVideoModel.h</key>
@@ -190,7 +190,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			67mszBB6fjnmUVRcyXXxXalitWrVgx6JNB2wAbe0LGI=
+			48NIW5aildNJfiOPq+rgLXG7sqFNJzFB1WHrkebuxwg=
 			</data>
 		</dict>
 		<key>Headers/MercurySplashAd.h</key>

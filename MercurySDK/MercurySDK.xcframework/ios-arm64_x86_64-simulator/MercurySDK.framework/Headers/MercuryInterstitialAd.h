@@ -3,7 +3,7 @@
 //  MercurySDK
 //
 //  Created by guangyao on 2023/12/25.
-//  Copyright © 2023 mercury. All rights reserved.
+//  Copyright © 2023 Mercury. All rights reserved.
 //
 //
 
