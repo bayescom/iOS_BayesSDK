@@ -47,6 +47,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 广告刷新间隔，范围 [10, 120] 秒，设 0 则不刷新。[可选]
 @property(nonatomic, assign) NSInteger interval;
 
+/// 广告是否有效
+@property (nonatomic, assign, readonly) BOOL isAdValid;
+
 /// 实时价格（分）
 @property(nonatomic, assign) NSInteger price;
 
