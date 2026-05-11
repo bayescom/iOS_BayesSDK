@@ -51,12 +51,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否允许个性化广告推送 默认为允许
 + (void)openAdTrack:(BOOL)enable;
 
-/// 设置AAID
-/// - Parameters:
-///   - mediaId: 阿里提供给媒体的mediaId
-///   - mediaSecret: 阿里提供给媒体的mediaSecret
-+ (void)setAAIDWithMediaId:(NSString *)mediaId mediaSecret:(NSString *)mediaSecret;
-
 /// 设置CAID
 /// - Parameters:
 ///   - caid: caid值
