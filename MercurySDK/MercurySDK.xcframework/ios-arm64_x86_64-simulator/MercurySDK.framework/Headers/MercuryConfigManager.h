@@ -51,12 +51,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否允许个性化广告推送 默认为允许
 + (void)openAdTrack:(BOOL)enable;
 
-/// 设置CAID
+/// 设置ID
 /// - Parameters:
-///   - caid: caid值
-///   - version: caid版本号
-/// - note: caid支持传入多个不同版本，开发者可多次调用此方法
-+ (void)setCAID:(NSString *)caid version:(NSString *)version;
+///   - identity: cid值
+///   - version: cid版本号
+/// - note: cid支持传入多个不同版本，开发者可多次调用此方法
++ (void)setID:(NSString *)identity version:(NSString *)version;
 
 /// 禁止SDK获取IDFA信息，默认值为NO：即允许获取
 + (void)forbiddenIDFA:(BOOL)forbidden;
