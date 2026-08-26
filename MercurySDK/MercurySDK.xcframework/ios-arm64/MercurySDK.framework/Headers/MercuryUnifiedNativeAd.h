@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MercuryUnifiedNativeAdDataObject.h"
-#import "MercuryBaseAdObject.h"
+#import "MercuryServerBiddingProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface MercuryUnifiedNativeAd : MercuryBaseAdObject
+@interface MercuryUnifiedNativeAd : NSObject <MercuryServerBiddingProtocol>
 
 @property (nonatomic, weak) id<MercuryUnifiedNativeAdDelegate> delegate;
 

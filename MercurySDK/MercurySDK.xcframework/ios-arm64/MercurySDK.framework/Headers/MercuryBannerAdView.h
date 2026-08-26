@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MercuryAdMaterial.h"
 #import "MercuryAdProtocol.h"
+#import "MercuryServerBiddingProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface MercuryBannerAdView : UIView <MercuryAdProtocol>
+@interface MercuryBannerAdView : UIView <MercuryAdProtocol, MercuryServerBiddingProtocol>
 
 /// 委托 [可选]
 @property(nonatomic, weak) id<MercuryBannerAdViewDelegate> delegate;
@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL isAdValid;
 
 /// 实时价格（分）
-@property(nonatomic, assign) NSInteger price;
+@property(nonatomic, assign, readonly) NSInteger price;
 
 /// 初始方法
 /// @param frame banner 展示的位置和大小
@@ -73,17 +73,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 拉取并展示广告
 - (void)loadAdAndShow;
-
-#pragma mark: - S2S Bidding
-/// 获取 sdkInfo 用于 Server Bidding 请求获取 token
-- (NSString *)getSDKInfo;
-
-/// 请求bidding广告
-/// - Parameter token: 媒体传入竞价成功的广告token
-- (void)loadBiddingAd:(NSString *)token;
-
-/// 获取广告素材
-- (MercuryAdMaterial *)getAdMaterial;
 
 @end
 

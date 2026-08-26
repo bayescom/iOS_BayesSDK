@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "MercuryAdMaterial.h"
-#import "MercuryBaseAdObject.h"
 #import "MercuryRewardedVideoModel.h"
 #import "MercuryAdProtocol.h"
+#import "MercuryServerBiddingProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -52,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface MercuryRewardVideoAd : MercuryBaseAdObject <MercuryAdProtocol>
+@interface MercuryRewardVideoAd : NSObject <MercuryAdProtocol, MercuryServerBiddingProtocol>
 
 @property (nonatomic, weak) id<MercuryRewardVideoAdDelegate> delegate;
 
@@ -62,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL isAdValid;
 
 /// 实时价格（分）
-@property (nonatomic, assign) NSInteger price;
+@property (nonatomic, assign, readonly) NSInteger price;
 
 /// 初始化激励广告
 /// @param adspotId 广告Id
@@ -83,17 +82,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 展示广告
 - (void)showAdFromRootViewController:(UIViewController *)rootViewController;
-
-#pragma mark: - S2S Bidding
-/// 获取 sdkInfo 用于 Server Bidding 请求获取 token
-- (NSString *)getSDKInfo;
-
-/// 请求bidding广告
-/// - Parameter token: 媒体传入竞价成功的广告token
-- (void)loadBiddingAd:(NSString *)token;
-
-/// 获取广告素材
-- (MercuryAdMaterial *)getAdMaterial;
 
 @end
 

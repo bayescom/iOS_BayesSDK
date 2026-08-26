@@ -8,13 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "MercuryNativeExpressAdView.h"
-#import "MercuryAdMaterial.h"
-#import "MercuryBaseAdObject.h"
+#import "MercuryServerBiddingProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class MercuryNativeExpressAd;
-@protocol MercuryNativeExpressAdDelegete <NSObject>
+@protocol MercuryNativeExpressAdDelegate <NSObject>
 
 @optional
 /// 拉取原生模板广告成功
@@ -46,7 +45,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface MercuryNativeExpressAd : MercuryBaseAdObject
+/// 历史拼写兼容，请使用 MercuryNativeExpressAdDelegate。
+__attribute__((deprecated("Use MercuryNativeExpressAdDelegate instead")))
+@protocol MercuryNativeExpressAdDelegete <MercuryNativeExpressAdDelegate>
+@end
+
+@interface MercuryNativeExpressAd : NSObject <MercuryServerBiddingProtocol>
 
 /// 广告展示的尺寸
 /// 可将宽度设置为屏宽，自适应时，可将高度直接设置为0
@@ -56,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat padding;
 
 /// 代理
-@property (nonatomic, weak) id<MercuryNativeExpressAdDelegete> delegate;
+@property (nonatomic, weak) id<MercuryNativeExpressAdDelegate> delegate;
 
 /// 构造方法
 /// @param adspotId 广告位 ID
@@ -70,17 +74,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 加载广告
 - (void)loadAdWithCount:(NSInteger)count;
-
-#pragma mark: - S2S Bidding
-/// 获取 sdkInfo 用于 Server Bidding 请求获取 token
-- (NSString *)getSDKInfo;
-
-/// 请求bidding广告
-/// - Parameter token: 媒体传入竞价成功的广告token
-- (void)loadBiddingAd:(NSString *)token;
-
-/// 获取广告素材
-- (MercuryAdMaterial *)getAdMaterial;
 
 @end
 

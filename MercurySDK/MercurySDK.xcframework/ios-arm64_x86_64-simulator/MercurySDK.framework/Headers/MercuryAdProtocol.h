@@ -6,11 +6,15 @@
 //  Copyright © 2025 Mercury. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol MercuryAdProtocol <NSObject>
 
 @optional
 
-/// 获取广告剩余有效期秒数
+/// 获取广告剩余有效时间（秒）
 - (NSTimeInterval)getAdValidSeconds;
 
 /// 竞败之后调用
@@ -19,3 +23,5 @@
 
 
 @end
+
+NS_ASSUME_NONNULL_END

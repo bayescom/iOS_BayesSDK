@@ -24,15 +24,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// 三小图广告的图片Url集合
 @property (nonatomic, strong, readonly) NSArray *imageUrlList;
 /// 素材宽度（单图、三图、视频）
-@property (nonatomic, assign) NSInteger mediaWidth;
+@property (nonatomic, assign, readonly) NSInteger mediaWidth;
 /// 素材高度（单图、三图、视频）
-@property (nonatomic, assign) NSInteger mediaHeight;
+@property (nonatomic, assign, readonly) NSInteger mediaHeight;
 /// 是否为三小图广告
-@property (nonatomic, readonly) BOOL isThreeImgsAd;
+@property (nonatomic, assign, readonly) BOOL isThreeImgsAd;
 /// 是否为视频广告
-@property (nonatomic, readonly) BOOL isVideoAd;
+@property (nonatomic, assign, readonly) BOOL isVideoAd;
 /// 实时价格（分）
-@property (nonatomic, readonly) NSInteger price;
+@property (nonatomic, assign, readonly) NSInteger price;
 /// 广告对应的按钮展示文案
 @property (nonatomic, copy, readonly) NSString *buttonText;
 /// 广告平台logo图
