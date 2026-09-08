@@ -18,24 +18,6 @@ typedef NS_ENUM(NSInteger, MercuryAdBidLossReason) {
     MercuryAdBidLossReasonPrice = 1,
     /// 出价低于底价
     MercuryAdBidLossReasonBelowFloorPrice = 2,
-    /// 返回超时
-    MercuryAdBidLossReasonTimeout = 3,
-    /// 参数缺失返回无效
-    MercuryAdBidLossReasonInvalidResponse = 4,
-    /// 先审后投审核中
-    MercuryAdBidLossReasonUnderReview = 5,
-    /// 素材审核不通过
-    MercuryAdBidLossReasonMaterialRejected = 6,
-    /// 素材类型与尺寸不匹配
-    MercuryAdBidLossReasonMaterialMismatch = 7,
-    /// 广告主包名过滤
-    MercuryAdBidLossReasonAdvertiserBundleFiltered = 8,
-    /// 广告主域名过滤
-    MercuryAdBidLossReasonAdvertiserDomainFiltered = 9,
-    /// 链接非https过滤
-    MercuryAdBidLossReasonNonHTTPS = 10,
-    /// 监测地址过长
-    MercuryAdBidLossReasonTrackingURLTooLong = 11,
 };
 
 @protocol MercuryAdProtocol <NSObject>

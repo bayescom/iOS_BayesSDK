@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
  加载广告
  @param adCount 加载条数
  */
-- (void)loadAdWithAdCount:(NSInteger)adCount;
+- (void)loadAdWithAdCount:(NSInteger)adCount __attribute__((deprecated("已弃用，只支持返回1个广告")));
 
 @end
 

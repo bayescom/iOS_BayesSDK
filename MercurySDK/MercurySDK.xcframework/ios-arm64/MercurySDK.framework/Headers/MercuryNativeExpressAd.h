@@ -72,8 +72,16 @@ __attribute__((deprecated("Use MercuryNativeExpressAdDelegate instead")))
 - (instancetype)initAdWithAdspotId:(NSString * _Nonnull)adspotId
                          customExt:(NSDictionary *_Nullable)ext;
 
-/// 加载广告
-- (void)loadAdWithCount:(NSInteger)count;
+/**
+ 加载广告，仅加载一条数据
+ */
+- (void)loadAd;
+
+/**
+ 加载广告
+ @param count 加载条数
+ */
+- (void)loadAdWithCount:(NSInteger)count __attribute__((deprecated("已弃用，只支持返回1个广告")));
 
 @end
 
