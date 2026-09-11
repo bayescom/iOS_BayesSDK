@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, MercuryAdBidLossReason) {
     /// 其他原因
     MercuryAdBidLossReasonOther = 0,
     /// 比价落败
-    MercuryAdBidLossReasonPrice = 1,
+    MercuryAdBidLossReasonLowPrice = 1,
     /// 出价低于底价
     MercuryAdBidLossReasonBelowFloorPrice = 2,
 };
