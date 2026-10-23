@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		032738D832F13E74B4C5A635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0627443DC3A3B8194A3734 /* ViewController.swift */; };
-		22AB2782308B09CD0064E16E /* MercurySDK in Frameworks */ = {isa = PBXBuildFile; productRef = 22AB2781308B09CD0064E16E /* MercurySDK */; };
 		7AFAE0A3552B726395E71CB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461F21949241199750B427D5 /* Foundation.framework */; };
 		EAAD15AEC5D073D81F652FAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F16A355B24435AA4D357BD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AFAE0A3552B726395E71CB5 /* Foundation.framework in Frameworks */,
-				22AB2782308B09CD0064E16E /* MercurySDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +92,6 @@
 			);
 			name = MercurySDKSPMTest;
 			packageProductDependencies = (
-				22AB2781308B09CD0064E16E /* MercurySDK */,
 			);
 			productName = MercurySDKSPMTest;
 			productReference = 39F6ACB04FD6C963B7F91B7A /* MercurySDKSPMTest.app */;
@@ -111,6 +108,7 @@
 				TargetAttributes = {
 					7CAC77C046E0A0D87AF6C4B0 = {
 						CreatedOnToolsVersion = 26.2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -124,7 +122,6 @@
 			);
 			mainGroup = 884F4382D41659A402C9B2A9;
 			packageReferences = (
-				22AB2780308B09CD0064E16E /* XCRemoteSwiftPackageReference "iOS_BayesSDK" */,
 			);
 			productRefGroup = 585E3C52F2E605B82FDEF263 /* Products */;
 			projectDirPath = "";
@@ -208,8 +205,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -224,10 +220,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = MercurySDKSPMTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -315,10 +308,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = MercurySDKSPMTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -354,25 +344,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		22AB2780308B09CD0064E16E /* XCRemoteSwiftPackageReference "iOS_BayesSDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bayescom/iOS_BayesSDK.git";
-			requirement = {
-				kind = exactVersion;
-				version = 5.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		22AB2781308B09CD0064E16E /* MercurySDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 22AB2780308B09CD0064E16E /* XCRemoteSwiftPackageReference "iOS_BayesSDK" */;
-			productName = MercurySDK;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B30B1664AC8CD1B1C1870EF9 /* Project object */;
 }

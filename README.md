@@ -26,9 +26,9 @@ https://github.com/bayescom/iOS_BayesSDK.git
 
 podspec 中的 `VALID_ARCHS = x86_64 armv7 arm64` 没有 SwiftPM 对应设置。实际可用架构由 XCFramework 决定：目前提供 iOS 真机 arm64，以及 iOS 模拟器 arm64、x86_64；**不包含 armv7**。
 
-发布版本 `5.0.1` 新增 SPM 接入，仍使用原有 SDK 二进制；因此 `MercuryConfigManager.sdkVersion()` 当前返回 `5.0.0`。可用独立测试 App 检查导入、运行以及真实凭据下的初始化回调。
+发布版本 `5.0.1` 包含更新后的 MercurySDK 5.0.1 二进制；`MercuryConfigManager.sdkVersion()` 返回 `5.0.1`。仓库内的 `MercurySDK-SPM-Test` 已移除旧的包引用；打 tag 后，可在该 App 中重新添加 Git URL，选择精确版本 `5.0.1`，手动验证远程接入。
 
-当前沿用的 XCFramework 尚未签名。若需使用发布团队证书签名，应在签名后创建新版本，不要改写已发布 tag 中的二进制。
+当前 XCFramework 未使用发布团队证书签名。如后续需要更换签名或二进制，应在正式对外发布后创建新版本。
 
 ## CocoaPods
 
@@ -41,9 +41,9 @@ pod 'MercurySDK'
 ## 发布检查
 
 1. 确认 XCFramework 包含目标设备和模拟器架构、公开头文件、module map 与隐私清单。
-2. 使用发布团队证书签名 XCFramework，并核对隐私清单内容。
-3. 用独立 App 通过 SPM 编译、运行和归档；检查实际广告流程及归档中的隐私报告。
-4. 提交 `Package.swift`、文档、podspec 版本以及需要更新的二进制，然后给该提交打与 podspec 一致的 Git tag。
+2. 核对隐私清单内容；如采用发布团队证书签名，检查 XCFramework 的签名。
+3. 提交 `Package.swift`、文档、podspec 版本以及需要更新的二进制，然后给该提交打与 podspec 一致的 Git tag。
+4. 打 tag 后，在仓库内的测试 App 中重新添加 Git 包的精确版本，验证导入和运行；实际广告流程及归档中的隐私报告需单独检查。
 
 ## License
 
