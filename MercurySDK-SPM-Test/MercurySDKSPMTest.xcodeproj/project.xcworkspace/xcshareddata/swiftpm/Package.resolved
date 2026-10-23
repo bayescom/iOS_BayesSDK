@@ -1,0 +1,15 @@
+{
+  "originHash" : "c6783c48d90f36617ac448f26c1d4aec52b63ef17b334722bf27388e0b83f980",
+  "pins" : [
+    {
+      "identity" : "ios_bayessdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bayescom/iOS_BayesSDK.git",
+      "state" : {
+        "revision" : "3e1a31b5a75cc157012f5e825e382af147408060",
+        "version" : "5.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
